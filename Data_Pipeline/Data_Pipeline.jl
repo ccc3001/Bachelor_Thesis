@@ -37,30 +37,45 @@ for i in ProgressBar(readdir())
     if endswith(i,".ISQ")
         ISQname = i[1:(length(i)-4)]
         img = loadISQ(i)
+        img_datatype_array=[0,0,0,0,0]
+        if int(img["dataType"]) <= 5
+            img_datatype_array[int(img["dataType"])] = 1;
+        end
         image_data = ImageMeta(img[:,:,:])
         #print(dataType, index,img["patientName"] )
         Dict_1 = Dict("version" => img["version"],"scannerID" => img["scannerID"],"numberOfProjections" => img["numberOfProjections"],"scannerType" => img["scannerType"],"intensity" => img["intensity"]
         ,"dataRange" => img["dataRange"],"pixdim" => img["pixdim"],"reconstructionAlg" => img["reconstructionAlg"],"sliceThickness" => img["sliceThickness"],"sliceIncrement" => img["sliceIncrement"]
         ,"measurementIndex" => img["measurementIndex"],"referenceLine" => img["referenceLine"],"site" => img["site"],"dataOffset" => img["dataOffset"],"numberOfSamples" => img["numberOfSamples"]
         ,"sampleTime" => img["sampleTime"],"muScaling" => img["muScaling"],"physdim" => img["physdim"],"numBlocks" => img["numBlocks"],"energy" => img["energy"],"dataType" => img["dataType"]
-        ,"headerSize" => img["headerSize"],"scanDistance" => img["scanDistance"],"startPosition" => img["startPosition"],"numBytes" => img["numBytes"],"patientIndex" => img["patientIndex"]
+        ,"headerSize" => img["headerSize"],"scanDistance" => img["scanDistance"],"startPosition" => img["startPosition"],"numBytes" => img["numBytes"],"patientIndex" => img["patientIndex"],"img_datatype_array" => img_datatype_array
         )#,"data" => image_data
         # save the image in a json dictionary 
         stringdata = JSON.json(Dict_1)
         open(pwd() * "\\jsons\\" * ISQname * "_ISQ" * ".json", "w") do f
             write(f, stringdata)
-        h5open(ISQname *"_ISQ" * ".h5","w") do h5
+        h5open(pwd() * "\\h5\\" * ISQname *"_ISQ" * ".h5","w") do h5
             for i in 1:110
                 image =Gray.(Int16.(ImageAxes.data(img[:,:,i]))/(img["dataRange"][2]))
                 h5[string(i)]=image
             end
+            h5open(pwd() * "\\h5\\" * ISQname *"_snipped"*"_ISQ" * ".h5","w") do h5
+                for i in 1:110
+                    image =Gray.(Int16.(ImageAxes.data(img[384:1344,384:1344,i]))/(img["dataRange"][2]))
+                    h5[string(i)]=image
+                end
+            end
         end
+
     end
 
     #save all .RSQ files in the directory as json and remove the patient name
     elseif endswith(i,".RSQ")
         RSQname = i[1:(length(i)-4)]
         img = loadRSQ(i)
+        img_datatype_array=[0,0,0,0,0]
+        if int(img["dataType"]) <= 5
+            img_datatype_array[int(img["dataType"])] = 1;
+        end
         image_data = ImageMeta(img[:,:,:])
         Dict_2 = Dict("patientIndex" => img["patientIndex"],"detectorOffset" => img["detectorOffset"],"detectorSourceDist" => img["detectorSourceDist"],"detectorCenterDist" => img["detectorCenterDist"]
         ,"scannerID" => img["scannerID"],"detectorHeight" => img["detectorHeight"],"version" => img["version"],"numBytes" => img["numBytes"],"dataPixelR" => img["dataPixelR"]
@@ -68,15 +83,21 @@ for i in ProgressBar(readdir())
         ,"sliceThickness" => img["sliceThickness"],"ioRecord" => img["ioRecord"],"pixdim" => img["pixdim"],"numberOfProjections" => img["numberOfProjections"],"sliceIncrement" => img["sliceIncrement"]
         ,"fanAngle" => img["fanAngle"],"dataOffset" => img["dataOffset"],"numberOfSamples" => img["numberOfSamples"],"muScaling" => img["muScaling"],"angleRange" => img["angleRange"]
         ,"physdim" => img["physdim"],"numBlocks" => img["numBlocks"],"energy" => img["energy"],"centerPixel" => img["centerPixel"],"dataType" => img["dataType"],"headerSize" => img["headerSize"]
-        ,"orbitStartOffset" => img["orbitStartOffset"],"startPosition" => img["startPosition"],"calibrationScans" => img["calibrationScans"],"darkRecord" => img["darkRecord"],"data" => image_data)
+        ,"orbitStartOffset" => img["orbitStartOffset"],"startPosition" => img["startPosition"],"calibrationScans" => img["calibrationScans"],"darkRecord" => img["darkRecord"],"img_datatype_array" => img_datatype_array)
         # save the image in a json dictionary
         stringdata = JSON.json(Dict_2)
         open(pwd() * "\\jsons\\"* RSQname *"_RSQ" * ".json", "w") do f
             write(f, stringdata)
         end
-        h5open(RSQname *"_RSQ" * ".h5","w") do h5
+        h5open(pwd() * "\\h5\\" * RSQname * "_RSQ" * ".h5","w") do h5
             for i in 1:124
                 image = Gray.(Float32.(ImageAxes.data(img[:,:,i]))/10954)
+                h5[string(i)]=image
+            end
+        end
+        h5open(pwd() * "\\h5\\" * RSQname *"_snipped" * "_RSQ" * ".h5","w") do h5
+            for i in 1:124
+                image = Gray.(Float32.(ImageAxes.data(img[384:1344,384:1344,i]))/10954)
                 h5[string(i)]=image
             end
         end

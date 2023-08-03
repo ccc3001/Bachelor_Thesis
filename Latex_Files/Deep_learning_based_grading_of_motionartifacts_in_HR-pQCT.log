@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  19 JUL 2023 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  31 JUL 2023 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,7 +978,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 36.
+(Font)              scaled to size 7.0pt on input line 40.
 
 (c:/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
@@ -996,25 +996,25 @@ L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `Deep_learning_based_grading_of_motionartifac
 ts_in_HR-pQCT.out' has not changed.
-(rerunfilecheck)             Checksum: CE18CF1E1F0D047AE2AD6E7AAAA652B2;707.
+(rerunfilecheck)             Checksum: DE7CEFD62865F398A434D2F7F9F14B67;827.
  ) 
 Here is how much of TeX's memory you used:
- 20574 strings out of 475237
- 326231 string characters out of 5768555
- 1929238 words of memory out of 5000000
- 41192 multiletter control sequences out of 15000+600000
- 656403 words of font info for 155 fonts, out of 8000000 for 9000
+ 20589 strings out of 475237
+ 326608 string characters out of 5768555
+ 1934238 words of memory out of 5000000
+ 41193 multiletter control sequences out of 15000+600000
+ 657820 words of font info for 164 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 85i,16n,131p,1054b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,16n,131p,1151b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:
 /texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive
 /2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb>
 Output written on Deep_learning_based_grading_of_motionartifacts_in_HR-pQCT.pdf
- (1 page, 278031 bytes).
+ (1 page, 281670 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 47169 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 49225 words of extra memory for PDF output out of 51595 (max. 10000000)
 

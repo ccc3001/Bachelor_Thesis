@@ -138,7 +138,14 @@ overcoming the vanishing gradient problem
 -batch normalization ...
 -Dropout introduces regularization within the network by randomly skipping some units or connections with a certain probability
 
--on page 5464 is an tree showing the developement of cnns which has some intrsting concepts written in it},
+-on page 5464 is an tree showing the developement of cnns which has some intrsting concepts written in it
+
+-GoogleNet introduced a structure called the inception block which uses the  split, transform, and merge concept  to capture spatial information at different scales
+
+-CNNs may suffer from performance degradation, gradient vanishing, or 
+problems, which are not caused by overfitting but instead by an increase in the depth
+
+continue on 5483 it might be intreresting},
   doi        = {10.1007/s10462-020-09825-6},
   priority   = {prio2},
   publisher  = {Springer Science and Business Media {LLC}},
@@ -262,13 +269,24 @@ GoogLeNet, be careful with modifications},
 }
 
 @Misc{Simonyan2014,
-  author    = {Simonyan, Karen and Zisserman, Andrew},
-  title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
-  year      = {2014},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1409.1556},
-  keywords  = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  publisher = {arXiv},
+  author     = {Simonyan, Karen and Zisserman, Andrew},
+  title      = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  year       = {2014},
+  abstract   = {-In this work we investigate the effect of the convolutional network depth on its
+accuracy in the large-scale image recognition settin},
+  comment    = {- the classification error decreases with the increased ConvNet depth: from
+11 layers in A to 19 layers in E
+-scale jittering at training time leads to significantly better results than
+training on images with fixed smallest side
+- It was demonstrated that the representation depth is beneficial for the
+classification accuracy},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1409.1556},
+  keywords   = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio2},
+  publisher  = {arXiv},
+  ranking    = {rank3},
+  readstatus = {read},
 }
 
 @Misc{Dauphin2015,
@@ -504,31 +522,102 @@ comparably to the standard IMAGENET models},
 }
 
 @InProceedings{pmlr-v28-goodfellow13,
-  author    = {Goodfellow, Ian and Warde-Farley, David and Mirza, Mehdi and Courville, Aaron and Bengio, Yoshua},
-  booktitle = {Proceedings of the 30th International Conference on Machine Learning},
-  title     = {Maxout Networks},
-  year      = {2013},
-  address   = {Atlanta, Georgia, USA},
-  editor    = {Dasgupta, Sanjoy and McAllester, David},
-  month     = {17--19 Jun},
-  number    = {3},
-  pages     = {1319--1327},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {28},
-  abstract  = {We consider the problem of designing models to leverage a recently introduced approximate model averaging technique called dropout. We define a simple new model called maxout (so named because its output is the max of a set of inputs, and because it is a natural companion to dropout) designed to both facilitate optimization by dropout and improve the accuracy of dropout's fast approximate model averaging technique. We empirically verify that the model successfully accomplishes both of these tasks. We use maxout and dropout to demonstrate state of the art classification performance on four benchmark datasets: MNIST, CIFAR-10, CIFAR-100, and SVHN.},
-  pdf       = {http://proceedings.mlr.press/v28/goodfellow13.pdf},
-  url       = {https://proceedings.mlr.press/v28/goodfellow13.html},
+  author     = {Goodfellow, Ian and Warde-Farley, David and Mirza, Mehdi and Courville, Aaron and Bengio, Yoshua},
+  booktitle  = {Proceedings of the 30th International Conference on Machine Learning},
+  title      = {Maxout Networks},
+  year       = {2013},
+  address    = {Atlanta, Georgia, USA},
+  editor     = {Dasgupta, Sanjoy and McAllester, David},
+  month      = {17--19 Jun},
+  number     = {3},
+  pages      = {1319--1327},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {28},
+  abstract   = {We define a simple new model called
+maxout (so named because its output is the
+max of a set of inputs, and because it is a nat-
+ural companion to dropout)
+
+maxout is a activation function which is especially well suited for training with dropout},
+  comment    = {- dropout is known to work well in prac-
+tice
+
+Code and hyperparameters available at http://www-etud.iro.umontreal.ca/˜goodfeli/maxout.html
+
+-Dropout is a technique that can be applied to deter-
+ministic feedforward architectures that predict an out-
+put y given input vector v
+
+-maxout model is simply a feed-forward achitec-
+ture, such as a multilayer perceptron or deep convo-
+lutional neural network, that uses a new type of ac-
+tivation function: the maxout unit.
+
+-, it indicates that
+dropout does exact model averaging in deeper archi-
+tectures provided that they are locally linear among
+the space of inputs to each layer
+
+- maxout performs well is
+that it improves the bagging style training phase of
+dropout
+
+-t maxout allows training deeper
+networks, this greater variance suggests that maxout
+better propagates varying information downward to
+the lower layers and helps dropout training to better
+resemble bagging for the lower-layer parameters
+
+-maxout propagates
+variations in the gradient due to different choices of
+dropout masks to the lowest layers of a network},
+  pdf        = {http://proceedings.mlr.press/v28/goodfellow13.pdf},
+  priority   = {prio2},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://proceedings.mlr.press/v28/goodfellow13.html},
 }
 
 @Misc{Mishkin2015,
-  author    = {Mishkin, Dmytro and Matas, Jiri},
-  title     = {All you need is a good init},
-  year      = {2015},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1511.06422},
-  keywords  = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  publisher = {arXiv},
+  author     = {Mishkin, Dmytro and Matas, Jiri},
+  title      = {All you need is a good init},
+  year       = {2015},
+  abstract   = {Layer-sequential unit-variance (LSUV) initialization,a simple method for weight
+initialization for deep net learning
+
+The method consists of the two
+steps. First, pre-initialize weights of each convolution or inner-product layer with
+orthonormal matrices. Second, proceed from the first to the final layer, normaliz-
+ing the variance of the output of each layer to be equal to one.},
+  comment    = {batch normalization adds a 30% computational
+overhead to each iteration
+
+
+Tolvar ... Its value does not
+noticeably influence the performance in a broad range of 0.01 to 0.1
+
+L – convolution or full-
+connected layer, WL - its weights, BL - its output blob., Tolvar - variance tolerance, Ti – current
+trial, Tmax – max number of trials(usually it ends between 1 and 5 trials so maybeset it to 6 or 7 )
+
+Pre-initialize network with orthonormal matrices as in Saxe et al. (2014)
+for each layer L do
+while |Var(BL) − 1.0| ≥ Tolvar and (Ti < Tmax) do
+do Forward pass with a mini-batch
+calculate Var(BL)
+WL = WL / √Var(BL)
+end while
+end for
+
+performes well with maxout RELU and VLReLU},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1511.06422},
+  keywords   = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio2},
+  publisher  = {arXiv},
+  ranking    = {rank4},
+  readstatus = {read},
 }
 
 @Book{Briggs2000,
@@ -618,13 +707,31 @@ methodes are aimed towards ml problems with large data sets  and or high  dimens
   month         = feb,
   abstract      = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9% top-5 validation error (and 4.8% test error), exceeding the accuracy of human raters.},
   archiveprefix = {arXiv},
+  comment       = {-We propose a new mechanism, which we call Batch
+Normalization, that takes a step towards reducing internal
+covariate shift, and in doing so dramatically accelerates the
+training of deep neural nets
+-normalize each scalar feature independently, by
+making it have zero mean and unit variance
+-Simply adding Batch Normalization to a network does not
+take full advantage of our method
+-Increase learning rate
+-Remove Dropout
+-Shuffle training examples more thoroughly
+-Reduce the L2 weight regularization
+-Accelerate the learning rate decay
+-Remove Local Response Normalization
+-Reduce the photometric distortions},
   copyright     = {arXiv.org perpetual, non-exclusive license},
   doi           = {10.48550/ARXIV.1502.03167},
   eprint        = {1502.03167},
   file          = {:http\://arxiv.org/pdf/1502.03167v3:PDF},
   keywords      = {Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.LG},
+  priority      = {prio1},
   publisher     = {arXiv},
+  ranking       = {rank4},
+  readstatus    = {read},
 }
 
 @Article{Sode2011,
@@ -654,16 +761,37 @@ Quantitative Motion estimates (QMEs)
 }
 
 @Article{Hinton2006,
-  author    = {G. E. Hinton and R. R. Salakhutdinov},
-  journal   = {Science},
-  title     = {Reducing the Dimensionality of Data with Neural Networks},
-  year      = {2006},
-  month     = {jul},
-  number    = {5786},
-  pages     = {504--507},
-  volume    = {313},
-  doi       = {10.1126/science.1127647},
-  publisher = {American Association for the Advancement of Science ({AAAS})},
+  author     = {G. E. Hinton and R. R. Salakhutdinov},
+  journal    = {Science},
+  title      = {Reducing the Dimensionality of Data with Neural Networks},
+  year       = {2006},
+  month      = {jul},
+  number     = {5786},
+  pages      = {504--507},
+  volume     = {313},
+  abstract   = {High-dimensional data can be converted to low-dimensional codes by training a multilayer neural
+network with a small central layer to reconstruct high-dimensional input vectors},
+  comment    = {-principal components analysis (PCA), finds the directions of greatest variance in the
+data set and represents each data point by its
+coordinates along each of these directions
+-With large initial weights,
+autoencoders typically find poor local minima
+-what is a restricted boltzmann machine 
+
+-After learning one layer of feature de-
+tectors, we can treat their activities—when they
+are being driven by the data—as data for
+learning a second layer of features. The first
+layer of feature detectors then become the
+visible units for learning the next RBM
+
+-latent semantic analysis
+(LSA) a well known document retrival method based on PCA},
+  doi        = {10.1126/science.1127647},
+  priority   = {prio3},
+  publisher  = {American Association for the Advancement of Science ({AAAS})},
+  ranking    = {rank2},
+  readstatus = {read},
 }
 
 @Article{Rusk2015,
@@ -677,6 +805,147 @@ Quantitative Motion estimates (QMEs)
   volume    = {13},
   doi       = {10.1038/nmeth.3707},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Lecun1998,
+  author    = {Y. Lecun and L. Bottou and Y. Bengio and P. Haffner},
+  journal   = {Proceedings of the {IEEE}},
+  title     = {Gradient-based learning applied to document recognition},
+  year      = {1998},
+  number    = {11},
+  pages     = {2278--2324},
+  volume    = {86},
+  doi       = {10.1109/5.726791},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@InProceedings{pmlr-v9-glorot10a,
+  author    = {Glorot, Xavier and Bengio, Yoshua},
+  booktitle = {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+  title     = {Understanding the difficulty of training deep feedforward neural networks},
+  year      = {2010},
+  address   = {Chia Laguna Resort, Sardinia, Italy},
+  editor    = {Teh, Yee Whye and Titterington, Mike},
+  month     = {13--15 May},
+  pages     = {249--256},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {9},
+  abstract  = {Whereas before 2006 it appears that deep multi-layer neural networks were not successfully trained, since then several algorithms have been shown to successfully train them, with experimental results showing the superiority of deeper vs less deep architectures. All these experimental results were obtained with new initialization or training mechanisms. Our objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future.  We first observe the influence of the non-linear activations functions. We find that the logistic sigmoid activation is unsuited for deep networks with random initialization because of its mean value, which can drive especially the top hidden layer into saturation. Surprisingly, we find that saturated units can move out of saturation by themselves, albeit slowly, and explaining the plateaus sometimes seen when training neural networks. We find that a new non-linearity that saturates less can often be beneficial. Finally, we study how activations and gradients vary across layers and during training, with the idea that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1.  Based on these considerations, we propose a new initialization scheme that brings substantially faster convergence.},
+  pdf       = {http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf},
+  url       = {https://proceedings.mlr.press/v9/glorot10a.html},
+}
+
+@Misc{Ghiasi2020,
+  author    = {Ghiasi, Golnaz and Cui, Yin and Srinivas, Aravind and Qian, Rui and Lin, Tsung-Yi and Cubuk, Ekin D. and Le, Quoc V. and Zoph, Barret},
+  title     = {Simple Copy-Paste is a Strong Data Augmentation Method for Instance Segmentation},
+  year      = {2020},
+  copyright = {Creative Commons Attribution 4.0 International},
+  doi       = {10.48550/ARXIV.2012.07177},
+  keywords  = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
+}
+
+@Misc{Saxe2013,
+  author    = {Saxe, Andrew M. and McClelland, James L. and Ganguli, Surya},
+  title     = {Exact solutions to the nonlinear dynamics of learning in deep linear neural networks},
+  year      = {2013},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.1312.6120},
+  keywords  = {Neural and Evolutionary Computing (cs.NE), Disordered Systems and Neural Networks (cond-mat.dis-nn), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), Neurons and Cognition (q-bio.NC), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Physical sciences, FOS: Physical sciences, FOS: Biological sciences, FOS: Biological sciences},
+  publisher = {arXiv},
+}
+
+@Article{Yamashita2018,
+  author     = {Rikiya Yamashita and Mizuho Nishio and Richard Kinh Gian Do and Kaori Togashi},
+  journal    = {Insights into Imaging},
+  title      = {Convolutional neural networks: an overview and application in radiology},
+  year       = {2018},
+  month      = {jun},
+  number     = {4},
+  pages      = {611--629},
+  volume     = {9},
+  comment    = {-Two key hyperparameters that define the
+convolution operation are size and number of kernels. The
+former is typically 3 × 3, but sometimes 5 × 5 or 7 × 7
+- zeros are added on each side of the input tensor,
+so as to fit the center of a kernel on the outermost element and
+keep the same in-plane dimension through the convolution
+operation
+
+Convolution layer Kernels Kernel size, number of kernels, stride, padding, activation function
+
+Pooling layer None Pooling method, filter size, stride, padding
+
+Fully connected layer Weights Number of weights, activation function
+
+Others Model architecture, optimizer, learning rate, loss function, mini-batch
+size, epochs, regularization, weight initialization, dataset splitting
+
+- A max pooling with a filter of size 2 × 2 with a
+stride of 2 is commonly used in practice
+
+-Global average pooling typically applied only once before  the fully connected layers
+
+-ctivation function applied to the last fully connected
+layer is usually different from the others
+-softmax function which normalizes out-
+put real values from the last fully connected layer to target
+class probabilities
+
+- many improvements on the gra-
+dient descent algorithm have been proposed and widely used,
+such as SGD with momentum, RMSprop, and Adam
+
+-Dropout is a recently introduced reg-
+ularization technique where randomly selected activations are set to 0 during the training, so that the model becomes less
+sensitive to specific weights in the network	
+
+-include regularization with dropout or weight decay, batch
+normalization, and data augmentation, as well as reducing
+architectural complexity
+
+-There are a couple of techniques
+available to train a model efficiently on a smaller dataset: data
+augmentation and transfer learning.
+
+-whether transfer learning with such networks im-
+proves the performance in the medical field compared to that
+with ImageNet pretrained models is not clear and remains an
+area of further investigation
+
+-Transfere Learning :network is
+pretrained on an extremely large dataset, such as ImageNet -> you can also just use a pretrained convolution base for the network that is just capable to recognize the main features 
+
+- the annotation cost for aradiological image is much larger than a general image because radiologist expertise is required for annotation.
+
+- adding a small amount of gaussian noise doesnt impact the generall look of the picture which means it would still be interpreted the same way from a doctor that means that we can use this methode to modify our data},
+  doi        = {10.1007/s13244-018-0639-9},
+  priority   = {prio1},
+  publisher  = {Springer Science and Business Media {LLC}},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@InCollection{Zeiler2014,
+  author    = {Matthew D. Zeiler and Rob Fergus},
+  booktitle = {Computer Vision {\textendash} {ECCV} 2014},
+  publisher = {Springer International Publishing},
+  title     = {Visualizing and Understanding Convolutional Networks},
+  year      = {2014},
+  pages     = {818--833},
+  abstract  = {-},
+  doi       = {10.1007/978-3-319-10590-1_53},
+}
+
+@Article{Selvaraju2016,
+  author    = {Selvaraju, Ramprasaath R. and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
+  title     = {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization},
+  year      = {2016},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.1610.02391},
+  keywords  = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
