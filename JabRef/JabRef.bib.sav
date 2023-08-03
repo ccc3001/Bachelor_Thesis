@@ -939,13 +939,41 @@ pretrained on an extremely large dataset, such as ImageNet -> you can also just 
 }
 
 @Article{Selvaraju2016,
-  author    = {Selvaraju, Ramprasaath R. and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
-  title     = {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization},
+  author     = {Selvaraju, Ramprasaath R. and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
+  title      = {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization},
+  year       = {2016},
+  abstract   = {-proposition of grad cam a technique for producing "visual explanations" for decisions  from a large class of convolutional Neural Networks},
+  comment    = {-A drawback of CAM is that it requires feature maps to di-
+rectly precede softmax layers, so it is only applicable to a
+particular kind of CNN architectures
+-We introduce a
+new way of combining feature maps using the gradient signal
+that does not require any modification in the network architec-
+ture
+
+-calc L_GradCAM for class c :
+-we first calculate the gradient of the score for that class c,y^c (before the softmax function), with respect to the feature map activation A^k of a convolutional layer i.e. delta y / delta A^k
+-these gradients flowing back are global average pooled over the width and height dimensions (indexed by i and j respectively) to obtain the neuron importance wight alpha^c_k
+
+L^c_GradCAM = ReLU(sum_k(alpha^c_k A^k ))
+
+-t Grad-CAM generalizes CAM for a wide
+variety of CNN-based architecture},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1610.02391},
+  keywords   = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank4},
+  readstatus = {skimmed},
+}
+
+@InProceedings{Zhou_2016_CVPR,
+  author    = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Learning Deep Features for Discriminative Localization},
   year      = {2016},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1610.02391},
-  keywords  = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  publisher = {arXiv},
+  month     = {June},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
