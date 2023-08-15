@@ -34,13 +34,12 @@ using OpenCV
 
 
 ##preprocessing ##
-if !isdir(pwd()*"\\extracted_data\\h5") 
-    mkpath(pwd()*"/extracted_data/h5")
+if !isdir(joinpath(joinpath(pwd(),"extracted_data"), "h5")) 
+    mkpath(joinpath(joinpath(pwd(),"extracted_data"), "h5"))
 end
-if !isdir(pwd()*"\\extracted_data\\json")
-    mkpath(pwd()*"/extracted_data/json")
+if !isdir(joinpath(joinpath(pwd(),"extracted_data"), "json"))
+    mkpath(joinpath(joinpath(pwd(),"extracted_data"), "json"))
 end
-
 
 
 for i in ProgressBar(readdir())
@@ -65,19 +64,19 @@ for i in ProgressBar(readdir())
         )#,"data" => image_data
         # save the image in a json dictionary 
         stringdata = JSON.json(Dict_1)
-        open(pwd() * "\\extracted_data"* "\\json\\" * ISQname * "_ISQ" * ".json", "w") do f
+        open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "json") , ISQname * "_ISQ" * ".json"), "w") do f
             write(f, stringdata)
-        h5open(pwd() * "\\extracted_data"* "\\h5\\" * ISQname *"_ISQ" * ".h5","w") do h5
-            for i in 1:110
-                image =Gray.(Int16.(ImageAxes.data(img[:,:,i]))/(img["dataRange"][2]))
+        h5open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "h5") , ISQname * "_ISQ" * ".h5"),"w") do h5
+            for i in 1:img["pixdim"][3]
+                image =ImageAxes.data(img[:,:,i])
                 h5[string(i)]=image
             end
-            h5open(pwd() * "\\extracted_data"* "\\h5\\" * ISQname *"_snipped"*"_ISQ" * ".h5","w") do h5
-                for i in 1:110
-                    image =Gray.(Float32.(ImageAxes.data(img[257:1280,257:1280,i]))/(img["dataRange"][2]))
-                    h5[string(i)]=image
-                end
-            end
+            #h5open(pwd() * "\\extracted_data"* "\\h5\\" * ISQname *"_snipped"*"_ISQ" * ".h5","w") do h5
+            #    for i in 1:110
+            #        image =Float32.(ImageAxes.data(img[257:1280,257:1280,i]))/(img["dataRange"][2])
+            #        h5[string(i)]=image
+            #    end
+            #end
         end
 
     end
@@ -103,12 +102,12 @@ for i in ProgressBar(readdir())
         ,"orbitStartOffset" => img["orbitStartOffset"],"startPosition" => img["startPosition"],"calibrationScans" => img["calibrationScans"],"darkRecord" => img["darkRecord"],"img_datatype_array" => img_datatype_array)
         # save the image in a json dictionary
         stringdata = JSON.json(Dict_2)
-        open(pwd() * "\\extracted_data"* "\\json\\"* RSQname *"_RSQ" * ".json", "w") do f
+        open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "json") , RSQname * "_RSQ" * ".json"), "w") do f
             write(f, stringdata)
         end
-        h5open(pwd()* "\\extracted_data"* "\\h5\\" * RSQname * "_RSQ" * ".h5","w") do h5
-            for i in 1:124
-                image = Gray.(Float32.(ImageAxes.data(img[:,:,i]))/10954)
+        h5open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "h5") , RSQname * "_RSQ" * ".h5"),"w") do h5
+            for i in 1:img["pixdim"][3]
+                image = ImageAxes.data(img[:,:,i])
                 h5[string(i)]=image
             end
         end
