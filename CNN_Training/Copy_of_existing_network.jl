@@ -36,23 +36,23 @@ test_set = make_minibatch(test_imgs, test_labels, 1:length(test_imgs))
 # CNN model 
 model = Chain(
     #First convolution
-    Conv((3,3), 1=>16, pad(0,0),leakyrelu),
+    Conv((3,3), 1=>16,leakyrelu),
     x-> maxpool(x,(2,2),stride = 2 ),
     
     #Second convolution 
-    Conv((3,3), 16=>16, pad(0,0), leakyrelu),
-    x-> maxpool(x,(3,3),stride = 2),#TODO: Jana fragen ob das sin ergibt -> könnte sein das es maxpool(2,2) ist wenn ich 0.5 als wert haben darf 
+    Conv((3,3), 16=>16, leakyrelu),
+    x-> maxpool(x,(2,2),stride = 2),#TODO: Jana fragen ob das sin ergibt -> könnte sein das es maxpool(2,2) ist wenn ich 0.5 als wert haben darf 
 
     #Third convolution 
-    Conv((3,3), 16=>16, pad(0,0), leakyrelu),
+    Conv((3,3), 16=>16, leakyrelu),
     x-> maxpool(x,(2,2),stride = 2),
 
     #Fourth convolution
-    Conv((3,3), 16=>16, pad(0,0), leakyrelu),
+    Conv((3,3), 16=>16, leakyrelu),
     x-> maxpool(x,(2,2), stride =2),
 
     #Fifth convolution TODO: check if GlobalMeanPool is the same as global average pooling 
-    Conv((3,3), 16=>16, pad(0,0), leakyrelu),
+    Conv((3,3), 16=>16, leakyrelu),
     x-> GlobalMeanPool(x),
     
     #Fully connected layer 

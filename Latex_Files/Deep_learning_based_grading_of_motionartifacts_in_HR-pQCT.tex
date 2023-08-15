@@ -1,6 +1,7 @@
 \documentclass[acmsmall, review]{acmart}
 \usepackage{graphicx} % Required for inserting images
 \usepackage[utf8]{inputenc}
+
 \title{Deep learning based grading of motionartifacts in HR-pQCT}
 \setcopyright{none}
 \date{October 2022}
@@ -31,10 +32,44 @@
 \section{Introduction}
 	A common issue of High-resolution peripheral quantitative computed tomography (HR-pQCT) scans is the appearance of motion artifacts in Images. These artifacts can appear due to involuntary movements like twitches and spasms. Depending on the severeness of those artifacts in the resulting image, it might not be sufficient for medical use and a re scan is necessary. The decision of the severity is currently done by a Doctor which gives the image a number from 1 to 5, where 1 equals no motion artifacts and 5 equals severe motion artifacts. The descission of severity is often biased and varies from doctor to doctor. To support the descission of the doctor there have been approaches by [] and []  to improve the confidence of the result. both of those methodes perform better than the average doctor but still have considerable error rates. In this paper we will propose a new Convolutional Neural Network(CNN) which uses state of the art methodes to calculate the severity of motion Scores in CT scans. Afterwards we will compare it to the two existing methodes.
 	
+	A reoccurring issue in medical imaging is the lack of data for training in our case we had 500 labeled examples. If we compare this to the amount of data used in training state of the art networks it's a small fraction. This comes on the one hand from the fact that the labeling task in medical imaging can just be performed my professionals and therefore the labeling process is costly and just a few people can do it. Another issue is the availability of data since patient data cant be accessed and used as easy. Therefore we need to find a way to augment the data 
 \section{Literature review}
-\subsection{Grad-CAM}
+\subsection{Methodology}
+\subsubsection{Imroved Adaptive Moment Estimation (Adam)}
+\subsubsection{Gaussian Noice}
+\begin{comment}
+adding annealed Gaussian noise to the gradien
+-	surprisingly effective
+-	experiments indicate that adding annealed Gaussian noise by decaying the variance works better than using fixed Gaussian noise
+-	-adding n
+-	-random restarts and the use of a momentum-based optimizer like Adam are not sufficient to achieve the best results in the absence of added gradient noiseoise to the gradient helps in achieving higher average and best accuracy	content...
+\end{comment}
+
+\subsubsection{Batch Normalization}
+\subsubsection{Data Augmentation}
+\subsubsection{Dropout}
+\subsubsection{ELU / ReLU}
+\subsubsection{Maxout Unit}
+\subsubsection{CAM / Grad-CAM}
+\subsubsection{Transfer Learning}
+\subsubsection{Bayesian Approaches}
+\subsubsection{Network In Network (NIN)}
+\subsubsection{Convolution Block Attention Model(CBAM)}
+\subsubsection{Very Deep Constitutional Networks}
+\subsection{statistical approach}
+\subsection{Machine learning approach}
+
 
 \section{Methodology}
+\subsection{Data Distribution}
+\subsection{CNN Structure}
+
+
 \section{Results}
+\subsection{F1 Score}
+\subsection{Grad-CAM}
+\subsection{False Positive Rate}
+\subsection{Accuracy}
+\subsection{Sensitivity}
 \section{Discussion/Conclusion}
 \end{document}

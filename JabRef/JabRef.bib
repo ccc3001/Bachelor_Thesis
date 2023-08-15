@@ -154,23 +154,142 @@ continue on 5483 it might be intreresting},
 }
 
 @Misc{Ruder2016,
-  author    = {Ruder, Sebastian},
-  title     = {An overview of gradient descent optimization algorithms},
-  year      = {2016},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1609.04747},
-  keywords  = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  publisher = {arXiv},
+  author     = {Ruder, Sebastian},
+  title      = {An overview of gradient descent optimization algorithms},
+  year       = {2016},
+  comment    = {- Mini-batch
+gradient descent is typically the algorithm of choice when training a neural network
+
+Challanges 
+-A learning rate that is too small leads to
+painfully slow convergence, while a learning rate that is too large can hinder convergence
+and cause the loss function to fluctuate around the minimum or even to diverge
+-reducing the learning rate according to a pre-defined schedule or when the change in
+objective between epochs falls below a threshold.
+-If our data is sparse
+and our features have very different frequencies, we might not want to update all of them to
+the same extent, but perform a larger update for rarely occurring features
+-avoiding getting trapped in their numerous suboptimal local minima
+- difficulty arises in fact not from local minima but from saddle points
+
+optimization algorithms 
+
+momentum 
+-a method that helps accelerate SGD in the relevant direction and dampens
+oscillations
+- momentum
+term increases for dimensions whose gradients point in the same directions and reduces updates for
+dimensions whose gradients change directions-> faster convergence and reduced oscillation
+ -γ to a value of around 0.9
+
+
+Nesterov accelerated gradient 
+-has a notion of where it is going so that it knows to slow down
+-We can now effectively look ahead
+by calculating the gradient
+- γ to a value of around 0.9
+-prevents us from going too fast and results in increased
+responsiveness
+
+Adagrad
+-dapts the learning
+rate to the parameters, performing larger updates for infrequent and smaller updates for frequent
+parameters
+-greatly improved the robustness
+- used it for training large-scale neural nets
+-eliminates the need to manually tune the learning rate. Most
+implementations use a default value of 0.01 and leave it at that
+-main weakness is its accumulation of the squared gradients in the denominator
+
+Adadelta 
+-extention of Adagrad that seeks to reduce its aggressive, monotonically decreasing
+learning rate
+
+- Adadelta restricts the window of
+accumulated past gradients to some fixed size w
+
+RMSprop
+-RMSprop is an unpublished, adaptive learning rate method proposed by Geoff Hinton
+
+Adam
+-computes adaptive learning rates
+for each parameter
+- In addition to storing an exponentially decaying average of past squared gradients
+- estimates of the first moment (the mean) and the second moment (the uncentered
+variance) of the gradients respectively
+- default values of 0.9 for β1, 0.999 for β2, and 10−8 for epsilon
+-compares favorably to other adaptive learning-method
+algorithms
+
+AdaMax
+- vt factor in the Adam update rule scales the gradient inversely proportionally to the `2 norm of
+the past gradients
+-not as suggestible to bias towards zero as mt and vt
+in Adam, which is why we do not need to compute a bias correction
+
+Nadam (Nesterov-accelerated Adaptive Moment Estimation)
+-, Adam can be viewed as a combination of RMSprop and momentum: RM-
+Sprop
+-combines Adam and NAG
+-NAG then allows us to perform a more accurate step in the gradient direction by updating the
+parameters with the momentum step before computing the gradient
+
+shuffling and curriculum learning
+- avoid providing the training examples in a meaningful order to our model
+- good idea to shuffle the training
+data after every epoch
+
+Batch Normalization
+-To facilitate learning, we typically normalize the initial values of our parameters by initializing them
+with zero mean and unit variance
+-reestablishes these normalizations for every mini-batch and changes are back-
+propagated through the operation as well
+
+Gradient Noise
+-add noise that follows a Gaussian distribution
+
+Early stopping},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1609.04747},
+  keywords   = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank5},
+  readstatus = {read},
 }
 
 @InProceedings{Zhang2018,
-  author    = {Zijun Zhang},
-  booktitle = {2018 {IEEE}/{ACM} 26th International Symposium on Quality of Service ({IWQoS})},
-  title     = {Improved Adam Optimizer for Deep Neural Networks},
-  year      = {2018},
-  month     = {jun},
-  publisher = {{IEEE}},
-  doi       = {10.1109/iwqos.2018.8624183},
+  author     = {Zijun Zhang},
+  booktitle  = {2018 {IEEE}/{ACM} 26th International Symposium on Quality of Service ({IWQoS})},
+  title      = {Improved Adam Optimizer for Deep Neural Networks},
+  year       = {2018},
+  month      = {jun},
+  publisher  = {{IEEE}},
+  abstract   = {-Adam and RMSprop, have witnessed better optimization performance
+than stochastic gradient descent (SGD) in some scenarios.
+However, recent studies show that they often lead to worse
+generalization performance than SGD},
+  comment    = {-Adam does not
+preserve the directions of gradients as SGD does
+- the magnitude of each vector’s direction
+change depends on its L2-norm
+- fix the problem for Adam by
+explicitly normalizing each weight vector, and by opti-
+mizing only its direction,
+
+- we apply
+batch normalization or L2-regularization to the logits,
+which further improves the generalization performance
+in classification tasks
+
+-roposed algorithm adapts the
+learning rate to each input weight vector, instead of each
+individual weight, such that the direction of the gradient is
+preserved},
+  doi        = {10.1109/iwqos.2018.8624183},
+  priority   = {prio2},
+  ranking    = {rank4},
+  readstatus = {read},
 }
 
 @Misc{Lin2013,
@@ -462,15 +581,52 @@ comparably to the standard IMAGENET models},
 }
 
 @Article{Herzog2020,
-  author    = {Lisa Herzog and Elvis Murina and Oliver Dürr and Susanne Wegener and Beate Sick},
-  journal   = {Medical Image Analysis},
-  title     = {Integrating uncertainty in deep neural networks for {MRI} based stroke analysis},
-  year      = {2020},
-  month     = {oct},
-  pages     = {101790},
-  volume    = {65},
-  doi       = {10.1016/j.media.2020.101790},
-  publisher = {Elsevier {BV}},
+  author     = {Lisa Herzog and Elvis Murina and Oliver Dürr and Susanne Wegener and Beate Sick},
+  journal    = {Medical Image Analysis},
+  title      = {Integrating uncertainty in deep neural networks for {MRI} based stroke analysis},
+  year       = {2020},
+  month      = {oct},
+  pages      = {101790},
+  volume     = {65},
+  abstract   = {Deep Learning methods provide point predictions with-
+out quantifying the model’s uncertainty
+
+-provide an entire framework to diagnose ischemic stroke patients
+incorporating Bayesian uncertainty into the analysis procedure},
+  comment    = {-Bayesian approaches are the mainstay to quantify uncertainty
+in machine learning
+-In many MC dropout applications, a correlation between high
+uncertainty estimates and erroneous predictions was found
+-dropout layers (with dropout probability
+0.3) were inserted before each convolutional and fully connected
+layer
+-For model fitting, we trained with respect to the binary cross-
+entropy loss
+-The MC dropout variance (Var) is the variance across the soft-
+max probabilities
+
+-removing images resultet in a higher accuracy(i dont really understand it right now )
+
+-(ROC) curves and reports the Area under the curve (AUC) statis-
+tic, to assess the power of the respective uncertainty measure
+to differentiate between correct and erroneous predictions. For
+the sake of simplicity, results of the 3Ch-MC are presented
+-1Ch-MC showed similar outcomes
+-accuracy improved by about 2% when remov-
+ing only 5% of the images. In terms of AUC,
+-MC dropout does
+not only provide uncertainty information but also improves clas-
+sification performance.
+-integrating uncertainty in-
+formation in deep neural network models is essential to achieve
+a high performance for stroke classification
+-( epistemic
+and aleatoric uncertainty)},
+  doi        = {10.1016/j.media.2020.101790},
+  priority   = {prio1},
+  publisher  = {Elsevier {BV}},
+  ranking    = {rank4},
+  readstatus = {read},
 }
 
 @Article{Pereyra2017,
@@ -478,15 +634,21 @@ comparably to the standard IMAGENET models},
   title         = {Regularizing Neural Networks by Penalizing Confident Output Distributions},
   year          = {2017},
   month         = jan,
-  abstract      = {We systematically explore regularizing neural networks by penalizing low entropy output distributions. We show that penalizing low entropy output distributions, which has been shown to improve exploration in reinforcement learning, acts as a strong regularizer in supervised learning. Furthermore, we connect a maximum entropy based confidence penalty to label smoothing through the direction of the KL divergence. We exhaustively evaluate the proposed confidence penalty and label smoothing on 6 common benchmarks: image classification (MNIST and Cifar-10), language modeling (Penn Treebank), machine translation (WMT'14 English-to-German), and speech recognition (TIMIT and WSJ). We find that both label smoothing and the confidence penalty improve state-of-the-art models across benchmarks without modifying existing hyperparameters, suggesting the wide applicability of these regularizers.},
+  abstract      = {-We show that penalizing low entropy output distributions,
+which has been shown to improve exploration in reinforcement learning,},
   archiveprefix = {arXiv},
+  comment       = {-label smoothing regularization, has been
+shown to improve generalization},
   copyright     = {arXiv.org perpetual, non-exclusive license},
   doi           = {10.48550/ARXIV.1701.06548},
   eprint        = {1701.06548},
   file          = {:http\://arxiv.org/pdf/1701.06548v1:PDF},
   keywords      = {Neural and Evolutionary Computing (cs.NE), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.NE},
+  priority      = {prio3},
   publisher     = {arXiv},
+  ranking       = {rank4},
+  readstatus    = {skimmed},
 }
 
 @Article{Han2015,
@@ -502,22 +664,6 @@ comparably to the standard IMAGENET models},
   file          = {:http\://arxiv.org/pdf/1510.00149v5:PDF},
   keywords      = {Computer Vision and Pattern Recognition (cs.CV), Neural and Evolutionary Computing (cs.NE), FOS: Computer and information sciences},
   primaryclass  = {cs.CV},
-  publisher     = {arXiv},
-}
-
-@Article{DAmour2020,
-  author        = {D'Amour, Alexander and Heller, Katherine and Moldovan, Dan and Adlam, Ben and Alipanahi, Babak and Beutel, Alex and Chen, Christina and Deaton, Jonathan and Eisenstein, Jacob and Hoffman, Matthew D. and Hormozdiari, Farhad and Houlsby, Neil and Hou, Shaobo and Jerfel, Ghassen and Karthikesalingam, Alan and Lucic, Mario and Ma, Yian and McLean, Cory and Mincu, Diana and Mitani, Akinori and Montanari, Andrea and Nado, Zachary and Natarajan, Vivek and Nielson, Christopher and Osborne, Thomas F. and Raman, Rajiv and Ramasamy, Kim and Sayres, Rory and Schrouff, Jessica and Seneviratne, Martin and Sequeira, Shannon and Suresh, Harini and Veitch, Victor and Vladymyrov, Max and Wang, Xuezhi and Webster, Kellie and Yadlowsky, Steve and Yun, Taedong and Zhai, Xiaohua and Sculley, D.},
-  title         = {Underspecification Presents Challenges for Credibility in Modern Machine Learning},
-  year          = {2020},
-  month         = nov,
-  abstract      = {ML models often exhibit unexpectedly poor behavior when they are deployed in real-world domains. We identify underspecification as a key reason for these failures. An ML pipeline is underspecified when it can return many predictors with equivalently strong held-out performance in the training domain. Underspecification is common in modern ML pipelines, such as those based on deep learning. Predictors returned by underspecified pipelines are often treated as equivalent based on their training domain performance, but we show here that such predictors can behave very differently in deployment domains. This ambiguity can lead to instability and poor model behavior in practice, and is a distinct failure mode from previously identified issues arising from structural mismatch between training and deployment domains. We show that this problem appears in a wide variety of practical ML pipelines, using examples from computer vision, medical imaging, natural language processing, clinical risk prediction based on electronic health records, and medical genomics. Our results show the need to explicitly account for underspecification in modeling pipelines that are intended for real-world deployment in any domain.},
-  archiveprefix = {arXiv},
-  copyright     = {arXiv.org perpetual, non-exclusive license},
-  doi           = {10.48550/ARXIV.2011.03395},
-  eprint        = {2011.03395},
-  file          = {:http\://arxiv.org/pdf/2011.03395v2:PDF},
-  keywords      = {Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
-  primaryclass  = {cs.LG},
   publisher     = {arXiv},
 }
 
@@ -843,6 +989,7 @@ visible units for learning the next RBM
   copyright = {Creative Commons Attribution 4.0 International},
   doi       = {10.48550/ARXIV.2012.07177},
   keywords  = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority  = {prio3},
   publisher = {arXiv},
 }
 
@@ -969,11 +1116,159 @@ variety of CNN-based architecture},
 }
 
 @InProceedings{Zhou_2016_CVPR,
-  author    = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  title     = {Learning Deep Features for Discriminative Localization},
-  year      = {2016},
-  month     = {June},
+  author     = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
+  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title      = {Learning Deep Features for Discriminative Localization},
+  year       = {2016},
+  month      = {June},
+  comment    = {-global average pool-
+ing which acts as a structural regularizer, preventing over-
+fitting during training
+-CAM: . A class activation map for a particular cat-
+egory indicates the discriminative image regions used by the
+CNN to identify that category
+
+-way easyer to compute that Grad Cam but just works for networks that end with conv and dense layer 
+
+-We found that the localization ability of the networks im-
+proved when the last convolutional layer before GAP had a
+higher spatial resolution
+-CAM enables classification-trained CNNs to learn
+to perform object localization, without using any bounding
+box annotations},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+}
+
+@InProceedings{pmlr-v48-gal16,
+  author     = {Gal, Yarin and Ghahramani, Zoubin},
+  booktitle  = {Proceedings of The 33rd International Conference on Machine Learning},
+  title      = {Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning},
+  year       = {2016},
+  address    = {New York, New York, USA},
+  editor     = {Balcan, Maria Florina and Weinberger, Kilian Q.},
+  month      = {20--22 Jun},
+  pages      = {1050--1059},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {48},
+  abstract   = {Deep learning tools have gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. In comparison, Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. In this paper we develop a new theoretical framework casting dropout training in deep neural networks (NNs) as approximate Bayesian inference in deep Gaussian processes. A direct result of this theory gives us tools to model uncertainty with dropout NNs – extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing either computational complexity or test accuracy. We perform an extensive study of the properties of dropout’s uncertainty. Various network architectures and non-linearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods, and finish by using dropout’s uncertainty in deep reinforcement learning.},
+  comment    = {-Dropout is used in many models in deep
+learning as a way to avoid over-fitting
+- link between Gaussian processes and dropout
+-Recent advances
+in variational inference introduced new techniques into
+the field such as sampling-based variational inference and
+stochastic variational inference
+-show that a neural network with arbitrary depth and
+non-linearities, with dropout applied before every weight
+layer, is mathematically equivalent to an approximation
+to the probabilistic deep Gaussian process
+-During NN optimisation a regularisation term is
+often added. We often use L2 regularisation weighted by
+some weight decay λ, resulting in a minimisation objective
+-MC dropout can
+be approximated by averaging the weights of the network
+-) over validation log-likelihood to find optimal τ , and
+set the prior length-scale to 10−2 for most datasets based on
+the range of the data
+- We used dropout with probabilities 0.05 and 0.005
+since the network size is very small
+-built a probabilistic interpretation of dropout
+which allowed us to obtain model uncertainty out of exist-
+ing deep learning models},
+  pdf        = {http://proceedings.mlr.press/v48/gal16.pdf},
+  priority   = {prio1},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://proceedings.mlr.press/v48/gal16.html},
+}
+
+@InProceedings{pmlr-v28-wang13a,
+  author     = {Wang, Sida and Manning, Christopher},
+  booktitle  = {Proceedings of the 30th International Conference on Machine Learning},
+  title      = {Fast dropout training},
+  year       = {2013},
+  address    = {Atlanta, Georgia, USA},
+  editor     = {Dasgupta, Sanjoy and McAllester, David},
+  month      = {17--19 Jun},
+  number     = {2},
+  pages      = {118--126},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {28},
+  comment    = {-Dropout played
+an important role in the systems that won recent
+learning competitions such as ImageNet
+- Fast dropout fits into
+the general framework of integrating out noise added
+to the training data
+-include bernoulli function over probability of not dropping out in stochastic gradient descent 
+-Fast dropout is directly ap-
+plicable to dropping out the final hidden layer of neu-
+ral networks
+-When the number of hidden units is
+more than 10 or so, we may again approximate their
+inputs as Gaussians and characterize their outputs by
+the output means and variances
+
+-we use the output mean and variance to optimize the network but i dont really understand it 
+
+-gradient approximation using Gaussian
+samples is comparable to the difference between dif-
+ferent MC dropout runs with 200 samples
+
+- accuracy and time taken, in the top half of table
+1. Sampling from the Gaussian is generally around 10
+times faster than MC dropout and performs compara-
+bly
+
+-presented a way of getting the benefits of dropout
+training without actually sampling, thereby speeding
+up the process by an order of magnitude},
+  pdf        = {http://proceedings.mlr.press/v28/wang13a.pdf},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://proceedings.mlr.press/v28/wang13a.html},
+}
+
+@Misc{Neelakantan2015,
+  author     = {Neelakantan, Arvind and Vilnis, Luke and Le, Quoc V. and Sutskever, Ilya and Kaiser, Lukasz and Kurach, Karol and Martens, James},
+  title      = {Adding Gradient Noise Improves Learning for Very Deep Networks},
+  year       = {2015},
+  comment    = {-A recurring theme in recent works is that commonly-used optimization techniques are not always
+sufficient to robustly optimize the models. In this work, we explore a simple technique of adding
+annealed Gaussian noise to the gradien
+- surprisingly effective
+- experiments indicate that adding annealed Gaussian noise by decaying the variance works better
+than using fixed Gaussian noise
+-training step t
+
+g_t <- g_t * N(0, sigma_t^2)
+
+sigma_t^2 = n/(1+t)^gamma
+n selected from{0.01, 0.3, 1.0} and 
+gamma = 0.55
+-> seems like n is usually 0.01
+
+-adding noise to the gradient helps in achieving higher average and best accuracy
+- random restarts and the use of a momentum-based optimizer like
+Adam are not sufficient to achieve the best results in the absence of added gradient noise},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1511.06807},
+  keywords   = {Machine Learning (stat.ML), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank3},
+  readstatus = {read},
+}
+
+@Article{dozat2016incorporating,
+  author = {Dozat, Timothy},
+  title  = {Incorporating nesterov momentum into adam},
+  year   = {2016},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

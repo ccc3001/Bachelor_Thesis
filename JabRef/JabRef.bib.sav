@@ -462,15 +462,52 @@ comparably to the standard IMAGENET models},
 }
 
 @Article{Herzog2020,
-  author    = {Lisa Herzog and Elvis Murina and Oliver Dürr and Susanne Wegener and Beate Sick},
-  journal   = {Medical Image Analysis},
-  title     = {Integrating uncertainty in deep neural networks for {MRI} based stroke analysis},
-  year      = {2020},
-  month     = {oct},
-  pages     = {101790},
-  volume    = {65},
-  doi       = {10.1016/j.media.2020.101790},
-  publisher = {Elsevier {BV}},
+  author     = {Lisa Herzog and Elvis Murina and Oliver Dürr and Susanne Wegener and Beate Sick},
+  journal    = {Medical Image Analysis},
+  title      = {Integrating uncertainty in deep neural networks for {MRI} based stroke analysis},
+  year       = {2020},
+  month      = {oct},
+  pages      = {101790},
+  volume     = {65},
+  abstract   = {Deep Learning methods provide point predictions with-
+out quantifying the model’s uncertainty
+
+-provide an entire framework to diagnose ischemic stroke patients
+incorporating Bayesian uncertainty into the analysis procedure},
+  comment    = {-Bayesian approaches are the mainstay to quantify uncertainty
+in machine learning
+-In many MC dropout applications, a correlation between high
+uncertainty estimates and erroneous predictions was found
+-dropout layers (with dropout probability
+0.3) were inserted before each convolutional and fully connected
+layer
+-For model fitting, we trained with respect to the binary cross-
+entropy loss
+-The MC dropout variance (Var) is the variance across the soft-
+max probabilities
+
+-removing images resultet in a higher accuracy(i dont really understand it right now )
+
+-(ROC) curves and reports the Area under the curve (AUC) statis-
+tic, to assess the power of the respective uncertainty measure
+to differentiate between correct and erroneous predictions. For
+the sake of simplicity, results of the 3Ch-MC are presented
+-1Ch-MC showed similar outcomes
+-accuracy improved by about 2% when remov-
+ing only 5% of the images. In terms of AUC,
+-MC dropout does
+not only provide uncertainty information but also improves clas-
+sification performance.
+-integrating uncertainty in-
+formation in deep neural network models is essential to achieve
+a high performance for stroke classification
+-( epistemic
+and aleatoric uncertainty)},
+  doi        = {10.1016/j.media.2020.101790},
+  priority   = {prio1},
+  publisher  = {Elsevier {BV}},
+  ranking    = {rank4},
+  readstatus = {read},
 }
 
 @Article{Pereyra2017,
@@ -478,15 +515,21 @@ comparably to the standard IMAGENET models},
   title         = {Regularizing Neural Networks by Penalizing Confident Output Distributions},
   year          = {2017},
   month         = jan,
-  abstract      = {We systematically explore regularizing neural networks by penalizing low entropy output distributions. We show that penalizing low entropy output distributions, which has been shown to improve exploration in reinforcement learning, acts as a strong regularizer in supervised learning. Furthermore, we connect a maximum entropy based confidence penalty to label smoothing through the direction of the KL divergence. We exhaustively evaluate the proposed confidence penalty and label smoothing on 6 common benchmarks: image classification (MNIST and Cifar-10), language modeling (Penn Treebank), machine translation (WMT'14 English-to-German), and speech recognition (TIMIT and WSJ). We find that both label smoothing and the confidence penalty improve state-of-the-art models across benchmarks without modifying existing hyperparameters, suggesting the wide applicability of these regularizers.},
+  abstract      = {-We show that penalizing low entropy output distributions,
+which has been shown to improve exploration in reinforcement learning,},
   archiveprefix = {arXiv},
+  comment       = {-label smoothing regularization, has been
+shown to improve generalization},
   copyright     = {arXiv.org perpetual, non-exclusive license},
   doi           = {10.48550/ARXIV.1701.06548},
   eprint        = {1701.06548},
   file          = {:http\://arxiv.org/pdf/1701.06548v1:PDF},
   keywords      = {Neural and Evolutionary Computing (cs.NE), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.NE},
+  priority      = {prio3},
   publisher     = {arXiv},
+  ranking       = {rank4},
+  readstatus    = {skimmed},
 }
 
 @Article{Han2015,
@@ -969,11 +1012,91 @@ variety of CNN-based architecture},
 }
 
 @InProceedings{Zhou_2016_CVPR,
-  author    = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  title     = {Learning Deep Features for Discriminative Localization},
-  year      = {2016},
-  month     = {June},
+  author     = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
+  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title      = {Learning Deep Features for Discriminative Localization},
+  year       = {2016},
+  month      = {June},
+  comment    = {-global average pool-
+ing which acts as a structural regularizer, preventing over-
+fitting during training
+-CAM: . A class activation map for a particular cat-
+egory indicates the discriminative image regions used by the
+CNN to identify that category
+
+-way easyer to compute that Grad Cam but just works for networks that end with conv and dense layer 
+
+-We found that the localization ability of the networks im-
+proved when the last convolutional layer before GAP had a
+higher spatial resolution
+-CAM enables classification-trained CNNs to learn
+to perform object localization, without using any bounding
+box annotations},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+}
+
+@InProceedings{pmlr-v48-gal16,
+  author     = {Gal, Yarin and Ghahramani, Zoubin},
+  booktitle  = {Proceedings of The 33rd International Conference on Machine Learning},
+  title      = {Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning},
+  year       = {2016},
+  address    = {New York, New York, USA},
+  editor     = {Balcan, Maria Florina and Weinberger, Kilian Q.},
+  month      = {20--22 Jun},
+  pages      = {1050--1059},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {48},
+  abstract   = {Deep learning tools have gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. In comparison, Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. In this paper we develop a new theoretical framework casting dropout training in deep neural networks (NNs) as approximate Bayesian inference in deep Gaussian processes. A direct result of this theory gives us tools to model uncertainty with dropout NNs – extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing either computational complexity or test accuracy. We perform an extensive study of the properties of dropout’s uncertainty. Various network architectures and non-linearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods, and finish by using dropout’s uncertainty in deep reinforcement learning.},
+  comment    = {-Dropout is used in many models in deep
+learning as a way to avoid over-fitting
+- link between Gaussian processes and dropout
+-Recent advances
+in variational inference introduced new techniques into
+the field such as sampling-based variational inference and
+stochastic variational inference
+-show that a neural network with arbitrary depth and
+non-linearities, with dropout applied before every weight
+layer, is mathematically equivalent to an approximation
+to the probabilistic deep Gaussian process
+-During NN optimisation a regularisation term is
+often added. We often use L2 regularisation weighted by
+some weight decay λ, resulting in a minimisation objective
+-MC dropout can
+be approximated by averaging the weights of the network
+-) over validation log-likelihood to find optimal τ , and
+set the prior length-scale to 10−2 for most datasets based on
+the range of the data
+- We used dropout with probabilities 0.05 and 0.005
+since the network size is very small
+-built a probabilistic interpretation of dropout
+which allowed us to obtain model uncertainty out of exist-
+ing deep learning models},
+  pdf        = {http://proceedings.mlr.press/v48/gal16.pdf},
+  priority   = {prio1},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://proceedings.mlr.press/v48/gal16.html},
+}
+
+@InProceedings{pmlr-v28-wang13a,
+  author    = {Wang, Sida and Manning, Christopher},
+  booktitle = {Proceedings of the 30th International Conference on Machine Learning},
+  title     = {Fast dropout training},
+  year      = {2013},
+  address   = {Atlanta, Georgia, USA},
+  editor    = {Dasgupta, Sanjoy and McAllester, David},
+  month     = {17--19 Jun},
+  number    = {2},
+  pages     = {118--126},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {28},
+  abstract  = {Preventing feature co-adaptation by encouraging independent contributions from different features often improves classification and regression performance.  Dropout training (Hinton et al., 2012) does this by randomly dropping out (zeroing) hidden units and input features during training of neural networks. However, repeatedly sampling a random subset of input features makes training much slower. Based on an examination of the implied objective function of dropout training, we show how to do fast dropout training by sampling from or integrating a Gaussian approximation, instead of doing Monte Carlo optimization of this objective.  This approximation, justified by the central limit theorem and empirical evidence, gives an order of magnitude speedup and more stability.  We show how to do fast dropout training for classification, regression, and multilayer neural networks. Beyond dropout, our technique is extended to integrate out other types of noise and small image transformations.},
+  pdf       = {http://proceedings.mlr.press/v28/wang13a.pdf},
+  url       = {https://proceedings.mlr.press/v28/wang13a.html},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
