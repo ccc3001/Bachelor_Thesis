@@ -25,42 +25,50 @@
 	%Moreover, the majority of the crowdsourcing workers are unable to make accurate notes on medical or biological images due to their lack of medical or biological knowledge. Thus, ML researchers often rely on field experts to label such images; however, this process is costly and time consuming. Therefore, producing the large volume of labels required to develop flourishing deep networks turns out to be unfeasible.
 	%CBMA might be a good addition to my algorithm seems to imrpove overall performance
 \begin{abstract}
-	
+	A common issue of High-resolution peripheral quantitative computed tomography (HR-pQCT) scans is the appearance of motion artifacts in Images. These artifacts can appear due to involuntary movements like twitches and spasms. Depending on the severeness of those artifacts in the resulting image, it might not be sufficient for medical use and a re scan is necessary. The decision of the severity is decided by a Doctor which gives the image a number from 1 to 5, where 1 equals no motion artifacts and 5 equals severe motion artifacts. The descission of severity is often biased and varies from doctor to doctor. To support the descission of the doctor there have been approaches by [] and []  to improve the confidence of the result. both methodes can be performed with the absence of a doctor and results of [] show that with crossvalidation of another doctor a Convolutional Neural Network(CNN) can reach a higher accuracy than the cross validation of two doctors without a CNN. The CNN still has a considerable error rate. In this paper we will propose a new CNN which uses state of the art methods to calculate the severity of motion Scores in CT scans. Afterwards we will compare it to the two existing methods and show how those methods perform on the our data set
 \end{abstract}
 	\maketitle
 
 \section{Introduction}
-	A common issue of High-resolution peripheral quantitative computed tomography (HR-pQCT) scans is the appearance of motion artifacts in Images. These artifacts can appear due to involuntary movements like twitches and spasms. Depending on the severeness of those artifacts in the resulting image, it might not be sufficient for medical use and a re scan is necessary. The decision of the severity is currently done by a Doctor which gives the image a number from 1 to 5, where 1 equals no motion artifacts and 5 equals severe motion artifacts. The descission of severity is often biased and varies from doctor to doctor. To support the descission of the doctor there have been approaches by [] and []  to improve the confidence of the result. both of those methodes perform better than the average doctor but still have considerable error rates. In this paper we will propose a new Convolutional Neural Network(CNN) which uses state of the art methodes to calculate the severity of motion Scores in CT scans. Afterwards we will compare it to the two existing methodes.
+	
+	High-resolution peripheral quantitative computed tomography (HR-pQCT) is a specialized non-invasive imaging technique that provides detailed and accurate three-dimensional images of bone and tissue microarchitecture at the peripheral skeletal sites, in our case the radius and thibia. This advanced imaging modality offers several distinct advantages. One advantage is that HR-pQCT provides high resolution images that allow a thorough assessment of a scanned bone micro architecture. It offers precise measurement of bone mineral density(BMD) and geometric parameters such as trabecular thickness and cortical thickness. HR-pQCT has applications in both clinical and research setting and can help make more informed decissions about patient management and treatment strategies. For us the fact that it can provide insight into fracture or the risk of its occurrence.
 	
 	A reoccurring issue in medical imaging is the lack of data for training in our case we had 500 labeled examples. If we compare this to the amount of data used in training state of the art networks it's a small fraction. This comes on the one hand from the fact that the labeling task in medical imaging can just be performed my professionals and therefore the labeling process is costly and just a few people can do it. Another issue is the availability of data since patient data cant be accessed and used as easy. Therefore we need to find a way to augment the data 
 \section{Literature review}
-\subsection{Methodology}
-\subsubsection{Imroved Adaptive Moment Estimation (Adam)}
-\subsubsection{Gaussian Noice}
-\begin{comment}
-adding annealed Gaussian noise to the gradien
--	surprisingly effective
--	experiments indicate that adding annealed Gaussian noise by decaying the variance works better than using fixed Gaussian noise
--	-adding n
--	-random restarts and the use of a momentum-based optimizer like Adam are not sufficient to achieve the best results in the absence of added gradient noiseoise to the gradient helps in achieving higher average and best accuracy	content...
-\end{comment}
-
-\subsubsection{Batch Normalization}
-\subsubsection{Data Augmentation}
-\subsubsection{Dropout}
-\subsubsection{ELU / ReLU}
-\subsubsection{Maxout Unit}
-\subsubsection{CAM / Grad-CAM}
-\subsubsection{Transfer Learning}
-\subsubsection{Bayesian Approaches}
-\subsubsection{Network In Network (NIN)}
-\subsubsection{Convolution Block Attention Model(CBAM)}
-\subsubsection{Very Deep Constitutional Networks}
+\subsection{Convolutional Neural Networks}
+\subsection{Meidcal Imaging }
 \subsection{statistical approach}
 \subsection{Machine learning approach}
 
 
 \section{Methodology}
+\subsection{Methodology}
+\subsection{Imroved Adaptive Moment Estimation (Adam)}
+\subsection{Gaussian Noice}
+\begin{comment}
+	adding annealed Gaussian noise to the gradien
+	-	surprisingly effective
+	-	experiments indicate that adding annealed Gaussian noise by decaying the variance works better than using fixed Gaussian noise
+	-	-adding n
+	-	-random restarts and the use of a momentum-based optimizer like Adam are not sufficient to achieve the best results in the absence of added gradient noiseoise to the gradient helps in achieving higher average and best accuracy	content...
+\end{comment}
+
+\subsection{Batch Normalization}
+\subsection{Data Augmentation}
+A big issue in the space of medical imaging is the lack of training data. When training a CNN with to little data we either have to stop early and don't get a optimal accuracy for the network. If we would further train the network with the same samples the network would overfit and lose its validity  
+therefore we nee to find a way to augment the data so that it still has the same meaning for a person. The concept of data augmentation is well spread in the medilcal imaging field 
+to use data augmentaiton techniques like rotation 
+
+\subsection{Dropout}
+
+\subsection{ELU / ReLU}
+\subsection{Maxout Unit}
+\subsection{CAM / Grad-CAM}
+\subsection{Transfer Learning}
+\subsection{Bayesian Approaches}
+\subsection{Network In Network (NIN)}
+\subsection{Convolution Block Attention Model(CBAM)}
+\subsection{Very Deep Constitutional Networks}
 \subsection{Data Distribution}
 \subsection{CNN Structure}
 

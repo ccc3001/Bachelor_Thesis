@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  15 AUG 2023 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  15 AUG 2023 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -980,18 +980,18 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 32.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 32.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 39.
 
 Excluding 'comment' comment.
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 57.
+(Font)              scaled to size 7.0pt on input line 61.
  [1.1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/
 2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{c:/texlive/2023/texm
 f-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{c:/texlive/2023/texmf-dist/fo
 nts/enc/dvips/libertine/lbtn_nh77jq.enc}]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 75.
+(Font)              scaled to size 8.0pt on input line 83.
 
 (c:/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
@@ -1006,26 +1006,25 @@ L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `Deep_learning_based_grading_of_motionartifac
 ts_in_HR-pQCT.out' has not changed.
-(rerunfilecheck)             Checksum: 42FC77EE7CC309BF00C5862B4C3287FF;2238.
+(rerunfilecheck)             Checksum: 9903C95A47BA24A01A2D0551BCF07485;5144.
  ) 
 Here is how much of TeX's memory you used:
- 20651 strings out of 475237
- 327887 string characters out of 5768555
- 1938238 words of memory out of 5000000
- 41210 multiletter control sequences out of 15000+600000
- 670008 words of font info for 177 fonts, out of 8000000 for 9000
+ 20688 strings out of 475237
+ 328585 string characters out of 5768555
+ 1940238 words of memory out of 5000000
+ 41222 multiletter control sequences out of 15000+600000
+ 666878 words of font info for 194 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 85i,16n,131p,1151b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,16n,131p,1336b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:
 /texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/tex
-live/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive
-/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/202
-3/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb>
+live/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive
+/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb>
 Output written on Deep_learning_based_grading_of_motionartifacts_in_HR-pQCT.pdf
- (2 pages, 332248 bytes).
+ (2 pages, 296670 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 57489 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 53513 words of extra memory for PDF output out of 61914 (max. 10000000)
 
