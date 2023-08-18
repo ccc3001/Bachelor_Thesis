@@ -1,0 +1,227 @@
+\documentclass[
+a4paper, 
+%a5paper,
+%10pt,
+%11pt,
+12pt,
+%twoside, % single sided printout
+%oneside, % duplex printout (default)
+%% binding correction is used to compensate for the paper lost during binding
+%% of the document
+%BCOR=0.7cm, % binding correction
+%nobcorignoretitle, % do not ignore BCOR for title page
+%% the following two options only concern the graphics included by the document
+%% class
+%grayscaletitle, % keep the title in grayscale
+grayscalebody, % keep the rest of the document in grayscale
+abstract=on,
+%% expert options: your mileage may vary
+%baseclass=scrreprt % special option to use a different document baseclass
+twoside, BCOR10mm, 12pt, DIV13,headinclude, footexclude, final, abstracton, openright
+]{ibireprt}
+
+
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{ngerman}
+\usepackage[ngerman]{babel} %english,
+
+
+%\usepackage{fancyhdr}
+%%\pagestyle{fancy}
+%%\lhead{\leftmark}
+%\fancyhead[OR]{\thepage}% ungerade Seiten, rechts \thepage
+%\fancyhead[OL]{\leftmark}% ungerade Seiten, links
+%\fancyhead[ER]{\leftmark}% gerade Seiten, rechts
+%\fancyhead[EL]{\thepage}% gerade Seiten, links \thepage
+%\cfoot{}
+%\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+
+\setlength{\parindent}{0em}
+%\setlength{\parskip}{0mm}
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+%\linespread{1.15}
+
+\usepackage{quotchap}
+\usepackage{nccmath}
+
+\usepackage{microtype}
+
+\usepackage{qtxmath,tgtermes}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tabularx}
+%\usepackage[bookmarks,plainpages=false]{hyperref} %colorlinks  ,urlbordercolor={111},linkbordercolor={111},citebordercolor={111}
+\usepackage[Algorithmus]{algorithm}
+\usepackage{algorithmic}
+%\usepackage{tkmath}
+\usepackage{exscale}
+\usepackage{empheq}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage[hang,small,bf]{caption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{ntheorem}
+\usepackage{blindtext}
+
+%\mathindent1.5cm
+\def\fleq{\@fleqntrue \let\mathindent\@mathmargin \@mathmargin=\leftmargini}
+\def\cneq{\@fleqnfalse}
+
+
+%\setcapindent{0em}
+
+\newenvironment{fshaded}{%
+\def\FrameCommand{\fcolorbox{framecolor}{shadecolor}}%
+\MakeFramed {\FrameRestore}}%
+{\endMakeFramed}
+
+\theoremseparator{:}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{remark}[theorem]{Bemerkung}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}{Beispiel}
+%\newtheorem{proof}[theorem]{Beweis}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newenvironment{Theorem}{\goodbreak \definecolor{shadecolor}{rgb}{0.95,0.95,0.95}%
+\definecolor{framecolor}{rgb}{0,0,0}%
+\begin{fshaded}\begin{theorem}\sl}{\end{theorem} \end{fshaded}}
+\newenvironment{Lemma}{\goodbreak \definecolor{shadecolor}{rgb}{0.95,0.95,0.95}%
+\definecolor{framecolor}{rgb}{0,0,0}%
+\begin{fshaded} \begin{lemma}\sl}{\end{lemma} \end{fshaded}}
+\newenvironment{Remark}{\goodbreak \begin{remark}\rm}{\hfill  $\square$\end{remark}}
+\newenvironment{Example}{\goodbreak \begin{example}\rm}{\hfill $\square$ \end{example}}
+%\newenvironment{Proof}{\goodbreak \begin{proof}\rm}{\hfill $\blacksquare$ \end{proof}}
+\newenvironment{Definition}{\goodbreak \definecolor{shadecolor}{rgb}{0.95,0.95,0.95}%
+\definecolor{framecolor}{rgb}{0,0,0}%
+\begin{fshaded} \begin{definition}\rm}{\hfill  \end{definition} \end{fshaded} }
+\newenvironment{Corollary}{\goodbreak \begin{corollary}\rm}{\end{corollary}}
+
+\newenvironment{Proof}[1][Beweis:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\hfill $\blacksquare$\end{trivlist}}
+
+\numberwithin{equation}{chapter}
+\numberwithin{table}{chapter}
+\numberwithin{figure}{chapter}
+\numberwithin{algorithm}{chapter}
+\numberwithin{example}{chapter}
+\numberwithin{example}{chapter}
+
+\def\i{\mbox{\small{\rm i}}}
+\def\ti{\mbox{\scriptsize{\rm i}}}
+\newcommand{\e}[1]{{\rm e}^{ #1}}
+\renewcommand{\mod}{\;{\rm mod}\;}
+
+\newcommand{\zb}[1]{\mbox{\boldmath{${#1}$}}}
+\newcommand{\zbs}[1]{\mbox{\boldmath\scriptsize{${#1}$}}}
+\newcommand{\zbss}[1]{\mbox{\boldmath\tiny{${#1}$}}}
+
+\newcommand{\adj}{{\ensuremath{\mathsf{H}}}}
+\newcommand{\trans}{{\ensuremath{\mathsf{T}}}}
+
+
+% Keine "Schusterjungen"
+\clubpenalty = 10000
+% Keine "Hurenkinder"
+\widowpenalty = 10000 \displaywidowpenalty = 10000 %\displaywidowpenalty = 10000
+
+
+
+
+
+
+% Information for the Titlepage
+\author{Max Mustermann}
+\title{A very long title of the actual work in big sized letters}
+%\date{\today}
+\date{\today}
+\subject{Bachelor thesis}
+\professor{Prof.~Dr.-Ing.~Tobias Knopp}
+\advisor{Dr.~rer.~nat.~Martin Hofmann}
+
+
+
+
+
+
+
+\begin{document}
+%\frontmatter
+\maketitle
+%\mainmatter
+
+
+\newpage
+${}^{}$
+\vfill
+\noindent
+Ich versichere an Eides statt, die vorliegende Arbeit selbstständig und nur unter Benutzung der angegebenen Quellen und Hilfsmittel angefertigt zu haben.\\
+\vspace{1.5cm}
+
+\noindent
+Hamburg, den ??.??.2010
+\thispagestyle{empty}
+\newpage
+\newpage
+
+\setlength{\parskip}{1.5mm }
+
+%\newpage
+
+%\maketitle
+
+
+
+\tableofcontents
+
+
+\chapter*{Summary}
+
+\cite{Gleich2005}
+\cite{Gleich2008}
+
+\blindtext[10]
+
+
+\chapter{Introduction}
+
+\blindtext[10]
+
+\chapter{Methods}
+
+\blindtext[10]
+
+\begin{align}
+ \zb S &= \zb c \zb u
+\end{align}
+
+\chapter{Experimental Setup}
+
+\blindtext[10]
+
+\chapter{Results}
+
+\chapter{Discussion}
+
+\bibliographystyle{unsrt} %unsrt abbrv
+\bibliography{ref}
+
+\end{document}

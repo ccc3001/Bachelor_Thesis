@@ -22,19 +22,24 @@ test_y =[]
 
 
 for i in readdir("h5")
-    j = i[1:(length(a)-3)]
-    open(pwd() * "\\json\\" * j * "json", "r") do f
+    j = i[1:(length(i)-3)]
+    open(pwd() * "\\json\\" * j * ".json", "r") do f
         global dict
-        dicttxt = readall(f)  # file information to string
-        dict=JSON.parse(dicttxt)  # parse and transform data  
+        dicttxt = readline(f)  # file information to string
+        dict= JSON.parse(dicttxt)  # parse and transform data  
     end
 
     push!(test_y , dict["img_datatype_array"])
+    push!(test_y , dict["img_datatype_array"])
+    push!(test_y , dict["img_datatype_array"])
+
+
 
     c = h5open(pwd() * "\\h5\\" * i, "r") do file
-        read(file, "A")    
+        read(file)    
     end
-
-    push!(test_x, c)
+    push!(test_x, c["1"])
+    push!(test_x, c["50"])
+    push!(test_x, c["100"])
 
 end

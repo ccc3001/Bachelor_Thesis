@@ -1,0 +1,7 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{9}{}%
+\contentsline {chapter}{\numberline {2}Methods}{13}{}%
+\contentsline {chapter}{\numberline {3}Experimental Setup}{17}{}%
+\contentsline {chapter}{\numberline {4}Results}{21}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{23}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
