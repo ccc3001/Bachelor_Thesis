@@ -154,23 +154,142 @@ continue on 5483 it might be intreresting},
 }
 
 @Misc{Ruder2016,
-  author    = {Ruder, Sebastian},
-  title     = {An overview of gradient descent optimization algorithms},
-  year      = {2016},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1609.04747},
-  keywords  = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  publisher = {arXiv},
+  author     = {Ruder, Sebastian},
+  title      = {An overview of gradient descent optimization algorithms},
+  year       = {2016},
+  comment    = {- Mini-batch
+gradient descent is typically the algorithm of choice when training a neural network
+
+Challanges 
+-A learning rate that is too small leads to
+painfully slow convergence, while a learning rate that is too large can hinder convergence
+and cause the loss function to fluctuate around the minimum or even to diverge
+-reducing the learning rate according to a pre-defined schedule or when the change in
+objective between epochs falls below a threshold.
+-If our data is sparse
+and our features have very different frequencies, we might not want to update all of them to
+the same extent, but perform a larger update for rarely occurring features
+-avoiding getting trapped in their numerous suboptimal local minima
+- difficulty arises in fact not from local minima but from saddle points
+
+optimization algorithms 
+
+momentum 
+-a method that helps accelerate SGD in the relevant direction and dampens
+oscillations
+- momentum
+term increases for dimensions whose gradients point in the same directions and reduces updates for
+dimensions whose gradients change directions-> faster convergence and reduced oscillation
+ -γ to a value of around 0.9
+
+
+Nesterov accelerated gradient 
+-has a notion of where it is going so that it knows to slow down
+-We can now effectively look ahead
+by calculating the gradient
+- γ to a value of around 0.9
+-prevents us from going too fast and results in increased
+responsiveness
+
+Adagrad
+-dapts the learning
+rate to the parameters, performing larger updates for infrequent and smaller updates for frequent
+parameters
+-greatly improved the robustness
+- used it for training large-scale neural nets
+-eliminates the need to manually tune the learning rate. Most
+implementations use a default value of 0.01 and leave it at that
+-main weakness is its accumulation of the squared gradients in the denominator
+
+Adadelta 
+-extention of Adagrad that seeks to reduce its aggressive, monotonically decreasing
+learning rate
+
+- Adadelta restricts the window of
+accumulated past gradients to some fixed size w
+
+RMSprop
+-RMSprop is an unpublished, adaptive learning rate method proposed by Geoff Hinton
+
+Adam
+-computes adaptive learning rates
+for each parameter
+- In addition to storing an exponentially decaying average of past squared gradients
+- estimates of the first moment (the mean) and the second moment (the uncentered
+variance) of the gradients respectively
+- default values of 0.9 for β1, 0.999 for β2, and 10−8 for epsilon
+-compares favorably to other adaptive learning-method
+algorithms
+
+AdaMax
+- vt factor in the Adam update rule scales the gradient inversely proportionally to the `2 norm of
+the past gradients
+-not as suggestible to bias towards zero as mt and vt
+in Adam, which is why we do not need to compute a bias correction
+
+Nadam (Nesterov-accelerated Adaptive Moment Estimation)
+-, Adam can be viewed as a combination of RMSprop and momentum: RM-
+Sprop
+-combines Adam and NAG
+-NAG then allows us to perform a more accurate step in the gradient direction by updating the
+parameters with the momentum step before computing the gradient
+
+shuffling and curriculum learning
+- avoid providing the training examples in a meaningful order to our model
+- good idea to shuffle the training
+data after every epoch
+
+Batch Normalization
+-To facilitate learning, we typically normalize the initial values of our parameters by initializing them
+with zero mean and unit variance
+-reestablishes these normalizations for every mini-batch and changes are back-
+propagated through the operation as well
+
+Gradient Noise
+-add noise that follows a Gaussian distribution
+
+Early stopping},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1609.04747},
+  keywords   = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank5},
+  readstatus = {read},
 }
 
 @InProceedings{Zhang2018,
-  author    = {Zijun Zhang},
-  booktitle = {2018 {IEEE}/{ACM} 26th International Symposium on Quality of Service ({IWQoS})},
-  title     = {Improved Adam Optimizer for Deep Neural Networks},
-  year      = {2018},
-  month     = {jun},
-  publisher = {{IEEE}},
-  doi       = {10.1109/iwqos.2018.8624183},
+  author     = {Zijun Zhang},
+  booktitle  = {2018 {IEEE}/{ACM} 26th International Symposium on Quality of Service ({IWQoS})},
+  title      = {Improved Adam Optimizer for Deep Neural Networks},
+  year       = {2018},
+  month      = {jun},
+  publisher  = {{IEEE}},
+  abstract   = {-Adam and RMSprop, have witnessed better optimization performance
+than stochastic gradient descent (SGD) in some scenarios.
+However, recent studies show that they often lead to worse
+generalization performance than SGD},
+  comment    = {-Adam does not
+preserve the directions of gradients as SGD does
+- the magnitude of each vector’s direction
+change depends on its L2-norm
+- fix the problem for Adam by
+explicitly normalizing each weight vector, and by opti-
+mizing only its direction,
+
+- we apply
+batch normalization or L2-regularization to the logits,
+which further improves the generalization performance
+in classification tasks
+
+-roposed algorithm adapts the
+learning rate to each input weight vector, instead of each
+individual weight, such that the direction of the gradient is
+preserved},
+  doi        = {10.1109/iwqos.2018.8624183},
+  priority   = {prio2},
+  ranking    = {rank4},
+  readstatus = {read},
 }
 
 @Misc{Lin2013,
@@ -548,22 +667,6 @@ shown to improve generalization},
   publisher     = {arXiv},
 }
 
-@Article{DAmour2020,
-  author        = {D'Amour, Alexander and Heller, Katherine and Moldovan, Dan and Adlam, Ben and Alipanahi, Babak and Beutel, Alex and Chen, Christina and Deaton, Jonathan and Eisenstein, Jacob and Hoffman, Matthew D. and Hormozdiari, Farhad and Houlsby, Neil and Hou, Shaobo and Jerfel, Ghassen and Karthikesalingam, Alan and Lucic, Mario and Ma, Yian and McLean, Cory and Mincu, Diana and Mitani, Akinori and Montanari, Andrea and Nado, Zachary and Natarajan, Vivek and Nielson, Christopher and Osborne, Thomas F. and Raman, Rajiv and Ramasamy, Kim and Sayres, Rory and Schrouff, Jessica and Seneviratne, Martin and Sequeira, Shannon and Suresh, Harini and Veitch, Victor and Vladymyrov, Max and Wang, Xuezhi and Webster, Kellie and Yadlowsky, Steve and Yun, Taedong and Zhai, Xiaohua and Sculley, D.},
-  title         = {Underspecification Presents Challenges for Credibility in Modern Machine Learning},
-  year          = {2020},
-  month         = nov,
-  abstract      = {ML models often exhibit unexpectedly poor behavior when they are deployed in real-world domains. We identify underspecification as a key reason for these failures. An ML pipeline is underspecified when it can return many predictors with equivalently strong held-out performance in the training domain. Underspecification is common in modern ML pipelines, such as those based on deep learning. Predictors returned by underspecified pipelines are often treated as equivalent based on their training domain performance, but we show here that such predictors can behave very differently in deployment domains. This ambiguity can lead to instability and poor model behavior in practice, and is a distinct failure mode from previously identified issues arising from structural mismatch between training and deployment domains. We show that this problem appears in a wide variety of practical ML pipelines, using examples from computer vision, medical imaging, natural language processing, clinical risk prediction based on electronic health records, and medical genomics. Our results show the need to explicitly account for underspecification in modeling pipelines that are intended for real-world deployment in any domain.},
-  archiveprefix = {arXiv},
-  copyright     = {arXiv.org perpetual, non-exclusive license},
-  doi           = {10.48550/ARXIV.2011.03395},
-  eprint        = {2011.03395},
-  file          = {:http\://arxiv.org/pdf/2011.03395v2:PDF},
-  keywords      = {Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
-  primaryclass  = {cs.LG},
-  publisher     = {arXiv},
-}
-
 @InProceedings{pmlr-v28-goodfellow13,
   author     = {Goodfellow, Ian and Warde-Farley, David and Mirza, Mehdi and Courville, Aaron and Bengio, Yoshua},
   booktitle  = {Proceedings of the 30th International Conference on Machine Learning},
@@ -886,6 +989,7 @@ visible units for learning the next RBM
   copyright = {Creative Commons Attribution 4.0 International},
   doi       = {10.48550/ARXIV.2012.07177},
   keywords  = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority  = {prio3},
   publisher = {arXiv},
 }
 
@@ -1082,21 +1186,251 @@ ing deep learning models},
 }
 
 @InProceedings{pmlr-v28-wang13a,
-  author    = {Wang, Sida and Manning, Christopher},
-  booktitle = {Proceedings of the 30th International Conference on Machine Learning},
-  title     = {Fast dropout training},
-  year      = {2013},
-  address   = {Atlanta, Georgia, USA},
-  editor    = {Dasgupta, Sanjoy and McAllester, David},
-  month     = {17--19 Jun},
-  number    = {2},
-  pages     = {118--126},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {28},
-  abstract  = {Preventing feature co-adaptation by encouraging independent contributions from different features often improves classification and regression performance.  Dropout training (Hinton et al., 2012) does this by randomly dropping out (zeroing) hidden units and input features during training of neural networks. However, repeatedly sampling a random subset of input features makes training much slower. Based on an examination of the implied objective function of dropout training, we show how to do fast dropout training by sampling from or integrating a Gaussian approximation, instead of doing Monte Carlo optimization of this objective.  This approximation, justified by the central limit theorem and empirical evidence, gives an order of magnitude speedup and more stability.  We show how to do fast dropout training for classification, regression, and multilayer neural networks. Beyond dropout, our technique is extended to integrate out other types of noise and small image transformations.},
-  pdf       = {http://proceedings.mlr.press/v28/wang13a.pdf},
-  url       = {https://proceedings.mlr.press/v28/wang13a.html},
+  author     = {Wang, Sida and Manning, Christopher},
+  booktitle  = {Proceedings of the 30th International Conference on Machine Learning},
+  title      = {Fast dropout training},
+  year       = {2013},
+  address    = {Atlanta, Georgia, USA},
+  editor     = {Dasgupta, Sanjoy and McAllester, David},
+  month      = {17--19 Jun},
+  number     = {2},
+  pages      = {118--126},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {28},
+  comment    = {-Dropout played
+an important role in the systems that won recent
+learning competitions such as ImageNet
+- Fast dropout fits into
+the general framework of integrating out noise added
+to the training data
+-include bernoulli function over probability of not dropping out in stochastic gradient descent 
+-Fast dropout is directly ap-
+plicable to dropping out the final hidden layer of neu-
+ral networks
+-When the number of hidden units is
+more than 10 or so, we may again approximate their
+inputs as Gaussians and characterize their outputs by
+the output means and variances
+
+-we use the output mean and variance to optimize the network but i dont really understand it 
+
+-gradient approximation using Gaussian
+samples is comparable to the difference between dif-
+ferent MC dropout runs with 200 samples
+
+- accuracy and time taken, in the top half of table
+1. Sampling from the Gaussian is generally around 10
+times faster than MC dropout and performs compara-
+bly
+
+-presented a way of getting the benefits of dropout
+training without actually sampling, thereby speeding
+up the process by an order of magnitude},
+  pdf        = {http://proceedings.mlr.press/v28/wang13a.pdf},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://proceedings.mlr.press/v28/wang13a.html},
+}
+
+@Misc{Neelakantan2015,
+  author     = {Neelakantan, Arvind and Vilnis, Luke and Le, Quoc V. and Sutskever, Ilya and Kaiser, Lukasz and Kurach, Karol and Martens, James},
+  title      = {Adding Gradient Noise Improves Learning for Very Deep Networks},
+  year       = {2015},
+  comment    = {-A recurring theme in recent works is that commonly-used optimization techniques are not always
+sufficient to robustly optimize the models. In this work, we explore a simple technique of adding
+annealed Gaussian noise to the gradien
+- surprisingly effective
+- experiments indicate that adding annealed Gaussian noise by decaying the variance works better
+than using fixed Gaussian noise
+-training step t
+
+g_t <- g_t * N(0, sigma_t^2)
+
+sigma_t^2 = n/(1+t)^gamma
+n selected from{0.01, 0.3, 1.0} and 
+gamma = 0.55
+-> seems like n is usually 0.01
+
+-adding noise to the gradient helps in achieving higher average and best accuracy
+- random restarts and the use of a momentum-based optimizer like
+Adam are not sufficient to achieve the best results in the absence of added gradient noise},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1511.06807},
+  keywords   = {Machine Learning (stat.ML), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank3},
+  readstatus = {read},
+}
+
+@Article{dozat2016incorporating,
+  author = {Dozat, Timothy},
+  title  = {Incorporating nesterov momentum into adam},
+  year   = {2016},
+}
+
+@Article{Whittier2020,
+  author    = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
+  journal   = {Osteoporosis International},
+  title     = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
+  year      = {2020},
+  month     = {may},
+  number    = {9},
+  pages     = {1607--1627},
+  volume    = {31},
+  comment   = {In general, density-based measures are less sensitive to motion
+artifacts than structure-based measures. It is acceptable to include
+all outcome variables from scans with a motion score of three or
+less, as the precision error is not substantially compromised for
+density (< 1% error), microarchitecture (< 5% error), and biome-
+chanical parameters, such as estimated failure load (< 4% error)
+
+-.However, even with a standardized
+scoring system, motion scoring remains subjective, and op-
+erator agreement has shown to remain only moderate, even
+with intensive training},
+  doi       = {10.1007/s00198-020-05438-5},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Burghardt2011,
+  author     = {Andrew J. Burghardt and Thomas M. Link and Sharmila Majumdar},
+  journal    = {Clinical Orthopaedics {\&}amp$\mathsemicolon$ Related Research},
+  title      = {High-resolution Computed Tomography for Clinical Imaging of Bone Microarchitecture},
+  year       = {2011},
+  month      = {aug},
+  number     = {8},
+  pages      = {2179--2193},
+  volume     = {469},
+  comment    = {-CT currently provides quantitative measures
+of bone structure and may be used for estimating bone
+strength mathematically. The techniques may provide
+clinically relevant information by enhancing our under-
+standing of fracture risk and establishing the efficacy of
+antifracture for osteoporosis and other bone metabolic
+disorders.
+- clinical assessment of skeletal
+health is based on measures of bone mineral density
+(BMD)
+-Furthermore, QCT can examine cortical and trabecular
+bone independently.
+BMD only explains about 70% to 75% of the variance in
+strength while the remaining variance is due to the
+cumulative and synergistic effect of factors such as bone
+macro- and microarchitecture, tissue composition, and
+-with HR-pQCT and MDCT it is possible to perform in vitro and in vivo imaging of
+bone across different structural scales from the whole bone
+to the ultrastructural level.
+microdamage
+-CT is a three-dimensional radiographic imaging technique.
+The image formation process begins with the acquisition of
+sequential radiographic projections captured over a range
+of angular positions around the object of interest. The
+cross-sectional field of view is reconstructed using estab-
+lished computational techniques based on radon projection
+theory
+- Similar to simple radiography, the recon-
+structed image’s intensity values represent the local
+radiographic attenuation: a material property related to the
+object’s electron density (atomic number and mass den-
+sity). The contrast between soft and mineralized tissue in
+CT is high, due to the relative electron-dense inorganic
+component (calcium hydroxyapatite) of the bone matrix
+-The HR-pQCT
+imaging system consists of a microfocus xray source and
+high-resolution charge-coupled device (CCD) detector that
+can produce tomographic images with a nominal resolution
+as high as 41 lm for a 12.6-mm field of view
+
+HR-pQCT
+-A dedicated extremity imaging system designed for
+trabecular-scale imaging is currently available from a
+single manufacturer (XtremeCT; Scanco Medical AG,
+Bru¨ttisellen, Switzerland). This device has the advantage of
+a higher signal-to-noise ratio and spatial resolution (nom-
+inal isotropic voxel dimension of 82 um)
+-radiation dose is lower when
+compared to whole-body CT and does not involve critical,
+radiosensitive organs in skeletally mature adults.
+In HR-pQCT, a standard protocol recommended by the
+manufacturer is utilized for most studies
+-The
+patient’s forearm or ankle is immobilized in a carbon fiber
+cast fixed within the gantry of the scanner.
+-This tomographic region spans 9.02 mm in length (110 slices)
+and is localized to a fixed offset proximal from either the
+radial or tibial midjoint line and extends proximally. The
+offset is 9.5 mm in the radius and 22.5 mm in the tibia-> many other techniques are listed after like 8% rule 
+-Changes in matrix mineral density is
+expected to cause an increase in BMD
+-For clinical investigations into longitudinal changes in
+HR-pQCT-derived measures of bone quality, it is critical
+baseline and followup scans be matched, since bone
+structure and geometry vary substantially along the axial
+direction [},
+  doi        = {10.1007/s11999-010-1766-x},
+  priority   = {prio1},
+  publisher  = {Ovid Technologies (Wolters Kluwer Health)},
+  readstatus = {read},
+}
+
+@Article{Boutroy2005,
+  author     = {Stephanie Boutroy and Mary L. Bouxsein and Francoise Munoz and Pierre D. Delmas},
+  journal    = {The Journal of Clinical Endocrinology {\&}amp$\mathsemicolon$ Metabolism},
+  title      = {$\less$i$\greater$In Vivo$\less$/i$\greater$Assessment of Trabecular Bone Microarchitecture by High-Resolution Peripheral Quantitative Computed Tomography},
+  year       = {2005},
+  month      = {dec},
+  number     = {12},
+  pages      = {6508--6515},
+  volume     = {90},
+  comment    = {-recent clinical
+observations have highlighted some limitations of areal BMD
+measurements. For instance, half of incident fractures occur
+in women with BMD values above the World Health Orga-
+nization (WHO)-defined diagnostic threshold for osteopo-
+rosis
+-(not to important) short-term reproducibility of HR-pQCT
+parameters was quite similar at the distal radius and distal
+tibia, with CVs less than 1.5% for bone density and from
+2.5– 4.4% for trabecular architectur
+- Patient move-
+ment and difficulty in matching the analysis volume in re-
+peat studies have been cited as primary error sources for
+follow-up measurements. Patient movement was also a
+concern in our study, because nine women (3.5%) at the distal
+radius and six women (2.3%) at the distal tibia were elimi-
+nated because of obvious movement artifacts that rendered
+the scan unsuitable for analysis.},
+  doi        = {10.1210/jc.2005-1258},
+  priority   = {prio3},
+  publisher  = {The Endocrine Society},
+  readstatus = {read},
+}
+
+@Article{article,
+  author     = {Feldkamp, Lee and Davis, L. C. and Kress, James},
+  journal    = {J. Opt. Soc. Am},
+  title      = {Practical Cone-Beam Algorithm},
+  year       = {1984},
+  month      = {01},
+  pages      = {612-619},
+  volume     = {1},
+  abstract   = {-As used here,
+direct three-dimensional (3D) reconstruction implies use of
+two-dimensional (2D)projection data with reconstruction on
+a 3D mesh of points, which may or may not be organized as
+parallel slices.
+-rewrite the Radon transform for two di-
+mensions in the form of a convolution and backprojection.
+This results in a fan-beam reconstruction formula and is a step
+preliminary to the determination of an algorithm for 3D re-
+construction.
+
+(nur ansatzweise gelesen ist aber wichtig um das bei der radon transform zu zitieren)},
+  priority   = {prio1},
+  readstatus = {skimmed},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

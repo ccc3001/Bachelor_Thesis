@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  18 AUG 2023 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  24 AUG 2023 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,65 +1110,89 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-[7] [8
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 2
+06.
+(c:/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
+File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [7{c:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [8]
 chapter 2.
-LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 218.
+<Bone_Network_Structure.png, id=36, 1054.36768pt x 308.43803pt>
+File: Bone_Network_Structure.png Graphic file (type png)
+<use Bone_Network_Structure.png>
+Package pdftex.def Info: Bone_Network_Structure.png  used on input line 231.
+(pdftex.def)             Requested size: 437.73479pt x 128.05116pt.
+[9
 
-LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <8> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 218.
-
-LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <6> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 218.
-
-[9{c:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-qx.enc}] [10
+ <./Bone_Network_Structure.png>] [10
 
 ]
 chapter 3.
-[11] [12
 
-]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 267.
+
+LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <8> not available
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 267.
+
+LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <6> not available
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 267.
+
+
+[12{c:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-qx.enc}]
 chapter 4.
-[13] [14
+[13
+
+] [14
 
 ]
 chapter 5.
-(./Bachelor_Thesis.bbl [15] [16
+[15] [16
 
 ]
+chapter 6.
+(./Bachelor_Thesis.bbl [17] [18
 
-LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
-               before end of `thebibliography' environment on input line 3.
+]
+Underfull \hbox (badness 1270) in paragraph at lines 25--28
+[]\T1/qtm/m/n/12 (+20) Yann Le-Cun, Yos-hua Ben-gio, and Geoffrey Hin-ton.  De-
+ep lear-ning.  \T1/qtm/m/it/12 (+20) Na-ture\T1/qtm/m/n/12 (+20) ,
+ []
 
 )
 \tf@thm=\write4
 \openout4 = `Bachelor_Thesis.thm'.
 
- [17] (./Bachelor_Thesis.aux)
+ [19] (./Bachelor_Thesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15353 strings out of 475237
- 277005 string characters out of 5768555
- 1923238 words of memory out of 5000000
- 36207 multiletter control sequences out of 15000+600000
- 635936 words of font info for 172 fonts, out of 8000000 for 9000
+ 15464 strings out of 475237
+ 278633 string characters out of 5768555
+ 1929238 words of memory out of 5000000
+ 36266 multiletter control sequences out of 15000+600000
+ 646846 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,12n,121p,10936b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmbi.pfb><c:/texlive
-/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2023/texmf-di
-st/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
-urw/bookman/ubkd8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhv
-b8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Bachelor_Thesis.pdf (17 pages, 89301 bytes).
+ 122i,12n,121p,10936b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/
+2023/texmf-dist/fonts/type1/public/tex-gyre/qtmbi.pfb><c:/texlive/2023/texmf-di
+st/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2023/texmf-dist/fonts/type1
+/public/tex-gyre/qtmri.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfon
+ts/rtxr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2023/te
+xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Bachelor_Thesis.pdf (19 pages, 736690 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48134 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 56331 words of extra memory for PDF output out of 61914 (max. 10000000)
 
