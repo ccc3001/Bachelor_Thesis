@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Sode2011}
 Miki Sode, Andrew~J. Burghardt, Jean-Baptiste Pialat, Thomas~M. Link, and
@@ -36,5 +36,62 @@ Rikiya Yamashita, Mizuho Nishio, Richard Kinh~Gian Do, and Kaori Togashi.
 Lee Feldkamp, L.~C. Davis, and James Kress.
 \newblock Practical cone-beam algorithm.
 \newblock {\em J. Opt. Soc. Am}, 1:612--619, 01 1984.
+
+\bibitem{Bergh2021}
+J.P. van~den Bergh, P.~Szulc, A.M. Cheung, M.~Bouxsein, K.~Engelke, and
+  R.~Chapurlat.
+\newblock The clinical application of high-resolution peripheral computed
+  tomography ({HR}-{pQCT}) in adults: state of the art and future directions.
+\newblock {\em Osteoporosis International}, 32(8):1465--1485, may 2021.
+
+\bibitem{Ruder2016}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms, 2016.
+
+\bibitem{Kingma2014}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization, 2014.
+
+\bibitem{Neelakantan2015}
+Arvind Neelakantan, Luke Vilnis, Quoc~V. Le, Ilya Sutskever, Lukasz Kaiser,
+  Karol Kurach, and James Martens.
+\newblock Adding gradient noise improves learning for very deep networks, 2015.
+
+\bibitem{Alzubaidi2021}
+Laith Alzubaidi, Jinglan Zhang, Amjad~J. Humaidi, Ayad Al-Dujaili, Ye~Duan,
+  Omran Al-Shamma, J.~Santamar{\'{\i}}a, Mohammed~A. Fadhel, Muthana Al-Amidie,
+  and Laith Farhan.
+\newblock Review of deep learning: concepts, {CNN} architectures, challenges,
+  applications, future directions.
+\newblock {\em Journal of Big Data}, 8(1), mar 2021.
+
+\bibitem{NEURIPS2019_eb1e7832}
+Maithra Raghu, Chiyuan Zhang, Jon Kleinberg, and Samy Bengio.
+\newblock Transfusion: Understanding transfer learning for medical imaging.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle
+  Alch\'{e}-Buc, E.~Fox, and R.~Garnett, editors, {\em Advances in Neural
+  Information Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+
+\bibitem{Ioffe2015}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock February 2015.
+
+\bibitem{Khan2020}
+Asifullah Khan, Anabia Sohail, Umme Zahoora, and Aqsa~Saeed Qureshi.
+\newblock A survey of the recent architectures of deep convolutional neural
+  networks.
+\newblock {\em Artificial Intelligence Review}, 53(8):5455--5516, apr 2020.
+
+\bibitem{Mishkin2017}
+Dmytro Mishkin, Nikolay Sergievskiy, and Jiri Matas.
+\newblock Systematic evaluation of convolution neural network advances on the
+  imagenet.
+\newblock {\em Computer Vision and Image Understanding}, 161:11--19, aug 2017.
+
+\bibitem{Woo2018}
+Sanghyun Woo, Jongchan Park, Joon-Young Lee, and In~So Kweon.
+\newblock Cbam: Convolutional block attention module, 2018.
 
 \end{thebibliography}

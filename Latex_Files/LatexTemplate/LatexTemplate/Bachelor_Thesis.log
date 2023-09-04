@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  24 AUG 2023 09:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  4 SEP 2023 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,77 +1122,94 @@ chapter 2.
 <Bone_Network_Structure.png, id=36, 1054.36768pt x 308.43803pt>
 File: Bone_Network_Structure.png Graphic file (type png)
 <use Bone_Network_Structure.png>
-Package pdftex.def Info: Bone_Network_Structure.png  used on input line 231.
+Package pdftex.def Info: Bone_Network_Structure.png  used on input line 238.
 (pdftex.def)             Requested size: 437.73479pt x 128.05116pt.
-[9
 
- <./Bone_Network_Structure.png>] [10
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [9
+
+ <./Bone_Network_Structure.png>] [10{c:/texlive/2023/texmf-dist/fonts/enc/dvips
+/tex-gyre/q-qx.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.en
+c}]
 chapter 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 267.
+ [11
 
-LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <8> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 267.
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <6> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 267.
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 329--335
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
 
 
-[12{c:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-qx.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+[17] [18
+
+]
 chapter 4.
-[13
-
-] [14
+[19] [20
 
 ]
 chapter 5.
-[15] [16
+[21] [22
 
 ]
 chapter 6.
-(./Bachelor_Thesis.bbl [17] [18
+(./Bachelor_Thesis.bbl [23] [24
 
 ]
-Underfull \hbox (badness 1270) in paragraph at lines 25--28
-[]\T1/qtm/m/n/12 (+20) Yann Le-Cun, Yos-hua Ben-gio, and Geoffrey Hin-ton.  De-
-ep lear-ning.  \T1/qtm/m/it/12 (+20) Na-ture\T1/qtm/m/n/12 (+20) ,
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [25])
 \tf@thm=\write4
 \openout4 = `Bachelor_Thesis.thm'.
 
- [19] (./Bachelor_Thesis.aux)
+
+[26] (./Bachelor_Thesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15464 strings out of 475237
- 278633 string characters out of 5768555
- 1929238 words of memory out of 5000000
+ 15480 strings out of 475237
+ 278762 string characters out of 5768555
+ 1932238 words of memory out of 5000000
  36266 multiletter control sequences out of 15000+600000
- 646846 words of font info for 198 fonts, out of 8000000 for 9000
+ 642570 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,12n,121p,10936b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/
-2023/texmf-dist/fonts/type1/public/tex-gyre/qtmbi.pfb><c:/texlive/2023/texmf-di
-st/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2023/texmf-dist/fonts/type1
-/public/tex-gyre/qtmri.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfon
-ts/rtxr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb><c:/
-texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2023/te
-xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Bachelor_Thesis.pdf (19 pages, 736690 bytes).
+ 122i,16n,121p,10936b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/2023/texm
+f-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/tex-gyre/qtmri.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/t
+xfonts/rtxmi.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/rtxr.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb><c:/texlive/2023/texmf-dist/f
+onts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb>
+Output written on Bachelor_Thesis.pdf (26 pages, 764628 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56331 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 54283 words of extra memory for PDF output out of 61914 (max. 10000000)
 
