@@ -1,8 +1,9 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{7}{}%
-\contentsline {chapter}{\numberline {2}Literature review}{9}{}%
-\contentsline {chapter}{\numberline {3}Methods}{11}{}%
-\contentsline {chapter}{\numberline {4}Experimental Setup}{13}{}%
-\contentsline {chapter}{\numberline {5}Results}{15}{}%
-\contentsline {chapter}{\numberline {6}Discussion}{17}{}%
+\contentsline {chapter}{\numberline {2}Literature review}{11}{}%
+\contentsline {chapter}{\numberline {3}Methods}{13}{}%
+\contentsline {chapter}{\numberline {4}Methods}{17}{}%
+\contentsline {chapter}{\numberline {5}Experimental Setup}{23}{}%
+\contentsline {chapter}{\numberline {6}Results}{25}{}%
+\contentsline {chapter}{\numberline {7}Discussion}{27}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

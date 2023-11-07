@@ -3,44 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Bachelor_Thesis.aux
 The style file: unsrt.bst
 Database file #1: Bibliography.bib
-You've used 6 entries,
+Warning--empty journal in Ioffe2015
+You've used 16 entries,
             1791 wiz_defined-function locations,
-            495 strings with 4863 characters,
-and the built_in function-call counts, 1700 in all, are:
-= -- 140
-> -- 102
-< -- 0
-+ -- 36
-- -- 30
-* -- 165
-:= -- 286
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 6
+            554 strings with 6924 characters,
+and the built_in function-call counts, 3883 in all, are:
+= -- 292
+> -- 270
+< -- 1
++ -- 95
+- -- 79
+* -- 334
+:= -- 657
+add.period$ -- 45
+call.type$ -- 16
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 54
-empty$ -- 146
-format.name$ -- 30
-if$ -- 351
+cite$ -- 17
+duplicate$ -- 129
+empty$ -- 346
+format.name$ -- 79
+if$ -- 812
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 33
-num.names$ -- 6
-pop$ -- 6
+int.to.str$ -- 16
+missing$ -- 12
+newline$ -- 79
+num.names$ -- 18
+pop$ -- 48
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 18
+skip$ -- 54
 stack$ -- 0
-substring$ -- 151
-swap$ -- 6
-text.length$ -- 0
+substring$ -- 232
+swap$ -- 17
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 16
-width$ -- 7
-write$ -- 68
+warning$ -- 1
+while$ -- 33
+width$ -- 18
+write$ -- 165
+(There was 1 warning)
