@@ -64,7 +64,7 @@ model = Chain(
     
     #Second convolution 
     Conv((3,3), 16=>16, leakyrelu),
-    x-> maxpool(x,(2,2),stride = 2),#TODO: Jana fragen ob das sin ergibt -> könnte sein das es maxpool(2,2) ist wenn ich 0.5 als wert haben darf 
+    x-> maxpool(x,(2,2),stride = 2),
 
     #Third convolution 
     Conv((3,3), 16=>16, leakyrelu),
@@ -74,7 +74,7 @@ model = Chain(
     Conv((3,3), 16=>16, leakyrelu),
     x-> maxpool(x,(2,2), stride =2),
 
-    #Fifth convolution TODO: check if GlobalMeanPool is the same as global average pooling 
+    #Fifth convolution 
     Conv((3,3), 16=>16, leakyrelu),
     x-> GlobalMeanPool(x),
     
@@ -98,7 +98,7 @@ model(train_set[1][1])
 # a bit, adding gaussian random noise to our image to make it more robust.
 function loss(x, y)
     # We augment `x` a little bit here, adding in random noise
-    x_aug = x .+ 0.1f0*gpu(randn(eltype(x), size(x)))
+    x_aug = x .+ 0.1x0*gpu(randn(eltype(x), size(x)))
 
     y_hat = model(x_aug)
     return crossentropy(y_hat, y)

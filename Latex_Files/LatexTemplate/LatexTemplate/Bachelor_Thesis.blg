@@ -2,47 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Bachelor_Thesis.aux
 The style file: unsrt.bst
-I found no \citation commands---while reading file Bachelor_Thesis.aux
-Database file #1: ref.bib
-You've used 0 entries,
+Database file #1: Bibliography.bib
+You've used 6 entries,
             1791 wiz_defined-function locations,
-            445 strings with 3531 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+            495 strings with 4863 characters,
+and the built_in function-call counts, 1700 in all, are:
+= -- 140
+> -- 102
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 36
+- -- 30
+* -- 165
+:= -- 286
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 6
+duplicate$ -- 54
+empty$ -- 146
+format.name$ -- 30
+if$ -- 351
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 6
+pop$ -- 6
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 18
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 151
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 16
+width$ -- 7
+write$ -- 68
