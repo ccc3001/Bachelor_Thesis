@@ -1272,6 +1272,7 @@ Adam are not sufficient to achieve the best results in the absence of added grad
 }
 
 @Article{Whittier2020,
+<<<<<<< HEAD
   author     = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
   journal    = {Osteoporosis International},
   title      = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
@@ -1281,6 +1282,17 @@ Adam are not sufficient to achieve the best results in the absence of added grad
   pages      = {1607--1627},
   volume     = {31},
   comment    = {In general, density-based measures are less sensitive to motion
+=======
+  author    = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
+  journal   = {Osteoporosis International},
+  title     = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
+  year      = {2020},
+  month     = {may},
+  number    = {9},
+  pages     = {1607--1627},
+  volume    = {31},
+  comment   = {In general, density-based measures are less sensitive to motion
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 artifacts than structure-based measures. It is acceptable to include
 all outcome variables from scans with a motion score of three or
 less, as the precision error is not substantially compromised for
@@ -1291,11 +1303,16 @@ chanical parameters, such as estimated failure load (< 4% error)
 scoring system, motion scoring remains subjective, and op-
 erator agreement has shown to remain only moderate, even
 with intensive training},
+<<<<<<< HEAD
   doi        = {10.1007/s00198-020-05438-5},
   priority   = {prio1},
   publisher  = {Springer Science and Business Media {LLC}},
   ranking    = {rank4},
   readstatus = {read},
+=======
+  doi       = {10.1007/s00198-020-05438-5},
+  publisher = {Springer Science and Business Media {LLC}},
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 }
 
 @Article{Burghardt2011,
@@ -1436,6 +1453,7 @@ construction.
   readstatus = {skimmed},
 }
 
+<<<<<<< HEAD
 @Article{Suzuki2017,
   author    = {Kenji Suzuki},
   journal   = {Radiological Physics and Technology},
@@ -1467,4 +1485,6 @@ skeletal fragility and to improve prediction of fractures.},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+=======
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.25)  14 JAN 2024 17:53
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  7 NOV 2023 14:03
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 entering extended mode
 **./Bachelor_Thesis.tex
 (Bachelor_Thesis.tex
@@ -1155,15 +1159,30 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 2
+<<<<<<< HEAD
 06.
 (C:\Users\johan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tex-gyre\ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
+=======
+10.
+(c:/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
+File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7{c:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+[9] [10
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 
  [7]
 [8]
 chapter 2.
+<<<<<<< HEAD
 <Bone_Network_Structure.png, id=35, 1054.36768pt x 308.43803pt>
 File: Bone_Network_Structure.png Graphic file (type png)
 <use Bone_Network_Structure.png>
@@ -1213,9 +1232,106 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 chapter 4.
 [19] [20
+=======
+<Bone_Network_Structure.png, id=42, 1054.36768pt x 308.43803pt>
+File: Bone_Network_Structure.png Graphic file (type png)
+<use Bone_Network_Structure.png>
+Package pdftex.def Info: Bone_Network_Structure.png  used on input line 258.
+(pdftex.def)             Requested size: 437.73479pt x 128.05116pt.
+<Sode_rotated_scan.png, id=44, 385.44pt x 201.8742pt>
+File: Sode_rotated_scan.png Graphic file (type png)
+<use Sode_rotated_scan.png>
+Package pdftex.def Info: Sode_rotated_scan.png  used on input line 273.
+(pdftex.def)             Requested size: 437.73479pt x 229.26414pt.
+
+Overfull \hbox (13.71216pt too wide) in paragraph at lines 273--274
+ []\T1/qtm/m/n/12 (-20) [h] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./Bone_Network_Structure.png>] [12{c:/texlive/2023/texmf-dist/fonts/enc/d
+vips/tex-gyre/q-qx.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-r
+m.enc} <./Sode_rotated_scan.png>]
+chapter 3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+[15] [16
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
+
+]
+chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+<Conv_Layer.png, id=75, 1798.0776pt x 391.2216pt>
+File: Conv_Layer.png Graphic file (type png)
+<use Conv_Layer.png>
+Package pdftex.def Info: Conv_Layer.png  used on input line 384.
+(pdftex.def)             Requested size: 437.73479pt x 95.23825pt.
+<MaxPooling.jpg, id=76, 407.5225pt x 217.81375pt>
+File: MaxPooling.jpg Graphic file (type jpg)
+<use MaxPooling.jpg>
+Package pdftex.def Info: MaxPooling.jpg  used on input line 397.
+(pdftex.def)             Requested size: 196.97931pt x 105.28058pt.
+<Average_Pooling.jpg, id=77, 407.5225pt x 215.80624pt>
+File: Average_Pooling.jpg Graphic file (type jpg)
+<use Average_Pooling.jpg>
+Package pdftex.def Info: Average_Pooling.jpg  used on input line 405.
+(pdftex.def)             Requested size: 196.97931pt x 104.31026pt.
+
+Underfull \vbox (badness 1354) has occurred while \output is active []
+
+ [18 <./Conv_Layer.png> <./MaxPooling.jpg> <./Average_Pooling.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 551.
+
+LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <8> not available
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 551.
+
+LaTeX Font Info:    Font shape `OMS/txsy/b/n' in size <6> not available
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 551.
+
+
+[22]
 chapter 5.
+<<<<<<< HEAD
 [21] [22
 
 ]
@@ -1226,10 +1342,29 @@ chapter 6.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25])
+=======
+[23
+
+] [24
+
+]
+chapter 6.
+[25] [26
+
+]
+chapter 7.
+(./Bachelor_Thesis.bbl [27] [28
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29])
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 \tf@thm=\write4
 \openout4 = `Bachelor_Thesis.thm'.
 
 
+<<<<<<< HEAD
 [26]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
@@ -1274,4 +1409,36 @@ PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  54283 words of extra memory for PDF output out of 61914 (max. 10000000)
+=======
+[30] (./Bachelor_Thesis.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-06-30>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 15564 strings out of 475237
+ 280155 string characters out of 5768555
+ 1929238 words of memory out of 5000000
+ 36319 multiletter control sequences out of 15000+600000
+ 666408 words of font info for 229 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 122i,16n,121p,10936b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/2023/texm
+f-dist/fonts/type1/public/tex-gyre/qtmbi.pfb><c:/texlive/2023/texmf-dist/fonts/
+type1/public/tex-gyre/qtmr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/t
+ex-gyre/qtmri.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/rtxmi.
+pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive
+/2023/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/urw/bookman/ubkd8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/ur
+w/helvetic/uhvb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr
+8a.pfb>
+Output written on Bachelor_Thesis.pdf (30 pages, 1278073 bytes).
+PDF statistics:
+ 181 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 60447 words of extra memory for PDF output out of 61914 (max. 10000000)
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 
