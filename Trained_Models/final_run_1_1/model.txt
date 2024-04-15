@@ -1,0 +1,32 @@
+
+opt = Adam(0.001)
+model_name = "final_run_1_1"
+model = Chain(
+    #First convolution
+    BatchNorm(1),
+    Conv((3,3), 1=>16,leakyrelu),
+    x-> maxpool(x,(2,2),stride = 2 ),
+    #Second convolution 
+    Conv((3,3), 16=>16,leakyrelu),
+    x-> maxpool(x,(2,2),stride = 2 ),
+
+    #Third convolution 
+    Conv((3,3), 16=>16,leakyrelu),
+    x-> maxpool(x,(2,2),stride = 2),
+
+    #Fourth convolution
+    Conv((3,3), 16=>16,leakyrelu),
+    x-> maxpool(x,(2,2),stride = 2 ),
+
+    #Fifth convolution 
+    Conv((3,3), 16=>16,leakyrelu),
+    Conv((3,3), 16=>16,leakyrelu),
+    #AlphaDropout(0.5),
+    Flux.GlobalMeanPool(),
+    Flux.flatten,
+    #Fully connected layer
+    Dense(16=>1),
+    sigmoid_fast
+    #TODO: softmax needs to be added to last dense layer
+
+    )|> gpu 
