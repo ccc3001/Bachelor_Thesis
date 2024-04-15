@@ -219,7 +219,7 @@ to ensure the correctness of the labeled data three doctors of the institution l
  If we compare the data to the amount of data used in training state of the art networks like ImageNet with many Million Examples it's a small fraction. This comes on the one hand from the fact that the labeling task in medical imaging can just be performed my professionals and therefore the labeling process is costly and just a few people can do it. Another issue is the availability of data since patient data cant be accessed and used as easy. Therefore we need to find a way to augment the data so that we don't run into problems like overfitting the network or poor generalization of the network 
   
 
-\cite{Sode2011} uses the power of CNNs to train a network for grading motion artifacts. Deep learning techniques, particularly CNNs, have revolutionized medical image analysis. CNNs are a %TODO: short description of cnns maybe also about the use of medical imaging in other arreas 
+1\cite{Sode2011} uses the power of CNNs to train a network for grading motion artifacts. Deep learning techniques, particularly CNNs, have revolutionized medical image analysis. CNNs are a %TODO: short description of cnns maybe also about the use of medical imaging in other arreas 
 CNNs excel at tasks such as image segmentation, object detection, and classification. With their ability to automatically learn intricate patterns and features from complex visual data, enabling more accurate and efficient diagnostic processes. %more information necessary 
 Even with the simplistic structure chosen in \cite{Sode2011} the Network is reaching a accuracy of ..., this can lead to the assumtion that a more suffisticated network might be more suitable . In this paper we will build on those findings and try to create a stronger network with state of the art CNN building blocks 
 
@@ -271,7 +271,7 @@ High resolution peripheral quantitative computer tomography(HR-pQCT) is a  dedic
 %i dont really now how to merge the two parts maybe with the data part but maybe it can be seen as a sub section and does not need to be connected 
 
 %machine learning 
-In the recent years machine learning has become a popular in the research domain due to its versatile nature. It is a branch of artificial intelligence and computer science which focuses on the use of data and algorithms to imitate the way humans learn. A machine learning algorithm operates by processing data to identify patterns and connections. It learns from the data through a training process, adjusting its internal parameters to minimize a measure called "loss." This loss quantifies the difference between the algorithm's predictions and the actual outcomes in the training data. The algorithm iteratively refines its parameters to reduce this loss, making its predictions more accurate. Once trained, the algorithm can apply its learning to new, unseen data, aiming to make predictions or classifications with minimized error based on its learned patterns.
+In the recent years machine learning has become popular in the research domain due to its versatile nature. It is a branch of artificial intelligence and computer science which focuses on the use of data and algorithms to imitate the way humans learn. A machine learning algorithm operates by processing data to identify patterns and connections. It learns from the data through a training process, adjusting its internal parameters to minimize a measure called "loss." This loss quantifies the difference between the algorithm's predictions and the actual outcomes in the training data. The algorithm iteratively refines its parameters to reduce this loss, making its predictions more accurate. Once trained, the algorithm can apply its learning to new, unseen data, aiming to make predictions or classifications with minimized error based on its learned patterns.
 %optimizers
 The process of refining the data is done by a so called optimizer. There are various different optimization algorithms like stochastic gradient descent, RMSprop, Momentum or Adam. These algorithms differ in how they calculate and apply parameter updates based on the gradients of the loss funciton with respect to the models parameters (weight and biases) during training. The optimizer  seeks to find the optimal set of parameters by iteratively updating the parameters in a way that moves the model in the direciton of decreasing loss.
 
@@ -419,9 +419,10 @@ adding a small amount of gaussian noise does not impact the general look of the 
 
 %Data.
 
-\begin{center}
+\begin{table}[h]
+	\centering
 	\begin{tabular}{||c|c|c||}
-		
+		\hline
 		 Motion Grade&  Tibia rounded& Radius rounded  	\\
 		\hline
 		\hline
@@ -436,11 +437,18 @@ adding a small amount of gaussian noise does not impact the general look of the 
 		5 &  2&  8 \\
 		\hline
 	\end{tabular}
-\end{center}
+\end{table}
+%TODO: ich brauche mehr informationen in der tabelle 
+The data was provided by the osteology department of the ``Unfall Klinikum Eppendorf'' and labelled by 3 doctors of the department (need to check weather that is correct). The labelled data contained 500 Scans of the radius and 500 scans of the tibia. In  51.1 \% of all scans the doctors had a consensus, 57\% for grading tibia scans and 45.2\% for grading radius scans. 
 
-The data was provided by the osteology department of the ``Unfall Klinikum Eppendorf'' and Labeled by 3 doctors of the department (need to check wether thats correct). The labeled data contained 500 Scans of the radius and 500 scans of the tibia. In  51.1 \% of all scans the doctors had a consens, 57\% for grading the tibia and 45.2\% for grading the radius. 
+In 7.4\% of scans the two of the researchers chose the value 3 or 4 and the other one the opposite value making it unclear if a rescan is necessary. In 4.6\% of tibia and 10.2 \% of the radius scans this was the case. 
 
-In 7.4\% a rescan could have occured 4.6\% for tibia and 10.2 percent for the radius. This is hard to compare since we have a way bigger amount of values in the domain of 3 and 4 for the radius compared to the tibia. If we therefore link the amount of values that where the rounded gathered rating was 3 or 4 with the possibility of a rescan we get : 34\% for tibia and 27.9\% overall this concludes to  %TODO this text need to be rewritten because of lack of motivation
+Those percentages are hard to comparable since we have to see trends on a small sets of data. It could also just been that a lot of scans that were in the range of 3 and 4 were evaluated for the radius compared to the tibia since the radius nearly has 4.5 times as many scans where the rounded average grade was either 3 or 4.
+
+
+If we link the amount of scans where the average grade was between 3 and 4 with the amount of possible rescans in that domain we get uncertainty for a rescan of 30.95 \% with a 34\% chance for tibia and 27.9\% for radius scans. 
+%TODO: mehr informationen sammeln
+
 \chapter{Experimental Setup}
 
 
