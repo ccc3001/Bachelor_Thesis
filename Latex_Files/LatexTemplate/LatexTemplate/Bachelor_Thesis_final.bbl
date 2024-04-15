@@ -1,0 +1,171 @@
+\begin{thebibliography}{10}
+
+\bibitem{Walle2023}
+Matthias Walle, Dominic Eggemann, Penny~R. Atkins, Jack~J. Kendall, Kerstin
+  Stock, Ralph Müller, and Caitlyn~J. Collins.
+\newblock Motion grading of high-resolution quantitative computed tomography
+  supported by deep convolutional neural networks.
+\newblock {\em Bone}, 166:116607, jan 2023.
+
+\bibitem{Whittier2020}
+D.E. Whittier, S.K. Boyd, A.J. Burghardt, J.~Paccou, A.~Ghasem-Zadeh,
+  R.~Chapurlat, K.~Engelke, and M.L. Bouxsein.
+\newblock Guidelines for the assessment of bone density and microarchitecture
+  in vivo using high-resolution peripheral quantitative computed tomography.
+\newblock {\em Osteoporosis International}, 31(9):1607--1627, may 2020.
+
+\bibitem{LeCun2015}
+Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
+\newblock Deep learning.
+\newblock {\em Nature}, 521(7553):436--444, may 2015.
+
+\bibitem{Yamashita2018}
+Rikiya Yamashita, Mizuho Nishio, Richard Kinh~Gian Do, and Kaori Togashi.
+\newblock Convolutional neural networks: an overview and application in
+  radiology.
+\newblock {\em Insights into Imaging}, 9(4):611--629, jun 2018.
+
+\bibitem{Burghardt2011}
+Andrew~J. Burghardt, Thomas~M. Link, and Sharmila Majumdar.
+\newblock High-resolution computed tomography for clinical imaging of bone
+  microarchitecture.
+\newblock {\em Clinical Orthopaedics Related Research}, 469(8):2179--2193, aug
+  2011.
+
+\bibitem{Bergh2021}
+J.P. van~den Bergh, P.~Szulc, A.M. Cheung, M.~Bouxsein, K.~Engelke, and
+  R.~Chapurlat.
+\newblock The clinical application of high-resolution peripheral computed
+  tomography ({HR}-{pQCT}) in adults: state of the art and future directions.
+\newblock {\em Osteoporosis International}, 32(8):1465--1485, may 2021.
+
+\bibitem{Tian2022}
+Yingjie Tian, Duo Su, Stanislao Lauria, and Xiaohui Liu.
+\newblock Recent advances on loss functions in deep learning for computer
+  vision.
+\newblock {\em Neurocomputing}, 497:129--158, August 2022.
+
+\bibitem{Ruder2016}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms, 2016.
+
+\bibitem{Kingma2014}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization, 2014.
+
+\bibitem{Loshchilov2017}
+Ilya Loshchilov and Frank Hutter.
+\newblock Decoupled weight decay regularization.
+\newblock November 2017.
+
+\bibitem{Neelakantan2015}
+Arvind Neelakantan, Luke Vilnis, Quoc~V. Le, Ilya Sutskever, Lukasz Kaiser,
+  Karol Kurach, and James Martens.
+\newblock Adding gradient noise improves learning for very deep networks, 2015.
+
+\bibitem{Ioffe2015}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock February 2015.
+
+\bibitem{Khan2020}
+Asifullah Khan, Anabia Sohail, Umme Zahoora, and Aqsa~Saeed Qureshi.
+\newblock A survey of the recent architectures of deep convolutional neural
+  networks.
+\newblock {\em Artificial Intelligence Review}, 53(8):5455--5516, apr 2020.
+
+\bibitem{Mishkin2017}
+Dmytro Mishkin, Nikolay Sergievskiy, and Jiri Matas.
+\newblock Systematic evaluation of convolution neural network advances on the
+  imagenet.
+\newblock {\em Computer Vision and Image Understanding}, 161:11--19, aug 2017.
+
+\bibitem{Bridle1990}
+John~S Bridle.
+\newblock Probabilistic interpretation of feedforward classification network
+  outputs, with relationships to statistical pattern recognition.
+\newblock In {\em Neurocomputing: Algorithms, architectures and applications},
+  pages 227--236. Springer, 1990.
+
+\bibitem{Alzubaidi2021}
+Laith Alzubaidi, Jinglan Zhang, Amjad~J. Humaidi, Ayad Al-Dujaili, Ye~Duan,
+  Omran Al-Shamma, J.~Santamar{\'{\i}}a, Mohammed~A. Fadhel, Muthana Al-Amidie,
+  and Laith Farhan.
+\newblock Review of deep learning: concepts, {CNN} architectures, challenges,
+  applications, future directions.
+\newblock {\em Journal of Big Data}, 8(1), mar 2021.
+
+\bibitem{Szegedy2015}
+Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir
+  Anguelov, Dumitru Erhan, Vincent Vanhoucke, and Andrew Rabinovich.
+\newblock Going deeper with convolutions.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, June 2015.
+
+\bibitem{He2016a}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, June 2016.
+
+\bibitem{Richter2021}
+Mats~L. Richter, Julius Schoning, Anna Wiedenroth, and Ulf Krumnack.
+\newblock Should you go deeper? optimizing convolutional neural network
+  architectures without training.
+\newblock In {\em 2021 20th IEEE International Conference on Machine Learning
+  and Applications (ICMLA)}. IEEE, December 2021.
+
+\bibitem{Shorten2019}
+Connor Shorten and Taghi~M. Khoshgoftaar.
+\newblock A survey on image data augmentation for deep learning.
+\newblock {\em Journal of Big Data}, 6(1), July 2019.
+
+\bibitem{Zhang2020}
+Qiang Zhang, Evan Hann, Konrad Werys, Cody Wu, Iulia Popescu, Elena Lukaschuk,
+  Ahmet Barutcu, Vanessa~M. Ferreira, and Stefan~K. Piechnik.
+\newblock Deep learning with attention supervision for automated motion
+  artefact detection in quality control of cardiac t1-mapping.
+\newblock {\em Artificial Intelligence in Medicine}, 110:101955, nov 2020.
+
+\bibitem{Raghu2019}
+Maithra Raghu, Chiyuan Zhang, Jon Kleinberg, and Samy Bengio.
+\newblock Transfusion: Understanding transfer learning for medical imaging.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle
+  Alch\'{e}-Buc, E.~Fox, and R.~Garnett, editors, {\em Advances in Neural
+  Information Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+
+\bibitem{Dinga2019}
+Richard Dinga, Brenda~W.J.H. Penninx, Dick~J. Veltman, Lianne Schmaal, and
+  Andre~F. Marquand.
+\newblock August 2019.
+
+\bibitem{Cohen1960}
+Jacob Cohen.
+\newblock A coefficient of agreement for nominal scales.
+\newblock {\em Educational and Psychological Measurement}, 20(1):37--46, April
+  1960.
+
+\bibitem{Vieira2010}
+Susana~M. Vieira, Uzay Kaymak, and Joao M.~C. Sousa.
+\newblock Cohen’s kappa coefficient as a performance measure for feature
+  selection.
+\newblock In {\em International Conference on Fuzzy Systems}. IEEE, July 2010.
+
+\bibitem{glorot2010}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In Yee~Whye Teh and Mike Titterington, editors, {\em Proceedings of
+  the Thirteenth International Conference on Artificial Intelligence and
+  Statistics}, volume~9 of {\em Proceedings of Machine Learning Research},
+  pages 249--256, Chia Laguna Resort, Sardinia, Italy, 13--15 May 2010. PMLR.
+
+\bibitem{Tran2019}
+Doris My-Lan Tran, Nicolas Vilayphiou, and Bruno Koller.
+\newblock Clinical in vivo assessment of bone microarchitecture with ct
+  scanners: An enduring challenge.
+\newblock {\em Journal of Bone and Mineral Research}, 35(2):415--416, December
+  2019.
+
+\end{thebibliography}
