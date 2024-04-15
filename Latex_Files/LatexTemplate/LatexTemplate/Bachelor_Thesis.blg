@@ -3,46 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Bachelor_Thesis.aux
 The style file: unsrt.bst
 Database file #1: Bibliography.bib
+Warning--empty journal in Loshchilov2017
 Warning--empty journal in Ioffe2015
-You've used 16 entries,
+Warning--empty title in Dinga2019
+Warning--empty journal in Dinga2019
+You've used 28 entries,
             1791 wiz_defined-function locations,
-            554 strings with 6924 characters,
-and the built_in function-call counts, 3883 in all, are:
-= -- 292
-> -- 270
-< -- 1
-+ -- 95
-- -- 79
-* -- 334
-:= -- 657
-add.period$ -- 45
-call.type$ -- 16
-change.case$ -- 16
+            637 strings with 9684 characters,
+and the built_in function-call counts, 6924 in all, are:
+= -- 549
+> -- 429
+< -- 4
++ -- 152
+- -- 124
+* -- 567
+:= -- 1136
+add.period$ -- 85
+call.type$ -- 28
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 129
-empty$ -- 346
-format.name$ -- 79
-if$ -- 812
+cite$ -- 32
+duplicate$ -- 276
+empty$ -- 639
+format.name$ -- 124
+if$ -- 1488
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 12
-newline$ -- 79
-num.names$ -- 18
-pop$ -- 48
+int.to.str$ -- 28
+missing$ -- 25
+newline$ -- 139
+num.names$ -- 32
+pop$ -- 93
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 54
+skip$ -- 114
 stack$ -- 0
-substring$ -- 232
-swap$ -- 17
-text.length$ -- 1
+substring$ -- 387
+swap$ -- 51
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 33
-width$ -- 18
-write$ -- 165
-(There was 1 warning)
+warning$ -- 4
+while$ -- 60
+width$ -- 30
+write$ -- 296
+(There were 4 warnings)

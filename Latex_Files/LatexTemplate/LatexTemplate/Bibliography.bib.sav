@@ -1,3 +1,350 @@
+<<<<<<< HEAD
+@Article{Suzuki2017,
+  author    = {Kenji Suzuki},
+  journal   = {Radiological Physics and Technology},
+  title     = {Overview of deep learning in medical imaging},
+  year      = {2017},
+  month     = {jul},
+  number    = {3},
+  pages     = {257--273},
+  volume    = {10},
+  doi       = {10.1007/s12194-017-0406-5},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Bergh2021,
+  author    = {J.P. van den Bergh and P. Szulc and A.M. Cheung and M. Bouxsein and K. Engelke and R. Chapurlat},
+  journal   = {Osteoporosis International},
+  title     = {The clinical application of high-resolution peripheral computed tomography ({HR}-{pQCT}) in adults: state of the art and future directions},
+  year      = {2021},
+  month     = {may},
+  number    = {8},
+  pages     = {1465--1485},
+  volume    = {32},
+  comment   = {-(HR-pQCT) is a low-
+dose X-ray-based imaging technique that was initially devel-
+oped to image bone microarchitecture in vivo at peripheral
+skeletal sites to gain insight into pathophysiology underlying
+skeletal fragility and to improve prediction of fractures.},
+  doi       = {10.1007/s00198-021-05999-z},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Agostinelli2014,
+  author        = {Agostinelli, Forest and Hoffman, Matthew and Sadowski, Peter and Baldi, Pierre},
+  title         = {Learning Activation Functions to Improve Deep Neural Networks},
+  year          = {2014},
+  month         = dec,
+  abstract      = {Artificial neural networks typically have a fixed, non-linear activation function at each neuron. We have designed a novel form of piecewise linear activation function that is learned independently for each neuron using gradient descent. With this adaptive activation function, we are able to improve upon deep neural network architectures composed of static rectified linear units, achieving state-of-the-art performance on CIFAR-10 (7.51%), CIFAR-100 (30.83%), and a benchmark from high-energy physics involving Higgs boson decay modes.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1412.6830},
+  eprint        = {1412.6830},
+  file          = {:http\://arxiv.org/pdf/1412.6830v3:PDF},
+  keywords      = {Neural and Evolutionary Computing (cs.NE), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.NE},
+  publisher     = {arXiv},
+}
+
+@InProceedings{Zhou2016,
+  author     = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
+  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title      = {Learning Deep Features for Discriminative Localization},
+  year       = {2016},
+  month      = {June},
+  comment    = {-global average pool-
+ing which acts as a structural regularizer, preventing over-
+fitting during training
+-CAM: . A class activation map for a particular cat-
+egory indicates the discriminative image regions used by the
+CNN to identify that category
+
+-way easyer to compute that Grad Cam but just works for networks that end with conv and dense layer 
+
+-We found that the localization ability of the networks im-
+proved when the last convolutional layer before GAP had a
+higher spatial resolution
+-CAM enables classification-trained CNNs to learn
+to perform object localization, without using any bounding
+box annotations},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+}
+
+@Article{Zhang2020,
+  author     = {Qiang Zhang and Evan Hann and Konrad Werys and Cody Wu and Iulia Popescu and Elena Lukaschuk and Ahmet Barutcu and Vanessa M. Ferreira and Stefan K. Piechnik},
+  journal    = {Artificial Intelligence in Medicine},
+  title      = {Deep learning with attention supervision for automated motion artefact detection in quality control of cardiac T1-mapping},
+  year       = {2020},
+  month      = {nov},
+  pages      = {101955},
+  volume     = {110},
+  comment    = {uniformly distributed random rotation within ±5 degrees
+and translation within ±10 pixels around the manually annotated centre
+of LV cavity
+- initial learning rate 0.001, which was lowered by
+a factor of 10 at the validation loss plateaus with a patience of 30 epoch.
+Adam [38] was used as the optimise},
+  doi        = {10.1016/j.artmed.2020.101955},
+  priority   = {prio1},
+  publisher  = {Elsevier {BV}},
+  readstatus = {skimmed},
+}
+
+@InProceedings{Zhang2018,
+  author     = {Zijun Zhang},
+  booktitle  = {2018 {IEEE}/{ACM} 26th International Symposium on Quality of Service ({IWQoS})},
+  title      = {Improved Adam Optimizer for Deep Neural Networks},
+  year       = {2018},
+  month      = {jun},
+  publisher  = {{IEEE}},
+  abstract   = {-Adam and RMSprop, have witnessed better optimization performance
+than stochastic gradient descent (SGD) in some scenarios.
+However, recent studies show that they often lead to worse
+generalization performance than SGD},
+  comment    = {-Adam does not
+preserve the directions of gradients as SGD does
+- the magnitude of each vector’s direction
+change depends on its L2-norm
+- fix the problem for Adam by
+explicitly normalizing each weight vector, and by opti-
+mizing only its direction,
+
+- we apply
+batch normalization or L2-regularization to the logits,
+which further improves the generalization performance
+in classification tasks
+
+-roposed algorithm adapts the
+learning rate to each input weight vector, instead of each
+individual weight, such that the direction of the gradient is
+preserved},
+  doi        = {10.1109/iwqos.2018.8624183},
+  priority   = {prio2},
+  ranking    = {rank4},
+  readstatus = {read},
+}
+
+@InCollection{Zeiler2014,
+  author    = {Matthew D. Zeiler and Rob Fergus},
+  booktitle = {Computer Vision {\textendash} {ECCV} 2014},
+  publisher = {Springer International Publishing},
+  title     = {Visualizing and Understanding Convolutional Networks},
+  year      = {2014},
+  pages     = {818--833},
+  abstract  = {-},
+  doi       = {10.1007/978-3-319-10590-1_53},
+}
+
+@Article{Yamashita2018,
+  author     = {Rikiya Yamashita and Mizuho Nishio and Richard Kinh Gian Do and Kaori Togashi},
+  journal    = {Insights into Imaging},
+  title      = {Convolutional neural networks: an overview and application in radiology},
+  year       = {2018},
+  month      = {jun},
+  number     = {4},
+  pages      = {611--629},
+  volume     = {9},
+  comment    = {-Two key hyperparameters that define the
+convolution operation are size and number of kernels. The
+former is typically 3 × 3, but sometimes 5 × 5 or 7 × 7
+- zeros are added on each side of the input tensor,
+so as to fit the center of a kernel on the outermost element and
+keep the same in-plane dimension through the convolution
+operation
+
+Convolution layer Kernels Kernel size, number of kernels, stride, padding, activation function
+
+Pooling layer None Pooling method, filter size, stride, padding
+
+Fully connected layer Weights Number of weights, activation function
+
+Others Model architecture, optimizer, learning rate, loss function, mini-batch
+size, epochs, regularization, weight initialization, dataset splitting
+
+- A max pooling with a filter of size 2 × 2 with a
+stride of 2 is commonly used in practice
+
+-Global average pooling typically applied only once before  the fully connected layers
+
+-ctivation function applied to the last fully connected
+layer is usually different from the others
+-softmax function which normalizes out-
+put real values from the last fully connected layer to target
+class probabilities
+
+- many improvements on the gra-
+dient descent algorithm have been proposed and widely used,
+such as SGD with momentum, RMSprop, and Adam
+
+-Dropout is a recently introduced reg-
+ularization technique where randomly selected activations are set to 0 during the training, so that the model becomes less
+sensitive to specific weights in the network	
+
+-include regularization with dropout or weight decay, batch
+normalization, and data augmentation, as well as reducing
+architectural complexity
+
+-There are a couple of techniques
+available to train a model efficiently on a smaller dataset: data
+augmentation and transfer learning.
+
+-whether transfer learning with such networks im-
+proves the performance in the medical field compared to that
+with ImageNet pretrained models is not clear and remains an
+area of further investigation
+
+-Transfere Learning :network is
+pretrained on an extremely large dataset, such as ImageNet -> you can also just use a pretrained convolution base for the network that is just capable to recognize the main features 
+
+- the annotation cost for aradiological image is much larger than a general image because radiologist expertise is required for annotation.
+
+- adding a small amount of gaussian noise doesnt impact the generall look of the picture which means it would still be interpreted the same way from a doctor that means that we can use this methode to modify our data},
+  doi        = {10.1007/s13244-018-0639-9},
+  priority   = {prio1},
+  publisher  = {Springer Science and Business Media {LLC}},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@Misc{Woo2018,
+  author     = {Woo, Sanghyun and Park, Jongchan and Lee, Joon-Young and Kweon, In So},
+  title      = {CBAM: Convolutional Block Attention Module},
+  year       = {2018},
+  abstract   = {a simple yet effective attention module for feed-forward convolutional
+neural networks},
+  comment    = {esearches have mainly investigated three
+important factors of networks: depth, width, and cardinality
+-The overview of CBAM: The module has two sequential sub-modules:
+channel and spatial. The intermediate feature map is adaptively refined through
+our module (CBAM) at every convolutional block of deep networks
+-An intuitive and simple way of extension is to increase the depth of neural
+networks
+-naive increase in depth comes to saturation due to the difficulty of gradient
+propagation
+-introduces  cannel attention and spatial attention model 
+-One can seamlessly integrate CBAM in any CNN architectures and jointly train the combined
+CBAM-enhanced networks
+-CBAM outperforms all the
+Convolutional Block Attention Module 7
+baselines without bells and whistles, demonstrating the general applicability of
+CBAM across different architectures as well as different tasks.
+-Using both
+attention is critical while the best-combining strategy is Network+ channel + spatial
+- Grad Cam shows that the use of CBAM in a network gives it a better better and more precise way of detecting objects 
+-improve representation power of CNN networks
+
+-},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1807.06521},
+  keywords   = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  readstatus = {read},
+}
+
+@InProceedings{Woo2023,
+  author    = {Woo, Sanghyun and Debnath, Shoubhik and Hu, Ronghang and Chen, Xinlei and Liu, Zhuang and Kweon, In So and Xie, Saining},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {ConvNeXt V2: Co-Designing and Scaling ConvNets With Masked Autoencoders},
+  year      = {2023},
+  month     = {June},
+  pages     = {16133-16142},
+}
+
+@Article{Whittier2020,
+  author     = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
+  journal    = {Osteoporosis International},
+  title      = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
+  year       = {2020},
+  month      = {may},
+  number     = {9},
+  pages      = {1607--1627},
+  volume     = {31},
+  comment    = {In general, density-based measures are less sensitive to motion
+artifacts than structure-based measures. It is acceptable to include
+all outcome variables from scans with a motion score of three or
+less, as the precision error is not substantially compromised for
+density (< 1% error), microarchitecture (< 5% error), and biome-
+chanical parameters, such as estimated failure load (< 4% error)
+
+-.However, even with a standardized
+scoring system, motion scoring remains subjective, and op-
+erator agreement has shown to remain only moderate, even
+with intensive training},
+  doi        = {10.1007/s00198-020-05438-5},
+  priority   = {prio1},
+  publisher  = {Springer Science and Business Media {LLC}},
+  ranking    = {rank4},
+  readstatus = {read},
+}
+
+@Article{Wang2015,
+  author        = {Wang, Limin and Guo, Sheng and Huang, Weilin and Qiao, Yu},
+  title         = {Places205-VGGNet Models for Scene Recognition},
+  year          = {2015},
+  month         = aug,
+  abstract      = {VGGNets have turned out to be effective for object recognition in still images. However, it is unable to yield good performance by directly adapting the VGGNet models trained on the ImageNet dataset for scene recognition. This report describes our implementation of training the VGGNets on the large-scale Places205 dataset. Specifically, we train three VGGNet models, namely VGGNet-11, VGGNet-13, and VGGNet-16, by using a Multi-GPU extension of Caffe toolbox with high computational efficiency. We verify the performance of trained Places205-VGGNet models on three datasets: MIT67, SUN397, and Places205. Our trained models achieve the state-of-the-art performance on these datasets and are made public available.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1508.01667},
+  eprint        = {1508.01667},
+  file          = {:http\://arxiv.org/pdf/1508.01667v1:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@InProceedings{Wang2013,
+  author     = {Wang, Sida and Manning, Christopher},
+  booktitle  = {Proceedings of the 30th International Conference on Machine Learning},
+  title      = {Fast dropout training},
+  year       = {2013},
+  address    = {Atlanta, Georgia, USA},
+  editor     = {Dasgupta, Sanjoy and McAllester, David},
+  month      = {17--19 Jun},
+  number     = {2},
+  pages      = {118--126},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {28},
+  comment    = {-Dropout played
+an important role in the systems that won recent
+learning competitions such as ImageNet
+- Fast dropout fits into
+the general framework of integrating out noise added
+to the training data
+-include bernoulli function over probability of not dropping out in stochastic gradient descent 
+-Fast dropout is directly ap-
+plicable to dropping out the final hidden layer of neu-
+ral networks
+-When the number of hidden units is
+more than 10 or so, we may again approximate their
+inputs as Gaussians and characterize their outputs by
+the output means and variances
+
+-we use the output mean and variance to optimize the network but i dont really understand it 
+
+-gradient approximation using Gaussian
+samples is comparable to the difference between dif-
+ferent MC dropout runs with 200 samples
+
+- accuracy and time taken, in the top half of table
+1. Sampling from the Gaussian is generally around 10
+times faster than MC dropout and performs compara-
+bly
+
+-presented a way of getting the benefits of dropout
+training without actually sampling, thereby speeding
+up the process by an order of magnitude},
+  pdf        = {http://proceedings.mlr.press/v28/wang13a.pdf},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://proceedings.mlr.press/v28/wang13a.html},
+}
+
 @Article{Walle2023,
   author     = {Matthias Walle and Dominic Eggemann and Penny R. Atkins and Jack J. Kendall and Kerstin Stock and Ralph Müller and Caitlyn J. Collins},
   journal    = {Bone},
@@ -13,144 +360,292 @@
   readstatus = {skimmed},
 }
 
-@Article{Zhang2020,
-  author     = {Qiang Zhang and Evan Hann and Konrad Werys and Cody Wu and Iulia Popescu and Elena Lukaschuk and Ahmet Barutcu and Vanessa M. Ferreira and Stefan K. Piechnik},
-  journal    = {Artificial Intelligence in Medicine},
-  title      = {Deep learning with attention supervision for automated motion artefact detection in quality control of cardiac T1-mapping},
-  year       = {2020},
-  month      = {nov},
-  pages      = {101955},
-  volume     = {110},
-  doi        = {10.1016/j.artmed.2020.101955},
-  publisher  = {Elsevier {BV}},
+ 
+@InProceedings{Vieira2010,
+  author    = {Vieira, Susana M. and Kaymak, Uzay and Sousa, Joao M. C.},
+  booktitle = {International Conference on Fuzzy Systems},
+  title     = {Cohen’s kappa coefficient as a performance measure for feature selection},
+  year      = {2010},
+  month     = jul,
+  publisher = {IEEE},
+  comment   = {-main idea of feature selection is to choose a subset of available features , by eliminating features with little or no predictive information
+
+-performance assesments are usually done using a validation set or by cross-validation. nevertheless there is always the question how to measure the performance between different models? in this paper the importance of the robustness of this measure is targeted. Cohen's kappa coefficient is a statistical measure of inter-rater  agreement for qualitative items. it is genreally thought to be a more robust measure  than simple percent agreement calculation since it takes into account the agreement occuring by chance 
+
+-Cohens Kappa [4] was first introduced as a measure of
+agreement between observers of psychological behavior. The
+original intent of Cohens Kappa was to measure the degree of
+agreement or disagreement of two or more people observing
+the same phenomenon.},
+  doi       = {10.1109/fuzzy.2010.5584447},
+}
+
+ 
+@Article{Tian2022,
+  author     = {Tian, Yingjie and Su, Duo and Lauria, Stanislao and Liu, Xiaohui},
+  journal    = {Neurocomputing},
+  title      = {Recent advances on loss functions in deep learning for computer vision},
+  year       = {2022},
+  issn       = {0925-2312},
+  month      = aug,
+  pages      = {129--158},
+  volume     = {497},
+  doi        = {10.1016/j.neucom.2022.04.127},
+  priority   = {prio2},
+  publisher  = {Elsevier BV},
+  ranking    = {rank4},
   readstatus = {skimmed},
 }
 
-@Article{Lorch2017,
-  author     = {Benedikt Lorch and Ghislain Vaillant and Christian Baumgartner and Wenjia Bai and Daniel Rueckert and Andreas Maier},
-  journal    = {Journal of Medical Engineering},
-  title      = {Automated Detection of Motion Artefacts in {MR} Imaging Using Decision Forests},
-  year       = {2017},
-  month      = {jun},
-  pages      = {1--9},
-  volume     = {2017},
-  doi        = {10.1155/2017/4501647},
-  publisher  = {Hindawi Limited},
-  readstatus = {skimmed},
-}
+@InCollection{Tan2018,
+  author     = {Chuanqi Tan and Fuchun Sun and Tao Kong and Wenchang Zhang and Chao Yang and Chunfang Liu},
+  booktitle  = {Artificial Neural Networks and Machine Learning {\textendash} {ICANN} 2018},
+  publisher  = {Springer International Publishing},
+  title      = {A Survey on Deep Transfer Learning},
+  year       = {2018},
+  pages      = {270--279},
+  abstract   = {Transfer learning relaxes the hypothesis
+that the training data must be independent and identically distributed
+(i.i.d.) with the test data, which motivates us to use transfer learning
+to solve the problem of insufficient training data.
 
-@Article{Alzubaidi2021,
-  author     = {Laith Alzubaidi and Jinglan Zhang and Amjad J. Humaidi and Ayad Al-Dujaili and Ye Duan and Omran Al-Shamma and J. Santamar{\'{\i}}a and Mohammed A. Fadhel and Muthana Al-Amidie and Laith Farhan},
-  journal    = {Journal of Big Data},
-  title      = {Review of deep learning: concepts, {CNN} architectures, challenges, applications, future directions},
-  year       = {2021},
-  month      = {mar},
-  number     = {1},
-  volume     = {8},
-  comment    = {Optimizer selection:
-- two major issues in the learning process are learning algorithm selection(optimizer) while the other one is the issue of many enhancements(AdaDelta, Adagrad, and momentum)
-- batch gradient descent: the network
-parameters are updated merely one time behind considering all training datasets via
-the network
--Stochastic Gradient Descent: The parameters are updated at each training sample
-Mini-batch Gradient Descent: In this approach, the training samples are partitioned
-into several mini-batches
--other methodes are Momentum and Adaptive Moment Estimation
--AlexNet improved its learning ability by its depth and implementing several parameter optimization strategies-> number extraction stages was increased
-- ZefNet was the frontier network, which proposed that filters with small sizes
-could enhance the CNN performance
--VGG inserted a
-layer of the heap of 3 × 3 filters rather than the 5 × 5 and 11 × 11 filters in ZefNet.
--GoogLeNet combines multiple-scale convolutional transformations by employing merge, transform, and split functions for feature extraction
--architecture incorporates filters Page 31 of 74Alzubaidi et al. J Big Data (2021) 8:53
-of different sizes (5 × 5, 3 × 3, and 1 × 1) to capture channel information together with
-spatial information at diverse ranges of spatial resolution
--proposed the idea of aux-
-iliary learners to speed up the rate of convergence
--The novel idea of ResNet is its use of the
-bypass pathway concept
--ayer widening is a highly successful method of per-
-formance enhancement compared to deepening the residual network.
--slow enlargement in the feature map depth based on the
-up-down method
--Xception model
-adjusted the original inception block by making it wider and exchanging a single
-dimension (3 × 3) followed by a 1 × 1 convolution to reduce computational complex-
-ity
+- this paper introduces instance based, mapping based, network based and adversarial based transfer learning approaches},
+  comment    = {-Transfer learning (TL) is a technique in machine learning (ML) in which knowledge learned from a task is re-used in order to boost performance on a related task.[1] For example, for image classification, knowledge gained while learning to recognize cars could be applied when trying to recognize trucks. This topic is related to the psychological literature on transfer of learning, although practical ties between the two fields are limited. Reusing/transferring information from previously learned tasks to new tasks has the potential to significantly improve learning efficiency
 
--> high resolution network might be a good approach for my thesis (necessary for position-sensitive vision tasks)
+- might be intresting if i dont want to train tibia and radius together then i might first train radius and afterwards tibia to imrove its performance 
 
-- TL as compared to the target dataset. For instance,
-enhancing the medical image classification performance of CNN models is achieved
-by training the models using the ImageNet dataset, which contains natural images
+- First, network was trained
+in source domain with large-scale training dataset. Second, partial of network pretrained for source domain are transfer to be a part of new network designed for target domain
 
--TL from different domains does not significantly affect performance on
-medical imaging tasks
+-Instances-based: Utilize instances in source domain by appropriate weight
 
--ncrease the amount of available data and avoid the overfitting issue, data
-augmentation techniques are one possible solution : Flipping, Cropping 
-Rotation Translation
+Although there
+are different between two domains, partial instances in the source domain can
+be utilized by the target domain with appropriate weights
 
-- biological data tends to be imbalanced, as negative samples are much more numerous than positive ones, care for this before training because the model might not perform well on small classes 
--in healthcare or similar
-applications, the uncertainty scaling is frequently very significant
+-Mapping-based: Mapping instances from two domains into a new data space with better similarity
 
--paper has greate information about how to tackle the vanishing gradient problem 
--underspecification: It has been shown that small modifica-
-tions can force a model towards a completely different solution as well as lead to dif-
-ferent predictions in deployment domains
+Although there are different between two origin domains, they can be more similarly in an elaborate new data space.
 
-Paper contains many intresting evaluation techniques like :Accuracy Sensitivity Specificity, Precision, F1_Score, J_Score, False Positive Rate FPR, Area Under the ROC Curve},
-  doi        = {10.1186/s40537-021-00444-8},
-  priority   = {prio1},
-  publisher  = {Springer Science and Business Media {LLC}},
-  ranking    = {rank5},
+-Network-based: Reuse the partial of network pre-trained in the source domain
+
+Neural network is similar to the processing mechanism of the human brain, and it is an iterative and continuous
+abstraction process. The front-layers of the network can be treated as a feature
+extractor, and the extracted features are versatile
+
+-Adversarial-based: Use adversarial technology to find transferable features that both suitable for two domains
+
+Although there
+are different between two domains, partial instances in the source domain can
+be utilized by the target domain with appropriate weights},
+  doi        = {10.1007/978-3-030-01424-7_27},
+  priority   = {prio2},
+  ranking    = {rank3},
   readstatus = {read},
 }
 
-@Article{LeCun2015,
-  author    = {Yann LeCun and Yoshua Bengio and Geoffrey Hinton},
-  journal   = {Nature},
-  title     = {Deep learning},
-  year      = {2015},
-  month     = {may},
-  number    = {7553},
-  pages     = {436--444},
-  volume    = {521},
-  doi       = {10.1038/nature14539},
-  publisher = {Springer Science and Business Media {LLC}},
+ 
+@Article{Szegedy2017,
+  author    = {Szegedy, Christian and Ioffe, Sergey and Vanhoucke, Vincent and Alemi, Alexander},
+  journal   = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title     = {Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning},
+  year      = {2017},
+  issn      = {2159-5399},
+  month     = feb,
+  number    = {1},
+  volume    = {31},
+  comment   = {-benefits to combining Inception architec-
+tures with residual connections
+-residual connections acceler-
+ates the training of Inception networks significantly
+- studied whether Inception without residual connections can be
+made more efficient by making it deeper and wider
+-Each
+Inception block is followed by filter-expansion layer (1 ×
+1 convolution without activation)
+-scaling
+up the dimensionality of the filter bank before the residual
+addition to match the depth of the input.
+-step time of Inception-v4 proved to be signifi-
+cantly slower in practice, probably due to the larger number
+of layers
+-if the number of filters is
+very high, then even a very low (0.00001) learning rate is
+not sufficient to cope with the instabilities and the training
+with high learning rate had a chance to destroy its effects
+-inception-v3:
+	-converts 7x7 conv layers into multiple 3x3 layers 
+	-model is way deeper thatn googlenet and still just 2.5x higher cost and still much more efficient than vgg net 
+
+-training methodology batchsize 32 for 100 epochs},
+  doi       = {10.1609/aaai.v31i1.11231},
+  publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},
 }
 
-@Article{Khan2020,
-  author     = {Asifullah Khan and Anabia Sohail and Umme Zahoora and Aqsa Saeed Qureshi},
-  journal    = {Artificial Intelligence Review},
-  title      = {A survey of the recent architectures of deep convolutional neural networks},
-  year       = {2020},
-  month      = {apr},
-  number     = {8},
-  pages      = {5455--5516},
-  volume     = {53},
-  comment    = {- convolutional layer is composed of a set of convolutional kernels
--The use of pooling operation helps to extract a combination of features, which are invar-
-iant to translational shifts and small distortions
--ReLU and its variants are preferred as activation function as they help in
-overcoming the vanishing gradient problem
--batch normalization ...
--Dropout introduces regularization within the network by randomly skipping some units or connections with a certain probability
+@InProceedings{Szegedy2015,
+  author    = {Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Going Deeper With Convolutions},
+  year      = {2015},
+  month     = {June},
+}
 
--on page 5464 is an tree showing the developement of cnns which has some intrsting concepts written in it
+@Article{Sode2011,
+  author     = {Miki Sode and Andrew J. Burghardt and Jean-Baptiste Pialat and Thomas M. Link and Sharmila Majumdar},
+  journal    = {Bone},
+  title      = {Quantitative characterization of subject motion in {HR}-{pQCT} images of the distal radius and tibia},
+  year       = {2011},
+  month      = {jun},
+  number     = {6},
+  pages      = {1291--1297},
+  volume     = {48},
+  abstract   = {propose an objective technique for measuring subject motion based on a
+comparison of image similarity measure of the parallelized projections acquired at 0° and
+180°},
+  comment    = {-propose an objective technique for measuring subject motion based on a
+comparison of image similarity measure of the parallelized projections acquired at 0° and
+180°
 
--GoogleNet introduced a structure called the inception block which uses the  split, transform, and merge concept  to capture spatial information at different scales
+Quantitative Motion estimates (QMEs)
+-Two similarity measures, the sum of squared intensity difference
+(SSD) and normalized cross correlation (NCC) were examined.},
+  doi        = {10.1016/j.bone.2011.03.755},
+  priority   = {prio1},
+  publisher  = {Elsevier {BV}},
+  ranking    = {rank4},
+  readstatus = {read},
+}
 
--CNNs may suffer from performance degradation, gradient vanishing, or 
-problems, which are not caused by overfitting but instead by an increase in the depth
-
-continue on 5483 it might be intreresting},
-  doi        = {10.1007/s10462-020-09825-6},
+@Misc{Simonyan2014,
+  author     = {Simonyan, Karen and Zisserman, Andrew},
+  title      = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  year       = {2014},
+  abstract   = {-In this work we investigate the effect of the convolutional network depth on its
+accuracy in the large-scale image recognition settin},
+  comment    = {- the classification error decreases with the increased ConvNet depth: from
+11 layers in A to 19 layers in E
+-scale jittering at training time leads to significantly better results than
+training on images with fixed smallest side
+- It was demonstrated that the representation depth is beneficial for the
+classification accuracy},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1409.1556},
+  keywords   = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
   priority   = {prio2},
-  publisher  = {Springer Science and Business Media {LLC}},
+  publisher  = {arXiv},
   ranking    = {rank3},
+  readstatus = {read},
+}
+
+ 
+@Article{Shorten2019,
+  author    = {Shorten, Connor and Khoshgoftaar, Taghi M.},
+  journal   = {Journal of Big Data},
+  title     = {A survey on Image Data Augmentation for Deep Learning},
+  year      = {2019},
+  issn      = {2196-1115},
+  month     = jul,
+  number    = {1},
+  volume    = {6},
+  comment   = {data augmentation based on basic image manipulations 
+generic transformations
+
+-describes different augmentation techniques based on geometric transformations
+
+-also talk about the safety of functions 
+
+-flipping: Horizontal axis flipping is much more common than flipping the vertical axis
+-one of the easiest implementations 
+-cropping: central patch of image 
+-Additionally,
+random cropping can also be used to provide an effect very similar to translations
+-rotation:Rotation augmentations are done by rotating the image right or left on an axis
+between 1° and 359°
+- safety of rotation augmentations is heavily determined by
+the rotation degree parameter
+problem with mnist if rot more than 20 deg
+-translation: shit images left right up down can be very useful transformation to avoid positional bias in the data 
+-noise injection: Noise injection consists of injecting a matrix of random values usually drawn from a
+Gaussian distribution.
+-Adding noise to images can help CNNs learn
+more robust features
+
+-facial recognition geometric transformation 
+also usefull since they help the network overcome positional biases 
+-geometric transformations such ass translation or random cropping must be manually observed to make sure they  have not altered the label of the image
+
+-medical image analysis, the biases distancing
+the training data from the testing data are more complex than positional and transla-
+tional variances. Therefore, the scope of where and when geometric transformations
+can be applied is relatively limited
+
+-Kernel Filters: work by sliding a n x n matrix across an image with either a gaussian blur filter or a high contrast horizontl or vertical filter.
+-Kernel filters are a relatively unexplored area for Data Augmentation. A disadvantage
+of this technique is that it is very similar to the internal mechanisms of CNNs
+
+-mixing images: images are then mixed by averaging the pixel values
+for each of the RGB channels. This results in a mixed image which is used to train a clas-
+sification model
+- label assigned to the new image is the same as the first randomly
+selected image
+-when mixing
+images from the entire training set rather than from instances exclusively belonging
+to the same class},
+  doi       = {10.1186/s40537-019-0197-0},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Selvaraju2016,
+  author     = {Selvaraju, Ramprasaath R. and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
+  title      = {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization},
+  year       = {2016},
+  abstract   = {-proposition of grad cam a technique for producing "visual explanations" for decisions  from a large class of convolutional Neural Networks},
+  comment    = {-A drawback of CAM is that it requires feature maps to di-
+rectly precede softmax layers, so it is only applicable to a
+particular kind of CNN architectures
+-We introduce a
+new way of combining feature maps using the gradient signal
+that does not require any modification in the network architec-
+ture
+
+-calc L_GradCAM for class c :
+-we first calculate the gradient of the score for that class c,y^c (before the softmax function), with respect to the feature map activation A^k of a convolutional layer i.e. delta y / delta A^k
+-these gradients flowing back are global average pooled over the width and height dimensions (indexed by i and j respectively) to obtain the neuron importance wight alpha^c_k
+
+L^c_GradCAM = ReLU(sum_k(alpha^c_k A^k ))
+
+-t Grad-CAM generalizes CAM for a wide
+variety of CNN-based architecture},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1610.02391},
+  keywords   = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank4},
   readstatus = {skimmed},
+}
+
+@Misc{Saxe2013,
+  author    = {Saxe, Andrew M. and McClelland, James L. and Ganguli, Surya},
+  title     = {Exact solutions to the nonlinear dynamics of learning in deep linear neural networks},
+  year      = {2013},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.1312.6120},
+  keywords  = {Neural and Evolutionary Computing (cs.NE), Disordered Systems and Neural Networks (cond-mat.dis-nn), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), Neurons and Cognition (q-bio.NC), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Physical sciences, FOS: Physical sciences, FOS: Biological sciences, FOS: Biological sciences},
+  publisher = {arXiv},
+}
+
+@Article{Rusk2015,
+  author    = {Nicole Rusk},
+  journal   = {Nature Methods},
+  title     = {Deep learning},
+  year      = {2015},
+  month     = {dec},
+  number    = {1},
+  pages     = {35--35},
+  volume    = {13},
+  doi       = {10.1038/nmeth.3707},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @Misc{Ruder2016,
@@ -258,73 +753,140 @@ Early stopping},
   readstatus = {read},
 }
 
-@InProceedings{Zhang2018,
-  author     = {Zijun Zhang},
-  booktitle  = {2018 {IEEE}/{ACM} 26th International Symposium on Quality of Service ({IWQoS})},
-  title      = {Improved Adam Optimizer for Deep Neural Networks},
-  year       = {2018},
-  month      = {jun},
-  publisher  = {{IEEE}},
-  abstract   = {-Adam and RMSprop, have witnessed better optimization performance
-than stochastic gradient descent (SGD) in some scenarios.
-However, recent studies show that they often lead to worse
-generalization performance than SGD},
-  comment    = {-Adam does not
-preserve the directions of gradients as SGD does
-- the magnitude of each vector’s direction
-change depends on its L2-norm
-- fix the problem for Adam by
-explicitly normalizing each weight vector, and by opti-
-mizing only its direction,
+ 
+@InProceedings{Richter2021,
+  author    = {Richter, Mats L. and Schoning, Julius and Wiedenroth, Anna and Krumnack, Ulf},
+  booktitle = {2021 20th IEEE International Conference on Machine Learning and Applications (ICMLA)},
+  title     = {Should You Go Deeper? Optimizing Convolutional Neural Network Architectures without Training},
+  year      = {2021},
+  month     = dec,
+  publisher = {IEEE},
+  comment   = {-specialist often overshoot the number of convolutional layers in their design
+-propose design strategies based on a so-called border layer
+-currently only be approximated by
+comparative evaluation of trained mod
+-. Since
+convolutional layers can be considered feature extractors, the
+receptive field size is thus the natural upper limit to the size
+of features that a unit in a convolutional layer can extract
+from the input image
+- growth of the receptive field can lead
+to mismatches between the CNN architecture and the input
+image resolution, causing a loss of efficiency and predictive
+performanc
+-receptive field size increases with every
+convolutional layer l
+-the network gives a formular to calculate the receptive field sice for layer l this formular still does not work for Inception net v3 layers 
+-sequences of unproduc-
+tive layers are linked to a mismatch between CNN architecture
+and input resolution
+-Skip connections are a special case of non-sequential archi-
+tectures since they effectively create pathways that do not ex-
+pand the size of the receptive field and are often parameterless
+- skip connections
+effectively allow the CNN to skip all layers except the stem.
+Thus, the receptive field size is reduced effectively at each
+merging block of the pathway},
+  doi       = {10.1109/icmla52953.2021.00159},
+  ranking   = {rank5},
+}
 
-- we apply
-batch normalization or L2-regularization to the logits,
-which further improves the generalization performance
-in classification tasks
+@InProceedings{Raghu2019,
+  author     = {Raghu, Maithra and Zhang, Chiyuan and Kleinberg, Jon and Bengio, Samy},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Transfusion: Understanding Transfer Learning for Medical Imaging},
+  year       = {2019},
+  editor     = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {32},
+  abstract   = {In this paper, we explore properties of transfer learning for medical imaging},
+  comment    = {-Despite the immense popularity of transfer learning in medical imaging, there has been little work
+studying its precise effects
 
--roposed algorithm adapts the
-learning rate to each input weight vector, instead of each
-individual weight, such that the direction of the gradient is
-preserved},
-  doi        = {10.1109/iwqos.2018.8624183},
-  priority   = {prio2},
-  ranking    = {rank4},
+-learning is typically performed by taking a standard IMAGENET architecture along with its pretrained weights, and then fine-tuning on the target task.k. However, IMAGENET classification and medical image diagnosis have considerable differences
+-The basic building block for this family is the
+popular sequence of a (2d) convolution, followed by batch normalization [ 13 ] and a relu activation
+
+-surprisingly, transfer offers feature independent benefits to convergence simply through better
+weight scaling (ii) using pretrained weights from the lowest two layers/stages has the biggest effect
+on convergence
+-pretrained weights results in faster convergence
+
+-we find
+that transfer learning offers limited performance gains and much smaller architectures can perform
+comparably to the standard IMAGENET models},
+  priority   = {prio3},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://proceedings.neurips.cc/paper_files/paper/2019/file/eb1e78328c46506b46a4ac4a1e378b91-Paper.pdf},
+}
+
+@Article{Pereyra2017,
+  author        = {Pereyra, Gabriel and Tucker, George and Chorowski, Jan and Kaiser, Łukasz and Hinton, Geoffrey},
+  title         = {Regularizing Neural Networks by Penalizing Confident Output Distributions},
+  year          = {2017},
+  month         = jan,
+  abstract      = {-We show that penalizing low entropy output distributions,
+which has been shown to improve exploration in reinforcement learning,},
+  archiveprefix = {arXiv},
+  comment       = {-label smoothing regularization, has been
+shown to improve generalization},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1701.06548},
+  eprint        = {1701.06548},
+  file          = {:http\://arxiv.org/pdf/1701.06548v1:PDF},
+  keywords      = {Neural and Evolutionary Computing (cs.NE), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.NE},
+  priority      = {prio3},
+  publisher     = {arXiv},
+  ranking       = {rank4},
+  readstatus    = {skimmed},
+}
+
+@Misc{Neelakantan2015,
+  author     = {Neelakantan, Arvind and Vilnis, Luke and Le, Quoc V. and Sutskever, Ilya and Kaiser, Lukasz and Kurach, Karol and Martens, James},
+  title      = {Adding Gradient Noise Improves Learning for Very Deep Networks},
+  year       = {2015},
+  comment    = {-A recurring theme in recent works is that commonly-used optimization techniques are not always
+sufficient to robustly optimize the models. In this work, we explore a simple technique of adding
+annealed Gaussian noise to the gradien
+- surprisingly effective
+- experiments indicate that adding annealed Gaussian noise by decaying the variance works better
+than using fixed Gaussian noise
+-training step t
+
+g_t <- g_t * N(0, sigma_t^2)
+
+sigma_t^2 = n/(1+t)^gamma
+n selected from{0.01, 0.3, 1.0} and 
+gamma = 0.55
+-> seems like n is usually 0.01
+
+-adding noise to the gradient helps in achieving higher average and best accuracy
+- random restarts and the use of a momentum-based optimizer like
+Adam are not sufficient to achieve the best results in the absence of added gradient noise},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1511.06807},
+  keywords   = {Machine Learning (stat.ML), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank3},
   readstatus = {read},
 }
 
-@Misc{Lin2013,
-  author     = {Lin, Min and Chen, Qiang and Yan, Shuicheng},
-  title      = {Network In Network},
-  year       = {2013},
-  abstract   = {-Introduces the Network in Network structure to enhance model discriminability for local patches
--we build micro neural networks with
-more complex structures to abstract the data within the receptive field
--we are able to uti-
-lize global average pooling over feature maps in the classification layer, which is
-easier to interpret and less prone to overfitting than traditional fully connected lay-
-er},
-  comment    = {For Code: https://github.com/ducha-aiki/caffenet-benchmark
-
--generalized linear model(GLM)
-- In NIN, the
-GLM is replaced with a ”micro network” structure which is a general nonlinear function approxi-
-mator
--a micro network is
-introduced within each convolutional layer to compute more abstract features for local patches
-
--Each pooling layer performs
-weighted linear recombination on the input feature maps, which then go through a rectifier linear
-unit. The cross channel pooled feature maps are cross channel pooled again and again in the next
-layers. This cascaded cross channel parameteric pooling structure allows complex and learnable
-interactions of cross channel information
--for classification tasks},
-  copyright  = {arXiv.org perpetual, non-exclusive license},
-  doi        = {10.48550/ARXIV.1312.4400},
-  keywords   = {Neural and Evolutionary Computing (cs.NE), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  priority   = {prio2},
-  publisher  = {arXiv},
-  ranking    = {rank2},
-  readstatus = {read},
+ 
+@Article{Narkhede2021,
+  author    = {Narkhede, Meenal V. and Bartakke, Prashant P. and Sutaone, Mukul S.},
+  journal   = {Artificial Intelligence Review},
+  title     = {A review on weight initialization strategies for neural networks},
+  year      = {2021},
+  issn      = {1573-7462},
+  month     = jun,
+  number    = {1},
+  pages     = {291--322},
+  volume    = {55},
+  doi       = {10.1007/s10462-021-10033-z},
+  publisher = {Springer Science and Business Media LLC},
 }
 
 @Article{Mishkin2017,
@@ -377,106 +939,253 @@ GoogLeNet, be careful with modifications},
   readstatus = {read},
 }
 
-@InCollection{Bottou2010,
-  author    = {L{\'{e}}on Bottou},
-  booktitle = {Proceedings of {COMPSTAT}{\textquotesingle}2010},
-  publisher = {Physica-Verlag {HD}},
-  title     = {Large-Scale Machine Learning with Stochastic Gradient Descent},
-  year      = {2010},
-  pages     = {177--186},
-  doi       = {10.1007/978-3-7908-2604-3_16},
-}
+@Misc{Mishkin2015,
+  author     = {Mishkin, Dmytro and Matas, Jiri},
+  title      = {All you need is a good init},
+  year       = {2015},
+  abstract   = {Layer-sequential unit-variance (LSUV) initialization,a simple method for weight
+initialization for deep net learning
 
-@Misc{Simonyan2014,
-  author     = {Simonyan, Karen and Zisserman, Andrew},
-  title      = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
-  year       = {2014},
-  abstract   = {-In this work we investigate the effect of the convolutional network depth on its
-accuracy in the large-scale image recognition settin},
-  comment    = {- the classification error decreases with the increased ConvNet depth: from
-11 layers in A to 19 layers in E
--scale jittering at training time leads to significantly better results than
-training on images with fixed smallest side
-- It was demonstrated that the representation depth is beneficial for the
-classification accuracy},
+The method consists of the two
+steps. First, pre-initialize weights of each convolution or inner-product layer with
+orthonormal matrices. Second, proceed from the first to the final layer, normaliz-
+ing the variance of the output of each layer to be equal to one.},
+  comment    = {batch normalization adds a 30% computational
+overhead to each iteration
+
+
+Tolvar ... Its value does not
+noticeably influence the performance in a broad range of 0.01 to 0.1
+
+L – convolution or full-
+connected layer, WL - its weights, BL - its output blob., Tolvar - variance tolerance, Ti – current
+trial, Tmax – max number of trials(usually it ends between 1 and 5 trials so maybeset it to 6 or 7 )
+
+Pre-initialize network with orthonormal matrices as in Saxe et al. (2014)
+for each layer L do
+while |Var(BL) − 1.0| ≥ Tolvar and (Ti < Tmax) do
+do Forward pass with a mini-batch
+calculate Var(BL)
+WL = WL / √Var(BL)
+end while
+end for
+
+performes well with maxout RELU and VLReLU},
   copyright  = {arXiv.org perpetual, non-exclusive license},
-  doi        = {10.48550/ARXIV.1409.1556},
-  keywords   = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  doi        = {10.48550/ARXIV.1511.06422},
+  keywords   = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
   priority   = {prio2},
   publisher  = {arXiv},
-  ranking    = {rank3},
+  ranking    = {rank4},
   readstatus = {read},
 }
 
-@Misc{Dauphin2015,
-  author    = {Dauphin, Yann N. and de Vries, Harm and Bengio, Yoshua},
-  title     = {Equilibrated adaptive learning rates for non-convex optimization},
-  year      = {2015},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1502.04390},
-  keywords  = {Machine Learning (cs.LG), Numerical Analysis (math.NA), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Mathematics, FOS: Mathematics},
-  publisher = {arXiv},
+@Article{Loshchilov2017,
+  author        = {Ilya Loshchilov and Frank Hutter},
+  title         = {Decoupled Weight Decay Regularization},
+  year          = {2017},
+  month         = nov,
+  abstract      = {L$_2$ regularization and weight decay regularization are equivalent for standard stochastic gradient descent (when rescaled by the learning rate), but as we demonstrate this is \emph{not} the case for adaptive gradient algorithms, such as Adam. While common implementations of these algorithms employ L$_2$ regularization (often calling it "weight decay" in what may be misleading due to the inequivalence we expose), we propose a simple modification to recover the original formulation of weight decay regularization by \emph{decoupling} the weight decay from the optimization steps taken w.r.t. the loss function. We provide empirical evidence that our proposed modification (i) decouples the optimal choice of weight decay factor from the setting of the learning rate for both standard SGD and Adam and (ii) substantially improves Adam's generalization performance, allowing it to compete with SGD with momentum on image classification datasets (on which it was previously typically outperformed by the latter). Our proposed decoupled weight decay has already been adopted by many researchers, and the community has implemented it in TensorFlow and PyTorch; the complete source code for our experiments is available at https://github.com/loshchil/AdamW-and-SGDW},
+  archiveprefix = {arXiv},
+  comment       = {-weight decay is not equaly efficient in Adam as in SGD
+-the larger the runtime/number of batch
+passes to be performed, the smaller the optimal weight decay(ADAM and SGD)
+-ADAM cab substantially benefit from a scheduled learnigńg rate multiplyer 
+
+-introduce adamw as a new decoupled optimizer if we want to change the learning rate while training},
+  eprint        = {1711.05101},
+  file          = {:http\://arxiv.org/pdf/1711.05101v3:PDF},
+  keywords      = {cs.LG, cs.NE, math.OC},
+  primaryclass  = {cs.LG},
 }
 
-@Misc{Woo2018,
-  author     = {Woo, Sanghyun and Park, Jongchan and Lee, Joon-Young and Kweon, In So},
-  title      = {CBAM: Convolutional Block Attention Module},
-  year       = {2018},
-  abstract   = {a simple yet effective attention module for feed-forward convolutional
-neural networks},
-  comment    = {esearches have mainly investigated three
-important factors of networks: depth, width, and cardinality
--The overview of CBAM: The module has two sequential sub-modules:
-channel and spatial. The intermediate feature map is adaptively refined through
-our module (CBAM) at every convolutional block of deep networks
--An intuitive and simple way of extension is to increase the depth of neural
-networks
--naive increase in depth comes to saturation due to the difficulty of gradient
-propagation
--introduces  cannel attention and spatial attention model 
--One can seamlessly integrate CBAM in any CNN architectures and jointly train the combined
-CBAM-enhanced networks
--CBAM outperforms all the
-Convolutional Block Attention Module 7
-baselines without bells and whistles, demonstrating the general applicability of
-CBAM across different architectures as well as different tasks.
--Using both
-attention is critical while the best-combining strategy is Network+ channel + spatial
-- Grad Cam shows that the use of CBAM in a network gives it a better better and more precise way of detecting objects 
--improve representation power of CNN networks
+@Article{Lorch2017,
+  author     = {Benedikt Lorch and Ghislain Vaillant and Christian Baumgartner and Wenjia Bai and Daniel Rueckert and Andreas Maier},
+  journal    = {Journal of Medical Engineering},
+  title      = {Automated Detection of Motion Artefacts in {MR} Imaging Using Decision Forests},
+  year       = {2017},
+  month      = {jun},
+  pages      = {1--9},
+  volume     = {2017},
+  doi        = {10.1155/2017/4501647},
+  publisher  = {Hindawi Limited},
+  readstatus = {skimmed},
+}
 
--},
+@Misc{Lin2013,
+  author     = {Lin, Min and Chen, Qiang and Yan, Shuicheng},
+  title      = {Network In Network},
+  year       = {2013},
+  abstract   = {-Introduces the Network in Network structure to enhance model discriminability for local patches
+-we build micro neural networks with
+more complex structures to abstract the data within the receptive field
+-we are able to uti-
+lize global average pooling over feature maps in the classification layer, which is
+easier to interpret and less prone to overfitting than traditional fully connected lay-
+er},
+  comment    = {For Code: https://github.com/ducha-aiki/caffenet-benchmark
+
+-generalized linear model(GLM)
+- In NIN, the
+GLM is replaced with a ”micro network” structure which is a general nonlinear function approxi-
+mator
+-a micro network is
+introduced within each convolutional layer to compute more abstract features for local patches
+
+-Each pooling layer performs
+weighted linear recombination on the input feature maps, which then go through a rectifier linear
+unit. The cross channel pooled feature maps are cross channel pooled again and again in the next
+layers. This cascaded cross channel parameteric pooling structure allows complex and learnable
+interactions of cross channel information
+-for classification tasks},
   copyright  = {arXiv.org perpetual, non-exclusive license},
-  doi        = {10.48550/ARXIV.1807.06521},
-  keywords   = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  doi        = {10.48550/ARXIV.1312.4400},
+  keywords   = {Neural and Evolutionary Computing (cs.NE), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio2},
+  publisher  = {arXiv},
+  ranking    = {rank2},
+  readstatus = {read},
+}
+
+@Article{LeCun2015,
+  author    = {Yann LeCun and Yoshua Bengio and Geoffrey Hinton},
+  journal   = {Nature},
+  title     = {Deep learning},
+  year      = {2015},
+  month     = {may},
+  number    = {7553},
+  pages     = {436--444},
+  volume    = {521},
+  doi       = {10.1038/nature14539},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Lecun1998,
+  author    = {Y. Lecun and L. Bottou and Y. Bengio and P. Haffner},
+  journal   = {Proceedings of the {IEEE}},
+  title     = {Gradient-based learning applied to document recognition},
+  year      = {1998},
+  number    = {11},
+  pages     = {2278--2324},
+  volume    = {86},
+  doi       = {10.1109/5.726791},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Misc{Kingma2014,
+  author     = {Kingma, Diederik P. and Ba, Jimmy},
+  title      = {Adam: A Method for Stochastic Optimization},
+  year       = {2014},
+  abstract   = {algorithm for first-order gradient-based optimization of
+stochastic objective functions, based on adaptive estimates of lower-order mo-
+ments
+-computationally efficient,
+has little memory requirements},
+  comment    = {adaptive moment estimation(Adam)
+
+Good default settings for the tested machine learning problems are α = 0.001,
+β1 = 0.9, β2 = 0.999 and  = 10−8
+
+
+Require: α: Stepsize
+Require: β1, β2 ∈ [0, 1): Exponential decay rates for the moment estimates
+Require: f (θ): Stochastic objective function with parameters θ
+Require: θ0: Initial parameter vector
+m0 ← 0 (Initialize 1st moment vector)
+v0 ← 0 (Initialize 2nd moment vector)
+t ← 0 (Initialize timestep)
+while θt not converged do
+t ← t + 1
+gt ← ∇θ ft(θt−1) (Get gradients w.r.t. stochastic objective at timestep t)
+mt ← β1 · mt−1 + (1 − β1) · gt (Update biased first moment estimate)
+vt ← β2 · vt−1 + (1 − β2) · g2
+t (Update biased second raw moment estimate)̂
+mt ← mt/(1 − βt
+1) (Compute bias-corrected first moment estimate)̂
+vt ← vt/(1 − βt
+2) (Compute bias-corrected second raw moment estimate)
+θt ← θt−1 − α ·̂ mt/(√̂ vt + ) (Update parameters)
+end while
+return θt (Resulting parameters)
+
+
+
+in this paper another function is introduced which is called AdaMax-> a varian of Adam based on the infinity norm
+
+methodes are aimed towards ml problems with large data sets  and or high  dimensionality wich is true in my case},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1412.6980},
+  keywords   = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
   priority   = {prio1},
   publisher  = {arXiv},
+  ranking    = {rank4},
   readstatus = {read},
 }
 
-@InProceedings{He_2016_CVPR,
-  author     = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
-  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  title      = {Deep Residual Learning for Image Recognition},
-  year       = {2016},
-  month      = {June},
-  abstract   = {-present a residual learning framework to ease the training
-of networks that are substantially deeper than those used
-previously
+@Article{Khan2020,
+  author     = {Asifullah Khan and Anabia Sohail and Umme Zahoora and Aqsa Saeed Qureshi},
+  journal    = {Artificial Intelligence Review},
+  title      = {A survey of the recent architectures of deep convolutional neural networks},
+  year       = {2020},
+  month      = {apr},
+  number     = {8},
+  pages      = {5455--5516},
+  volume     = {53},
+  comment    = {- convolutional layer is composed of a set of convolutional kernels
+-The use of pooling operation helps to extract a combination of features, which are invar-
+iant to translational shifts and small distortions
+-ReLU and its variants are preferred as activation function as they help in
+overcoming the vanishing gradient problem
+-batch normalization ...
+-Dropout introduces regularization within the network by randomly skipping some units or connections with a certain probability
 
-won the 1st place on the
-ILSVRC 2015 classification task},
-  comment    = {Is
-learning better networks as easy as stacking more layers?
+-on page 5464 is an tree showing the developement of cnns which has some intrsting concepts written in it
 
--Multigrid method reformulates the system as subproblems at multiple scales, where each subproblem is responsible for the residual solution between a coarser and a finer scale
--An early practice of training multi-layer perceptrons
-(MLPs) is to add a linear layer connected from the network
-input to the output
--y = F(x, {Wi}) + Wsx.},
+-GoogleNet introduced a structure called the inception block which uses the  split, transform, and merge concept  to capture spatial information at different scales
+
+-CNNs may suffer from performance degradation, gradient vanishing, or 
+problems, which are not caused by overfitting but instead by an increase in the depth
+
+continue on 5483 it might be intreresting},
+  doi        = {10.1007/s10462-020-09825-6},
   priority   = {prio2},
+  publisher  = {Springer Science and Business Media {LLC}},
   ranking    = {rank3},
-  readstatus = {read},
+  readstatus = {skimmed},
+}
+
+@Article{Ioffe2015,
+  author        = {Ioffe, Sergey and Szegedy, Christian},
+  title         = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+  year          = {2015},
+  month         = feb,
+  abstract      = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9% top-5 validation error (and 4.8% test error), exceeding the accuracy of human raters.},
+  archiveprefix = {arXiv},
+  comment       = {-We propose a new mechanism, which we call Batch
+Normalization, that takes a step towards reducing internal
+covariate shift, and in doing so dramatically accelerates the
+training of deep neural nets
+-normalize each scalar feature independently, by
+making it have zero mean and unit variance
+-Simply adding Batch Normalization to a network does not
+take full advantage of our method
+-Increase learning rate
+-Remove Dropout
+-Shuffle training examples more thoroughly
+-Reduce the L2 weight regularization
+-Accelerate the learning rate decay
+-Remove Local Response Normalization
+-Reduce the photometric distortions},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1502.03167},
+  eprint        = {1502.03167},
+  file          = {:http\://arxiv.org/pdf/1502.03167v3:PDF},
+  keywords      = {Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  priority      = {prio1},
+  publisher     = {arXiv},
+  ranking       = {rank4},
+  readstatus    = {read},
 }
 
 @Misc{Hu2017,
@@ -503,81 +1212,38 @@ through the use of identity-based skip connections},
   readstatus = {read},
 }
 
-@InCollection{Tan2018,
-  author     = {Chuanqi Tan and Fuchun Sun and Tao Kong and Wenchang Zhang and Chao Yang and Chunfang Liu},
-  booktitle  = {Artificial Neural Networks and Machine Learning {\textendash} {ICANN} 2018},
-  publisher  = {Springer International Publishing},
-  title      = {A Survey on Deep Transfer Learning},
-  year       = {2018},
-  pages      = {270--279},
-  abstract   = {Transfer learning relaxes the hypothesis
-that the training data must be independent and identically distributed
-(i.i.d.) with the test data, which motivates us to use transfer learning
-to solve the problem of insufficient training data.
+@Article{Hinton2006,
+  author     = {G. E. Hinton and R. R. Salakhutdinov},
+  journal    = {Science},
+  title      = {Reducing the Dimensionality of Data with Neural Networks},
+  year       = {2006},
+  month      = {jul},
+  number     = {5786},
+  pages      = {504--507},
+  volume     = {313},
+  abstract   = {High-dimensional data can be converted to low-dimensional codes by training a multilayer neural
+network with a small central layer to reconstruct high-dimensional input vectors},
+  comment    = {-principal components analysis (PCA), finds the directions of greatest variance in the
+data set and represents each data point by its
+coordinates along each of these directions
+-With large initial weights,
+autoencoders typically find poor local minima
+-what is a restricted boltzmann machine 
 
-- this paper introduces instance based, mapping based, network based and adversarial based transfer learning approaches},
-  comment    = {-Transfer learning (TL) is a technique in machine learning (ML) in which knowledge learned from a task is re-used in order to boost performance on a related task.[1] For example, for image classification, knowledge gained while learning to recognize cars could be applied when trying to recognize trucks. This topic is related to the psychological literature on transfer of learning, although practical ties between the two fields are limited. Reusing/transferring information from previously learned tasks to new tasks has the potential to significantly improve learning efficiency
+-After learning one layer of feature de-
+tectors, we can treat their activities—when they
+are being driven by the data—as data for
+learning a second layer of features. The first
+layer of feature detectors then become the
+visible units for learning the next RBM
 
-- might be intresting if i dont want to train tibia and radius together then i might first train radius and afterwards tibia to imrove its performance 
-
-- First, network was trained
-in source domain with large-scale training dataset. Second, partial of network pretrained for source domain are transfer to be a part of new network designed for target domain
-
--Instances-based: Utilize instances in source domain by appropriate weight
-
-Although there
-are different between two domains, partial instances in the source domain can
-be utilized by the target domain with appropriate weights
-
--Mapping-based: Mapping instances from two domains into a new data space with better similarity
-
-Although there are different between two origin domains, they can be more similarly in an elaborate new data space.
-
--Network-based: Reuse the partial of network pre-trained in the source domain
-
-Neural network is similar to the processing mechanism of the human brain, and it is an iterative and continuous
-abstraction process. The front-layers of the network can be treated as a feature
-extractor, and the extracted features are versatile
-
--Adversarial-based: Use adversarial technology to find transferable features that both suitable for two domains
-
-Although there
-are different between two domains, partial instances in the source domain can
-be utilized by the target domain with appropriate weights},
-  doi        = {10.1007/978-3-030-01424-7_27},
-  priority   = {prio2},
-  ranking    = {rank3},
-  readstatus = {read},
-}
-
-@InProceedings{NEURIPS2019_eb1e7832,
-  author     = {Raghu, Maithra and Zhang, Chiyuan and Kleinberg, Jon and Bengio, Samy},
-  booktitle  = {Advances in Neural Information Processing Systems},
-  title      = {Transfusion: Understanding Transfer Learning for Medical Imaging},
-  year       = {2019},
-  editor     = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
-  publisher  = {Curran Associates, Inc.},
-  volume     = {32},
-  abstract   = {In this paper, we explore properties of transfer learning for medical imaging},
-  comment    = {-Despite the immense popularity of transfer learning in medical imaging, there has been little work
-studying its precise effects
-
--learning is typically performed by taking a standard IMAGENET architecture along with its pretrained weights, and then fine-tuning on the target task.k. However, IMAGENET classification and medical image diagnosis have considerable differences
--The basic building block for this family is the
-popular sequence of a (2d) convolution, followed by batch normalization [ 13 ] and a relu activation
-
--surprisingly, transfer offers feature independent benefits to convergence simply through better
-weight scaling (ii) using pretrained weights from the lowest two layers/stages has the biggest effect
-on convergence
--pretrained weights results in faster convergence
-
--we find
-that transfer learning offers limited performance gains and much smaller architectures can perform
-comparably to the standard IMAGENET models},
+-latent semantic analysis
+(LSA) a well known document retrival method based on PCA},
+  doi        = {10.1126/science.1127647},
   priority   = {prio3},
-  ranking    = {rank3},
+  publisher  = {American Association for the Advancement of Science ({AAAS})},
+  ranking    = {rank2},
   readstatus = {read},
-  url        = {https://proceedings.neurips.cc/paper_files/paper/2019/file/eb1e78328c46506b46a4ac4a1e378b91-Paper.pdf},
 }
 
 @Article{Herzog2020,
@@ -629,26 +1295,39 @@ and aleatoric uncertainty)},
   readstatus = {read},
 }
 
-@Article{Pereyra2017,
-  author        = {Pereyra, Gabriel and Tucker, George and Chorowski, Jan and Kaiser, Łukasz and Hinton, Geoffrey},
-  title         = {Regularizing Neural Networks by Penalizing Confident Output Distributions},
-  year          = {2017},
-  month         = jan,
-  abstract      = {-We show that penalizing low entropy output distributions,
-which has been shown to improve exploration in reinforcement learning,},
-  archiveprefix = {arXiv},
-  comment       = {-label smoothing regularization, has been
-shown to improve generalization},
-  copyright     = {arXiv.org perpetual, non-exclusive license},
-  doi           = {10.48550/ARXIV.1701.06548},
-  eprint        = {1701.06548},
-  file          = {:http\://arxiv.org/pdf/1701.06548v1:PDF},
-  keywords      = {Neural and Evolutionary Computing (cs.NE), Machine Learning (cs.LG), FOS: Computer and information sciences},
-  primaryclass  = {cs.NE},
-  priority      = {prio3},
-  publisher     = {arXiv},
-  ranking       = {rank4},
-  readstatus    = {skimmed},
+@InProceedings{He2016a,
+  author     = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title      = {Deep Residual Learning for Image Recognition},
+  year       = {2016},
+  month      = {June},
+  abstract   = {-present a residual learning framework to ease the training
+of networks that are substantially deeper than those used
+previously
+
+won the 1st place on the
+ILSVRC 2015 classification task},
+  comment    = {Is
+learning better networks as easy as stacking more layers?
+
+-Multigrid method reformulates the system as subproblems at multiple scales, where each subproblem is responsible for the residual solution between a coarser and a finer scale
+-An early practice of training multi-layer perceptrons
+(MLPs) is to add a linear layer connected from the network
+input to the output
+-y = F(x, {Wi}) + Wsx.},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+}
+
+@InCollection{He2016,
+  author    = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+  booktitle = {Computer Vision {\textendash} {ECCV} 2016},
+  publisher = {Springer International Publishing},
+  title     = {Identity Mappings in Deep Residual Networks},
+  year      = {2016},
+  pages     = {630--645},
+  doi       = {10.1007/978-3-319-46493-0_38},
 }
 
 @Article{Han2015,
@@ -667,7 +1346,7 @@ shown to improve generalization},
   publisher     = {arXiv},
 }
 
-@InProceedings{pmlr-v28-goodfellow13,
+@InProceedings{Goodfellow2013,
   author     = {Goodfellow, Ian and Warde-Farley, David and Mirza, Mehdi and Courville, Aaron and Bengio, Yoshua},
   booktitle  = {Proceedings of the 30th International Conference on Machine Learning},
   title      = {Maxout Networks},
@@ -725,116 +1404,6 @@ dropout masks to the lowest layers of a network},
   url        = {https://proceedings.mlr.press/v28/goodfellow13.html},
 }
 
-@Misc{Mishkin2015,
-  author     = {Mishkin, Dmytro and Matas, Jiri},
-  title      = {All you need is a good init},
-  year       = {2015},
-  abstract   = {Layer-sequential unit-variance (LSUV) initialization,a simple method for weight
-initialization for deep net learning
-
-The method consists of the two
-steps. First, pre-initialize weights of each convolution or inner-product layer with
-orthonormal matrices. Second, proceed from the first to the final layer, normaliz-
-ing the variance of the output of each layer to be equal to one.},
-  comment    = {batch normalization adds a 30% computational
-overhead to each iteration
-
-
-Tolvar ... Its value does not
-noticeably influence the performance in a broad range of 0.01 to 0.1
-
-L – convolution or full-
-connected layer, WL - its weights, BL - its output blob., Tolvar - variance tolerance, Ti – current
-trial, Tmax – max number of trials(usually it ends between 1 and 5 trials so maybeset it to 6 or 7 )
-
-Pre-initialize network with orthonormal matrices as in Saxe et al. (2014)
-for each layer L do
-while |Var(BL) − 1.0| ≥ Tolvar and (Ti < Tmax) do
-do Forward pass with a mini-batch
-calculate Var(BL)
-WL = WL / √Var(BL)
-end while
-end for
-
-performes well with maxout RELU and VLReLU},
-  copyright  = {arXiv.org perpetual, non-exclusive license},
-  doi        = {10.48550/ARXIV.1511.06422},
-  keywords   = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  priority   = {prio2},
-  publisher  = {arXiv},
-  ranking    = {rank4},
-  readstatus = {read},
-}
-
-@Book{Briggs2000,
-  author    = {Briggs, William L.},
-  publisher = {Society for Industrial and Applied Mathematics},
-  title     = {A multigrid tutorial.},
-  year      = {2000},
-  isbn      = {0898714621},
-  pages     = {193},
-}
-
-@Misc{Kingma2014,
-  author     = {Kingma, Diederik P. and Ba, Jimmy},
-  title      = {Adam: A Method for Stochastic Optimization},
-  year       = {2014},
-  abstract   = {algorithm for first-order gradient-based optimization of
-stochastic objective functions, based on adaptive estimates of lower-order mo-
-ments
--computationally efficient,
-has little memory requirements},
-  comment    = {adaptive moment estimation(Adam)
-
-Good default settings for the tested machine learning problems are α = 0.001,
-β1 = 0.9, β2 = 0.999 and  = 10−8
-
-
-Require: α: Stepsize
-Require: β1, β2 ∈ [0, 1): Exponential decay rates for the moment estimates
-Require: f (θ): Stochastic objective function with parameters θ
-Require: θ0: Initial parameter vector
-m0 ← 0 (Initialize 1st moment vector)
-v0 ← 0 (Initialize 2nd moment vector)
-t ← 0 (Initialize timestep)
-while θt not converged do
-t ← t + 1
-gt ← ∇θ ft(θt−1) (Get gradients w.r.t. stochastic objective at timestep t)
-mt ← β1 · mt−1 + (1 − β1) · gt (Update biased first moment estimate)
-vt ← β2 · vt−1 + (1 − β2) · g2
-t (Update biased second raw moment estimate)̂
-mt ← mt/(1 − βt
-1) (Compute bias-corrected first moment estimate)̂
-vt ← vt/(1 − βt
-2) (Compute bias-corrected second raw moment estimate)
-θt ← θt−1 − α ·̂ mt/(√̂ vt + ) (Update parameters)
-end while
-return θt (Resulting parameters)
-
-
-
-in this paper another function is introduced which is called AdaMax-> a varian of Adam based on the infinity norm
-
-methodes are aimed towards ml problems with large data sets  and or high  dimensionality wich is true in my case},
-  copyright  = {arXiv.org perpetual, non-exclusive license},
-  doi        = {10.48550/ARXIV.1412.6980},
-  keywords   = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  priority   = {prio1},
-  publisher  = {arXiv},
-  ranking    = {rank4},
-  readstatus = {read},
-}
-
-@InCollection{He2016,
-  author    = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
-  booktitle = {Computer Vision {\textendash} {ECCV} 2016},
-  publisher = {Springer International Publishing},
-  title     = {Identity Mappings in Deep Residual Networks},
-  year      = {2016},
-  pages     = {630--645},
-  doi       = {10.1007/978-3-319-46493-0_38},
-}
-
 @InProceedings{Goodfellow2014,
   author    = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
   booktitle = {Advances in Neural Information Processing Systems},
@@ -846,126 +1415,7 @@ methodes are aimed towards ml problems with large data sets  and or high  dimens
   url       = {https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf},
 }
 
-@Article{Ioffe2015,
-  author        = {Ioffe, Sergey and Szegedy, Christian},
-  title         = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
-  year          = {2015},
-  month         = feb,
-  abstract      = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9% top-5 validation error (and 4.8% test error), exceeding the accuracy of human raters.},
-  archiveprefix = {arXiv},
-  comment       = {-We propose a new mechanism, which we call Batch
-Normalization, that takes a step towards reducing internal
-covariate shift, and in doing so dramatically accelerates the
-training of deep neural nets
--normalize each scalar feature independently, by
-making it have zero mean and unit variance
--Simply adding Batch Normalization to a network does not
-take full advantage of our method
--Increase learning rate
--Remove Dropout
--Shuffle training examples more thoroughly
--Reduce the L2 weight regularization
--Accelerate the learning rate decay
--Remove Local Response Normalization
--Reduce the photometric distortions},
-  copyright     = {arXiv.org perpetual, non-exclusive license},
-  doi           = {10.48550/ARXIV.1502.03167},
-  eprint        = {1502.03167},
-  file          = {:http\://arxiv.org/pdf/1502.03167v3:PDF},
-  keywords      = {Machine Learning (cs.LG), FOS: Computer and information sciences},
-  primaryclass  = {cs.LG},
-  priority      = {prio1},
-  publisher     = {arXiv},
-  ranking       = {rank4},
-  readstatus    = {read},
-}
-
-@Article{Sode2011,
-  author     = {Miki Sode and Andrew J. Burghardt and Jean-Baptiste Pialat and Thomas M. Link and Sharmila Majumdar},
-  journal    = {Bone},
-  title      = {Quantitative characterization of subject motion in {HR}-{pQCT} images of the distal radius and tibia},
-  year       = {2011},
-  month      = {jun},
-  number     = {6},
-  pages      = {1291--1297},
-  volume     = {48},
-  abstract   = {propose an objective technique for measuring subject motion based on a
-comparison of image similarity measure of the parallelized projections acquired at 0° and
-180°},
-  comment    = {-propose an objective technique for measuring subject motion based on a
-comparison of image similarity measure of the parallelized projections acquired at 0° and
-180°
-
-Quantitative Motion estimates (QMEs)
--Two similarity measures, the sum of squared intensity difference
-(SSD) and normalized cross correlation (NCC) were examined.},
-  doi        = {10.1016/j.bone.2011.03.755},
-  priority   = {prio1},
-  publisher  = {Elsevier {BV}},
-  ranking    = {rank4},
-  readstatus = {read},
-}
-
-@Article{Hinton2006,
-  author     = {G. E. Hinton and R. R. Salakhutdinov},
-  journal    = {Science},
-  title      = {Reducing the Dimensionality of Data with Neural Networks},
-  year       = {2006},
-  month      = {jul},
-  number     = {5786},
-  pages      = {504--507},
-  volume     = {313},
-  abstract   = {High-dimensional data can be converted to low-dimensional codes by training a multilayer neural
-network with a small central layer to reconstruct high-dimensional input vectors},
-  comment    = {-principal components analysis (PCA), finds the directions of greatest variance in the
-data set and represents each data point by its
-coordinates along each of these directions
--With large initial weights,
-autoencoders typically find poor local minima
--what is a restricted boltzmann machine 
-
--After learning one layer of feature de-
-tectors, we can treat their activities—when they
-are being driven by the data—as data for
-learning a second layer of features. The first
-layer of feature detectors then become the
-visible units for learning the next RBM
-
--latent semantic analysis
-(LSA) a well known document retrival method based on PCA},
-  doi        = {10.1126/science.1127647},
-  priority   = {prio3},
-  publisher  = {American Association for the Advancement of Science ({AAAS})},
-  ranking    = {rank2},
-  readstatus = {read},
-}
-
-@Article{Rusk2015,
-  author    = {Nicole Rusk},
-  journal   = {Nature Methods},
-  title     = {Deep learning},
-  year      = {2015},
-  month     = {dec},
-  number    = {1},
-  pages     = {35--35},
-  volume    = {13},
-  doi       = {10.1038/nmeth.3707},
-  publisher = {Springer Science and Business Media {LLC}},
-}
-
-@Article{Lecun1998,
-  author    = {Y. Lecun and L. Bottou and Y. Bengio and P. Haffner},
-  journal   = {Proceedings of the {IEEE}},
-  title     = {Gradient-based learning applied to document recognition},
-  year      = {1998},
-  number    = {11},
-  pages     = {2278--2324},
-  volume    = {86},
-  doi       = {10.1109/5.726791},
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-}
-
-@InProceedings{pmlr-v9-glorot10a,
+@InProceedings{Glorot2010,
   author    = {Glorot, Xavier and Bengio, Yoshua},
   booktitle = {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
   title     = {Understanding the difficulty of training deep feedforward neural networks},
@@ -982,6 +1432,16 @@ visible units for learning the next RBM
   url       = {https://proceedings.mlr.press/v9/glorot10a.html},
 }
 
+@Article{Glorot2010a,
+  author  = {Glorot, Xavier and Bengio, Y.},
+  journal = {Journal of Machine Learning Research - Proceedings Track},
+  title   = {Understanding the difficulty of training deep feedforward neural networks},
+  year    = {2010},
+  month   = {01},
+  pages   = {249-256},
+  volume  = {9},
+}
+
 @Misc{Ghiasi2020,
   author    = {Ghiasi, Golnaz and Cui, Yin and Srinivas, Aravind and Qian, Rui and Lin, Tsung-Yi and Cubuk, Ekin D. and Le, Quoc V. and Zoph, Barret},
   title     = {Simple Copy-Paste is a Strong Data Augmentation Method for Instance Segmentation},
@@ -993,155 +1453,7 @@ visible units for learning the next RBM
   publisher = {arXiv},
 }
 
-@Misc{Saxe2013,
-  author    = {Saxe, Andrew M. and McClelland, James L. and Ganguli, Surya},
-  title     = {Exact solutions to the nonlinear dynamics of learning in deep linear neural networks},
-  year      = {2013},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1312.6120},
-  keywords  = {Neural and Evolutionary Computing (cs.NE), Disordered Systems and Neural Networks (cond-mat.dis-nn), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), Neurons and Cognition (q-bio.NC), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Physical sciences, FOS: Physical sciences, FOS: Biological sciences, FOS: Biological sciences},
-  publisher = {arXiv},
-}
-
-@Article{Yamashita2018,
-  author     = {Rikiya Yamashita and Mizuho Nishio and Richard Kinh Gian Do and Kaori Togashi},
-  journal    = {Insights into Imaging},
-  title      = {Convolutional neural networks: an overview and application in radiology},
-  year       = {2018},
-  month      = {jun},
-  number     = {4},
-  pages      = {611--629},
-  volume     = {9},
-  comment    = {-Two key hyperparameters that define the
-convolution operation are size and number of kernels. The
-former is typically 3 × 3, but sometimes 5 × 5 or 7 × 7
-- zeros are added on each side of the input tensor,
-so as to fit the center of a kernel on the outermost element and
-keep the same in-plane dimension through the convolution
-operation
-
-Convolution layer Kernels Kernel size, number of kernels, stride, padding, activation function
-
-Pooling layer None Pooling method, filter size, stride, padding
-
-Fully connected layer Weights Number of weights, activation function
-
-Others Model architecture, optimizer, learning rate, loss function, mini-batch
-size, epochs, regularization, weight initialization, dataset splitting
-
-- A max pooling with a filter of size 2 × 2 with a
-stride of 2 is commonly used in practice
-
--Global average pooling typically applied only once before  the fully connected layers
-
--ctivation function applied to the last fully connected
-layer is usually different from the others
--softmax function which normalizes out-
-put real values from the last fully connected layer to target
-class probabilities
-
-- many improvements on the gra-
-dient descent algorithm have been proposed and widely used,
-such as SGD with momentum, RMSprop, and Adam
-
--Dropout is a recently introduced reg-
-ularization technique where randomly selected activations are set to 0 during the training, so that the model becomes less
-sensitive to specific weights in the network	
-
--include regularization with dropout or weight decay, batch
-normalization, and data augmentation, as well as reducing
-architectural complexity
-
--There are a couple of techniques
-available to train a model efficiently on a smaller dataset: data
-augmentation and transfer learning.
-
--whether transfer learning with such networks im-
-proves the performance in the medical field compared to that
-with ImageNet pretrained models is not clear and remains an
-area of further investigation
-
--Transfere Learning :network is
-pretrained on an extremely large dataset, such as ImageNet -> you can also just use a pretrained convolution base for the network that is just capable to recognize the main features 
-
-- the annotation cost for aradiological image is much larger than a general image because radiologist expertise is required for annotation.
-
-- adding a small amount of gaussian noise doesnt impact the generall look of the picture which means it would still be interpreted the same way from a doctor that means that we can use this methode to modify our data},
-  doi        = {10.1007/s13244-018-0639-9},
-  priority   = {prio1},
-  publisher  = {Springer Science and Business Media {LLC}},
-  ranking    = {rank5},
-  readstatus = {read},
-}
-
-@InCollection{Zeiler2014,
-  author    = {Matthew D. Zeiler and Rob Fergus},
-  booktitle = {Computer Vision {\textendash} {ECCV} 2014},
-  publisher = {Springer International Publishing},
-  title     = {Visualizing and Understanding Convolutional Networks},
-  year      = {2014},
-  pages     = {818--833},
-  abstract  = {-},
-  doi       = {10.1007/978-3-319-10590-1_53},
-}
-
-@Article{Selvaraju2016,
-  author     = {Selvaraju, Ramprasaath R. and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
-  title      = {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization},
-  year       = {2016},
-  abstract   = {-proposition of grad cam a technique for producing "visual explanations" for decisions  from a large class of convolutional Neural Networks},
-  comment    = {-A drawback of CAM is that it requires feature maps to di-
-rectly precede softmax layers, so it is only applicable to a
-particular kind of CNN architectures
--We introduce a
-new way of combining feature maps using the gradient signal
-that does not require any modification in the network architec-
-ture
-
--calc L_GradCAM for class c :
--we first calculate the gradient of the score for that class c,y^c (before the softmax function), with respect to the feature map activation A^k of a convolutional layer i.e. delta y / delta A^k
--these gradients flowing back are global average pooled over the width and height dimensions (indexed by i and j respectively) to obtain the neuron importance wight alpha^c_k
-
-L^c_GradCAM = ReLU(sum_k(alpha^c_k A^k ))
-
--t Grad-CAM generalizes CAM for a wide
-variety of CNN-based architecture},
-  copyright  = {arXiv.org perpetual, non-exclusive license},
-  doi        = {10.48550/ARXIV.1610.02391},
-  keywords   = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  priority   = {prio1},
-  publisher  = {arXiv},
-  ranking    = {rank4},
-  readstatus = {skimmed},
-}
-
-@InProceedings{Zhou_2016_CVPR,
-  author     = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
-  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  title      = {Learning Deep Features for Discriminative Localization},
-  year       = {2016},
-  month      = {June},
-  comment    = {-global average pool-
-ing which acts as a structural regularizer, preventing over-
-fitting during training
--CAM: . A class activation map for a particular cat-
-egory indicates the discriminative image regions used by the
-CNN to identify that category
-
--way easyer to compute that Grad Cam but just works for networks that end with conv and dense layer 
-
--We found that the localization ability of the networks im-
-proved when the last convolutional layer before GAP had a
-higher spatial resolution
--CAM enables classification-trained CNNs to learn
-to perform object localization, without using any bounding
-box annotations},
-  priority   = {prio2},
-  ranking    = {rank3},
-  readstatus = {read},
-}
-
-@InProceedings{pmlr-v48-gal16,
+@InProceedings{Gal2016,
   author     = {Gal, Yarin and Ghahramani, Zoubin},
   booktitle  = {Proceedings of The 33rd International Conference on Machine Learning},
   title      = {Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning},
@@ -1185,119 +1497,86 @@ ing deep learning models},
   url        = {https://proceedings.mlr.press/v48/gal16.html},
 }
 
-@InProceedings{pmlr-v28-wang13a,
-  author     = {Wang, Sida and Manning, Christopher},
-  booktitle  = {Proceedings of the 30th International Conference on Machine Learning},
-  title      = {Fast dropout training},
-  year       = {2013},
-  address    = {Atlanta, Georgia, USA},
-  editor     = {Dasgupta, Sanjoy and McAllester, David},
-  month      = {17--19 Jun},
-  number     = {2},
-  pages      = {118--126},
-  publisher  = {PMLR},
-  series     = {Proceedings of Machine Learning Research},
-  volume     = {28},
-  comment    = {-Dropout played
-an important role in the systems that won recent
-learning competitions such as ImageNet
-- Fast dropout fits into
-the general framework of integrating out noise added
-to the training data
--include bernoulli function over probability of not dropping out in stochastic gradient descent 
--Fast dropout is directly ap-
-plicable to dropping out the final hidden layer of neu-
-ral networks
--When the number of hidden units is
-more than 10 or so, we may again approximate their
-inputs as Gaussians and characterize their outputs by
-the output means and variances
+@Article{Feldkamp1984,
+  author     = {Feldkamp, Lee and Davis, L. C. and Kress, James},
+  journal    = {J. Opt. Soc. Am},
+  title      = {Practical Cone-Beam Algorithm},
+  year       = {1984},
+  month      = {01},
+  pages      = {612-619},
+  volume     = {1},
+  abstract   = {-As used here,
+direct three-dimensional (3D) reconstruction implies use of
+two-dimensional (2D)projection data with reconstruction on
+a 3D mesh of points, which may or may not be organized as
+parallel slices.
+-rewrite the Radon transform for two di-
+mensions in the form of a convolution and backprojection.
+This results in a fan-beam reconstruction formula and is a step
+preliminary to the determination of an algorithm for 3D re-
+construction.
 
--we use the output mean and variance to optimize the network but i dont really understand it 
-
--gradient approximation using Gaussian
-samples is comparable to the difference between dif-
-ferent MC dropout runs with 200 samples
-
-- accuracy and time taken, in the top half of table
-1. Sampling from the Gaussian is generally around 10
-times faster than MC dropout and performs compara-
-bly
-
--presented a way of getting the benefits of dropout
-training without actually sampling, thereby speeding
-up the process by an order of magnitude},
-  pdf        = {http://proceedings.mlr.press/v28/wang13a.pdf},
-  priority   = {prio2},
-  ranking    = {rank3},
-  readstatus = {read},
-  url        = {https://proceedings.mlr.press/v28/wang13a.html},
-}
-
-@Misc{Neelakantan2015,
-  author     = {Neelakantan, Arvind and Vilnis, Luke and Le, Quoc V. and Sutskever, Ilya and Kaiser, Lukasz and Kurach, Karol and Martens, James},
-  title      = {Adding Gradient Noise Improves Learning for Very Deep Networks},
-  year       = {2015},
-  comment    = {-A recurring theme in recent works is that commonly-used optimization techniques are not always
-sufficient to robustly optimize the models. In this work, we explore a simple technique of adding
-annealed Gaussian noise to the gradien
-- surprisingly effective
-- experiments indicate that adding annealed Gaussian noise by decaying the variance works better
-than using fixed Gaussian noise
--training step t
-
-g_t <- g_t * N(0, sigma_t^2)
-
-sigma_t^2 = n/(1+t)^gamma
-n selected from{0.01, 0.3, 1.0} and 
-gamma = 0.55
--> seems like n is usually 0.01
-
--adding noise to the gradient helps in achieving higher average and best accuracy
-- random restarts and the use of a momentum-based optimizer like
-Adam are not sufficient to achieve the best results in the absence of added gradient noise},
-  copyright  = {arXiv.org perpetual, non-exclusive license},
-  doi        = {10.48550/ARXIV.1511.06807},
-  keywords   = {Machine Learning (stat.ML), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+(nur ansatzweise gelesen ist aber wichtig um das bei der radon transform zu zitieren)},
   priority   = {prio1},
-  publisher  = {arXiv},
-  ranking    = {rank3},
-  readstatus = {read},
+  readstatus = {skimmed},
 }
 
-@Article{dozat2016incorporating,
+@Article{Dozat2016,
   author = {Dozat, Timothy},
   title  = {Incorporating nesterov momentum into adam},
   year   = {2016},
 }
 
-@Article{Whittier2020,
-  author    = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
-  journal   = {Osteoporosis International},
-  title     = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
-  year      = {2020},
-  month     = {may},
-  number    = {9},
-  pages     = {1607--1627},
-  volume    = {31},
-  comment   = {In general, density-based measures are less sensitive to motion
-artifacts than structure-based measures. It is acceptable to include
-all outcome variables from scans with a motion score of three or
-less, as the precision error is not substantially compromised for
-density (< 1% error), microarchitecture (< 5% error), and biome-
-chanical parameters, such as estimated failure load (< 4% error)
+ 
+@Article{Dinga2019,
+  author    = {Dinga, Richard and Penninx, Brenda W.J.H. and Veltman, Dick J. and Schmaal, Lianne and Marquand, Andre F.},
+  year      = {2019},
+  month     = aug,
+  comment   = {-most commonly used method for quantifying  model performance is to calculate the accuracy (proportion of correctly classified samples to the whole samplespace)
 
--.However, even with a standardized
-scoring system, motion scoring remains subjective, and op-
-erator agreement has shown to remain only moderate, even
-with intensive training},
-  doi       = {10.1007/s00198-020-05438-5},
-  publisher = {Springer Science and Business Media {LLC}},
+-results show that accuracy had worst performance with respect to statistical properties in various settings  using simulated data
+
+
+Categorical measures: 
+-most commonly used performance measures are based on evaluation of categorical predictions
+-accuracy can be misleading since  for example if the diseas precalence is 1% it is trivial to obtain an accuracy of 99% just by always reporting no desease. ->therefore balanced accuracy is often used 
+
+F1 scorre is a harmoic mean of positive predicted value(PPV) and sensitivity (so if one of the elements is close
+to 0, the whole score will be close to 0)
+
+... just read until begining of page 5},
+  doi       = {10.1101/743138},
+  publisher = {Cold Spring Harbor Laboratory},
+}
+
+@Misc{Dauphin2015,
+  author    = {Dauphin, Yann N. and de Vries, Harm and Bengio, Yoshua},
+  title     = {Equilibrated adaptive learning rates for non-convex optimization},
+  year      = {2015},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.1502.04390},
+  keywords  = {Machine Learning (cs.LG), Numerical Analysis (math.NA), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Mathematics, FOS: Mathematics},
+  publisher = {arXiv},
+}
+
+ 
+@Article{Cohen1960,
+  author    = {Cohen, Jacob},
+  journal   = {Educational and Psychological Measurement},
+  title     = {A Coefficient of Agreement for Nominal Scales},
+  year      = {1960},
+  issn      = {1552-3888},
+  month     = apr,
+  number    = {1},
+  pages     = {37--46},
+  volume    = {20},
+  doi       = {10.1177/001316446002000104},
+  publisher = {SAGE Publications},
 }
 
 @Article{Burghardt2011,
   author     = {Andrew J. Burghardt and Thomas M. Link and Sharmila Majumdar},
-  journal    = {Clinical Orthopaedics {\&}amp$\mathsemicolon$ Related Research},
+  journal    = {Clinical Orthopaedics Related Research},
   title      = {High-resolution Computed Tomography for Clinical Imaging of Bone Microarchitecture},
   year       = {2011},
   month      = {aug},
@@ -1376,6 +1655,24 @@ direction [},
   readstatus = {read},
 }
 
+@Book{Briggs2000,
+  author    = {Briggs, William L.},
+  publisher = {Society for Industrial and Applied Mathematics},
+  title     = {A multigrid tutorial.},
+  year      = {2000},
+  isbn      = {0898714621},
+  pages     = {193},
+}
+
+@InCollection{Bridle1990,
+  author    = {Bridle, John S},
+  booktitle = {Neurocomputing: Algorithms, architectures and applications},
+  publisher = {Springer},
+  title     = {Probabilistic interpretation of feedforward classification network outputs, with relationships to statistical pattern recognition},
+  year      = {1990},
+  pages     = {227--236},
+}
+
 @Article{Boutroy2005,
   author     = {Stephanie Boutroy and Mary L. Bouxsein and Francoise Munoz and Pierre D. Delmas},
   journal    = {The Journal of Clinical Endocrinology {\&}amp$\mathsemicolon$ Metabolism},
@@ -1409,28 +1706,98 @@ the scan unsuitable for analysis.},
   readstatus = {read},
 }
 
-@Article{article,
-  author     = {Feldkamp, Lee and Davis, L. C. and Kress, James},
-  journal    = {J. Opt. Soc. Am},
-  title      = {Practical Cone-Beam Algorithm},
-  year       = {1984},
-  month      = {01},
-  pages      = {612-619},
-  volume     = {1},
-  abstract   = {-As used here,
-direct three-dimensional (3D) reconstruction implies use of
-two-dimensional (2D)projection data with reconstruction on
-a 3D mesh of points, which may or may not be organized as
-parallel slices.
--rewrite the Radon transform for two di-
-mensions in the form of a convolution and backprojection.
-This results in a fan-beam reconstruction formula and is a step
-preliminary to the determination of an algorithm for 3D re-
-construction.
+@InCollection{Bottou2010,
+  author    = {L{\'{e}}on Bottou},
+  booktitle = {Proceedings of {COMPSTAT}{\textquotesingle}2010},
+  publisher = {Physica-Verlag {HD}},
+  title     = {Large-Scale Machine Learning with Stochastic Gradient Descent},
+  year      = {2010},
+  pages     = {177--186},
+  doi       = {10.1007/978-3-7908-2604-3_16},
+}
 
-(nur ansatzweise gelesen ist aber wichtig um das bei der radon transform zu zitieren)},
+@Article{Alzubaidi2021,
+  author     = {Laith Alzubaidi and Jinglan Zhang and Amjad J. Humaidi and Ayad Al-Dujaili and Ye Duan and Omran Al-Shamma and J. Santamar{\'{\i}}a and Mohammed A. Fadhel and Muthana Al-Amidie and Laith Farhan},
+  journal    = {Journal of Big Data},
+  title      = {Review of deep learning: concepts, {CNN} architectures, challenges, applications, future directions},
+  year       = {2021},
+  month      = {mar},
+  number     = {1},
+  volume     = {8},
+  comment    = {Optimizer selection:
+- two major issues in the learning process are learning algorithm selection(optimizer) while the other one is the issue of many enhancements(AdaDelta, Adagrad, and momentum)
+- batch gradient descent: the network
+parameters are updated merely one time behind considering all training datasets via
+the network
+-Stochastic Gradient Descent: The parameters are updated at each training sample
+Mini-batch Gradient Descent: In this approach, the training samples are partitioned
+into several mini-batches
+-other methodes are Momentum and Adaptive Moment Estimation
+-AlexNet improved its learning ability by its depth and implementing several parameter optimization strategies-> number extraction stages was increased
+- ZefNet was the frontier network, which proposed that filters with small sizes
+could enhance the CNN performance
+-VGG inserted a
+layer of the heap of 3 × 3 filters rather than the 5 × 5 and 11 × 11 filters in ZefNet.
+-GoogLeNet combines multiple-scale convolutional transformations by employing merge, transform, and split functions for feature extraction
+-architecture incorporates filters Page 31 of 74Alzubaidi et al. J Big Data (2021) 8:53
+of different sizes (5 × 5, 3 × 3, and 1 × 1) to capture channel information together with
+spatial information at diverse ranges of spatial resolution
+-proposed the idea of aux-
+iliary learners to speed up the rate of convergence
+-The novel idea of ResNet is its use of the
+bypass pathway concept
+-ayer widening is a highly successful method of per-
+formance enhancement compared to deepening the residual network.
+-slow enlargement in the feature map depth based on the
+up-down method
+-Xception model
+adjusted the original inception block by making it wider and exchanging a single
+dimension (3 × 3) followed by a 1 × 1 convolution to reduce computational complex-
+ity
+
+-> high resolution network might be a good approach for my thesis (necessary for position-sensitive vision tasks)
+
+- TL as compared to the target dataset. For instance,
+enhancing the medical image classification performance of CNN models is achieved
+by training the models using the ImageNet dataset, which contains natural images
+
+-TL from different domains does not significantly affect performance on
+medical imaging tasks
+
+-ncrease the amount of available data and avoid the overfitting issue, data
+augmentation techniques are one possible solution : Flipping, Cropping 
+Rotation Translation
+
+- biological data tends to be imbalanced, as negative samples are much more numerous than positive ones, care for this before training because the model might not perform well on small classes 
+-in healthcare or similar
+applications, the uncertainty scaling is frequently very significant
+
+-paper has greate information about how to tackle the vanishing gradient problem 
+-underspecification: It has been shown that small modifica-
+tions can force a model towards a completely different solution as well as lead to dif-
+ferent predictions in deployment domains
+
+Paper contains many intresting evaluation techniques like :Accuracy Sensitivity Specificity, Precision, F1_Score, J_Score, False Positive Rate FPR, Area Under the ROC Curve},
+  doi        = {10.1186/s40537-021-00444-8},
   priority   = {prio1},
-  readstatus = {skimmed},
+  publisher  = {Springer Science and Business Media {LLC}},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+ 
+@Article{Tran2019,
+  author    = {Tran, Doris My-Lan and Vilayphiou, Nicolas and Koller, Bruno},
+  journal   = {Journal of Bone and Mineral Research},
+  title     = {Clinical in Vivo Assessment of Bone Microarchitecture With CT Scanners: An Enduring Challenge},
+  year      = {2019},
+  issn      = {1523-4681},
+  month     = dec,
+  number    = {2},
+  pages     = {415--416},
+  volume    = {35},
+  doi       = {10.1002/jbmr.3919},
+  publisher = {Oxford University Press (OUP)},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

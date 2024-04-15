@@ -30,7 +30,7 @@ function (m::CBAM)(x)
         ,x->sigmoid_fast(x))    
     Channel_Attention=Chain(SkipConnection(
         Channel_Attention_Block,
-        (A,B)->reshape(A,(1,1,m.input_size,1)).*B)
+        (A,B)->reshape(A,(1,1,m.input_size,:)).*B)
         ,BatchNorm(m.input_size))
     
 
@@ -73,7 +73,7 @@ function (m::Inception_module)(x)
 end
 
 
-struct Network_in_Network{}
+struct Network_in_Network{} 
 
 end
 
