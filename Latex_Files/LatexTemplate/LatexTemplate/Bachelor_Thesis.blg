@@ -1,7 +1,12 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Bachelor_Thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
+<<<<<<< HEAD
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+=======
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 Database file #1: Bibliography.bib
 Warning--empty journal in Loshchilov2017
 Warning--empty journal in Ioffe2015

@@ -1527,6 +1527,7 @@ construction.
   year   = {2016},
 }
 
+<<<<<<< HEAD
  
 @Article{Dinga2019,
   author    = {Dinga, Richard and Penninx, Brenda W.J.H. and Veltman, Dick J. and Schmaal, Lianne and Marquand, Andre F.},
@@ -1572,6 +1573,50 @@ to 0, the whole score will be close to 0)
   volume    = {20},
   doi       = {10.1177/001316446002000104},
   publisher = {SAGE Publications},
+=======
+@Article{Whittier2020,
+<<<<<<< HEAD
+  author     = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
+  journal    = {Osteoporosis International},
+  title      = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
+  year       = {2020},
+  month      = {may},
+  number     = {9},
+  pages      = {1607--1627},
+  volume     = {31},
+  comment    = {In general, density-based measures are less sensitive to motion
+=======
+  author    = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
+  journal   = {Osteoporosis International},
+  title     = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
+  year      = {2020},
+  month     = {may},
+  number    = {9},
+  pages     = {1607--1627},
+  volume    = {31},
+  comment   = {In general, density-based measures are less sensitive to motion
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
+artifacts than structure-based measures. It is acceptable to include
+all outcome variables from scans with a motion score of three or
+less, as the precision error is not substantially compromised for
+density (< 1% error), microarchitecture (< 5% error), and biome-
+chanical parameters, such as estimated failure load (< 4% error)
+
+-.However, even with a standardized
+scoring system, motion scoring remains subjective, and op-
+erator agreement has shown to remain only moderate, even
+with intensive training},
+<<<<<<< HEAD
+  doi        = {10.1007/s00198-020-05438-5},
+  priority   = {prio1},
+  publisher  = {Springer Science and Business Media {LLC}},
+  ranking    = {rank4},
+  readstatus = {read},
+=======
+  doi       = {10.1007/s00198-020-05438-5},
+  publisher = {Springer Science and Business Media {LLC}},
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
+>>>>>>> e932acff89962bf4401e1722924232d7d28804d2
 }
 
 @Article{Burghardt2011,
@@ -1800,4 +1845,38 @@ Paper contains many intresting evaluation techniques like :Accuracy Sensitivity 
   publisher = {Oxford University Press (OUP)},
 }
 
+<<<<<<< HEAD
+@Article{Suzuki2017,
+  author    = {Kenji Suzuki},
+  journal   = {Radiological Physics and Technology},
+  title     = {Overview of deep learning in medical imaging},
+  year      = {2017},
+  month     = {jul},
+  number    = {3},
+  pages     = {257--273},
+  volume    = {10},
+  doi       = {10.1007/s12194-017-0406-5},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Bergh2021,
+  author    = {J.P. van den Bergh and P. Szulc and A.M. Cheung and M. Bouxsein and K. Engelke and R. Chapurlat},
+  journal   = {Osteoporosis International},
+  title     = {The clinical application of high-resolution peripheral computed tomography ({HR}-{pQCT}) in adults: state of the art and future directions},
+  year      = {2021},
+  month     = {may},
+  number    = {8},
+  pages     = {1465--1485},
+  volume    = {32},
+  comment   = {-(HR-pQCT) is a low-
+dose X-ray-based imaging technique that was initially devel-
+oped to image bone microarchitecture in vivo at peripheral
+skeletal sites to gain insight into pathophysiology underlying
+skeletal fragility and to improve prediction of fractures.},
+  doi       = {10.1007/s00198-021-05999-z},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+=======
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 @Comment{jabref-meta: databaseType:bibtex;}
