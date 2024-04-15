@@ -1,8 +1,0 @@
-\babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{7}{}%
-\contentsline {chapter}{\numberline {2}Literature review}{9}{}%
-\contentsline {chapter}{\numberline {3}Methods and experimental Setup}{23}{}%
-\contentsline {chapter}{\numberline {4}Results}{27}{}%
-\contentsline {chapter}{\numberline {5}Discussion}{47}{}%
-\contentsline {chapter}{\numberline {6}Conclusion}{49}{}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
