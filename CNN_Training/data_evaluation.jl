@@ -64,53 +64,67 @@ using Flux.Data: DataLoader
 for (root, dirs, files) in walkdir(pwd())
     for dir in dirs
         i = readdir(glob"*.jld2", dir)
+        println("test")
         for file in i
             if endswith(file,".jld2") 
                 Dict= load(file)
-                
-                test = Dict[:"single_stored_object"]
-                if length(test) == 7
-                    println(file)
-                    f1,prec,rec,acc,loss,cohens_kappa,confusion_matrix = test
-                    for (i,j) in [(f1,"f1"),(prec,"prec"),(rec,"rec"),(acc,"acc"),(loss,"loss"),(cohens_kappa,"cohens_kappa")]
-                        println(j)
-                        println(mean(i[(length(i)-5):length(i)]))
-                        println(std(i[(length(i)-5):length(i)]))
+                open("evaluated_data.txt", "w") do file1
+                    test = Dict[:"single_stored_object"]
+                    if length(test) == 7
+                        #println(file)
+                        write(file1,"$(file)\n")
+                        f1,prec,rec,acc,loss,cohens_kappa,confusion_matrix = test
+                        for (i,j) in [(f1,"f1"),(prec,"prec"),(rec,"rec"),(acc,"acc"),(loss,"loss"),(cohens_kappa,"cohens_kappa")]
+                            #println(j)
+                            mean_val = mean(i[(length(i)-5):length(i)])
+                            std_dev_val = std(i[(length(i)-5):length(i)])
+                            write(file1,"$(j)\n")
+                            write(file1,"$(mean_val)\n")
+                            write(file1,"$(std_dev_val)\n")
+                            #println(mean_val)
+                            #println(std_dev_val)
+                        end
+    
+                        #j = readdir(glob"*.bson", dir)
+                        #println(j[length(j)-1])
+                        #@load j[length(j)-1] model
+                        #model = model 
+                        #println(model[2].weight)
+                        #model = model |>gpu
+                        
+                        #y_=[]
+                        #y =[]
+                        #for (x_tmp,y_tmp) in test_model
+                        #    
+                        #    result = model(x_tmp)
+    
+                        #    result = result |> cpu
+                        #    println(result)
+                        #    CUDA.@allowscalar append!(y_,result)
+                        #    CUDA.@allowscalar append!(y,y_tmp)
+                        #end
+                        #y_=round.(y_)
+                        #println(y_)
+                        #println(y)
+                        #correctnes =Float32.(y_ .== y)
+                        #println(Y_actual_type .* correctnes')
+    
+    
+                    elseif length(test) == 5   
+                        #println(file)
+                        write(file1, "$(file)\n")
+                        a,b,c,d,e = test
+                        for i in [a,b,c,d,e]
+                            mean_val = mean(i[(length(i)-5):length(i)])
+                            std_dev_val = std(i[(length(i)-5):length(i)])
+                            write(file1,"$(mean_val)\n")
+                            write(file1,"$(std_dev_val)\n")
+                            #println(mean_val)
+                            #println(std_dev_val)
+                        end     
                     end
-
-                    #j = readdir(glob"*.bson", dir)
-                    #println(j[length(j)-1])
-                    #@load j[length(j)-1] model
-                    #model = model 
-                    #println(model[2].weight)
-                    #model = model |>gpu
-                    
-                    #y_=[]
-                    #y =[]
-                    #for (x_tmp,y_tmp) in test_model
-                    #    
-                    #    result = model(x_tmp)
-
-                    #    result = result |> cpu
-                    #    println(result)
-                    #    CUDA.@allowscalar append!(y_,result)
-                    #    CUDA.@allowscalar append!(y,y_tmp)
-                    #end
-                    #y_=round.(y_)
-                    #println(y_)
-                    #println(y)
-                    #correctnes =Float32.(y_ .== y)
-                    #println(Y_actual_type .* correctnes')
-
-
-                elseif length(test) == 5   
-                    println(file)
-                    a,b,c,d,e = test
-                    for i in [a,b,c,d,e]
-                        println(mean(i[(length(i)-5):length(i)]))
-                        println(std(i[(length(i)-5):length(i)]))
-                    end     
                 end
+
                  
             end
 
