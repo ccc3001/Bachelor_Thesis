@@ -56,16 +56,20 @@ for i in ProgressBar(readdir())
         end
         image_data = ImageMeta(img[:,:,:])
         #print(dataType, index,img["patientName"] )
+
+        #create dictionary with information of the ISQ file 
         Dict_1 = Dict("version" => img["version"],"scannerID" => img["scannerID"],"numberOfProjections" => img["numberOfProjections"],"scannerType" => img["scannerType"],"intensity" => img["intensity"]
         ,"dataRange" => img["dataRange"],"pixdim" => img["pixdim"],"reconstructionAlg" => img["reconstructionAlg"],"sliceThickness" => img["sliceThickness"],"sliceIncrement" => img["sliceIncrement"]
         ,"measurementIndex" => img["measurementIndex"],"referenceLine" => img["referenceLine"],"site" => img["site"],"dataOffset" => img["dataOffset"],"numberOfSamples" => img["numberOfSamples"]
         ,"sampleTime" => img["sampleTime"],"muScaling" => img["muScaling"],"physdim" => img["physdim"],"numBlocks" => img["numBlocks"],"energy" => img["energy"],"dataType" => img["dataType"]
         ,"headerSize" => img["headerSize"],"scanDistance" => img["scanDistance"],"startPosition" => img["startPosition"],"numBytes" => img["numBytes"],"patientIndex" => img["patientIndex"],"img_datatype_array" => img_datatype_array
         )#,"data" => image_data
-        # save the image in a json dictionary 
+
+        # save the additional image data in a json dictionary 
         stringdata = JSON.json(Dict_1)
         open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "json") , ISQname * "_ISQ" * ".json"), "w") do f
             write(f, stringdata)
+        # save the images in a HDF5 file format 
         h5open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "h5") , ISQname * "_ISQ" * ".h5"),"w") do h5
             for i in 1:img["pixdim"][3]
                 image =ImageAxes.data(img[:,:,i])
@@ -93,6 +97,7 @@ for i in ProgressBar(readdir())
         end
     
         image_data = ImageMeta(img[:,:,:])
+        #create dictionary with information of the ISQ file 
         Dict_2 = Dict("patientIndex" => img["patientIndex"],"detectorOffset" => img["detectorOffset"],"detectorSourceDist" => img["detectorSourceDist"],"detectorCenterDist" => img["detectorCenterDist"]
         ,"scannerID" => img["scannerID"],"detectorHeight" => img["detectorHeight"],"version" => img["version"],"numBytes" => img["numBytes"],"dataPixelR" => img["dataPixelR"]
         ,"detectorWidth" => img["detectorWidth"],"intensity" => img["intensity"],"dataRange" => img["dataRange"],"dataRecord" => img["dataRecord"],"integrationTime" => img["integrationTime"]
@@ -102,9 +107,11 @@ for i in ProgressBar(readdir())
         ,"orbitStartOffset" => img["orbitStartOffset"],"startPosition" => img["startPosition"],"calibrationScans" => img["calibrationScans"],"darkRecord" => img["darkRecord"],"img_datatype_array" => img_datatype_array)
         # save the image in a json dictionary
         stringdata = JSON.json(Dict_2)
+        # save the additional image data in a json dictionary 
         open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "json") , RSQname * "_RSQ" * ".json"), "w") do f
             write(f, stringdata)
         end
+        #save the images in a HDF5 file format 
         h5open(joinpath(joinpath(joinpath(pwd() , "extracted_data"), "h5") , RSQname * "_RSQ" * ".h5"),"w") do h5
             for i in 1:img["pixdim"][3]
                 image = ImageAxes.data(img[:,:,i])
