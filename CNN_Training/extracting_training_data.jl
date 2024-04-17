@@ -1,7 +1,8 @@
 using HDF5
 using ImageMetadata
 using JSON
-
+using ScancoFiles
+using Images
 
 #reading json dict 
 #dict2 = Dict()
@@ -48,25 +49,29 @@ using JSON
 #create a dictionary with all the isq files and the exact slices i want to read from them 
 
 
-ISQ_Dict = Dict{Int,String}
-n = 1
+global ISQ_Dict = Dict{Int,String}
+global n = 1
 for (root, dirs, files) in walkdir(pwd())
     for file in files
         ## checks for .ISQ files and creates .h5 files to get the filesize down 
-        if endswith(file , ".ISQ")
-            img = loadISQ(file)
-            h5open(pwd() * file[1:(length(file)-4)] * ".h5" ,"w") do h5
+        if endswith(file , ".ISQ") && isfile(root*"\\"*file)
+            img = loadISQ(root*"\\"*file)
+            h5open(pwd() *"\\"* file[1:(length(file)-4)] * ".h5" ,"w") do h5
                 for i in [1,15,29,43,57,70,83,97,110]
-                    image =ImageAxes.data(img[:,:,i])
+                    image =(ImageAxes.data(img[:,:,i]).-img["dataRange"][1])/(img["dataRange"][2]-img["dataRange"][1])
                     h5[string(i)]=image
                 end
             img_datatype_array=[0,0,0,0,0]
             if Int(img["dataType"]) <= 5
                 img_datatype_array[Int(img["dataType"])] = 1;
             end
-                h5[string(0)=img_datatype_array]
+            print(img["dataType"])
+            print(img_datatype_array)
+            print("\n")
+            
+            h5[string(111)]= img_datatype_array
             end
-            rm(pwd()*file)
+            rm(root*"\\"*file)
         end
     
 end
@@ -74,11 +79,13 @@ end
 
 ##goes through the foldern structure and creates a dictionary with all the location of  h5 files
 for (root, dirs, files) in walkdir(pwd())
-        if endswith(file, ".h5")
+    for file in files     
+        if endswith(file, ".h5") && isfile(root*"\\"*file)
             a = Dict(n => pwd() * file)
-            n = n + 1
-            ISQ_Dict = merge!(ISQ_Dict,a)
+            global n = n + 1
+            global ISQ_Dict = merge!(ISQ_Dict,a)
         end
+    end
     end
     
 end

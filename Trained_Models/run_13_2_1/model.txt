@@ -1,0 +1,219 @@
+
+
+#### Second model 
+
+global test_log =[[],[],[],[],[],[],[]]
+global training_log = [[],[],[],[],[],[],[]]
+
+opt = Adam(0.0001)
+model_name = "run_13_2_1"
+model = Chain(
+    #First convolution
+    BatchNorm(1),
+    Conv((3,3), 1=>16,leakyrelu),#511
+    x-> maxpool(x,(2,2),stride = 2 ),#255
+    #Second convolution 
+    Conv((3,3), 16=>16,leakyrelu),#254
+    x-> maxpool(x,(2,2),stride = 2 ),#127
+
+    #Third convolution 
+    Conv((3,3), 16=>32,leakyrelu),#126
+    x-> maxpool(x,(2,2),stride = 2),#63
+
+    #Fourth convolution
+    Conv((3,3), 32=>64,leakyrelu),#62
+    x-> maxpool(x,(2,2),stride = 2 ),#31
+
+    #Fifth convolution 
+    Parallel(hcat,
+        Conv((1,1), 64=>16,elu),
+    Chain(
+        Conv((1,1), 64=>64,elu;pad = 0),
+        Conv((3,3), 64=>16,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 64=>64,elu ; pad = 0),
+        Conv((5,5) ,64=>16,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),64=>16,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+    
+
+    Parallel(hcat,
+        Conv((1,1), 64=>16,elu),
+    Chain(
+        Conv((1,1), 64=>64,elu;pad = 0),
+        Conv((3,3), 64=>16,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 64=>64,elu ; pad = 0),
+        Conv((5,5) ,64=>16,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),64=>16,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+
+
+    Parallel(hcat,
+        Conv((1,1), 64=>16,elu),
+    Chain(
+        Conv((1,1), 64=>64,elu;pad = 0),
+        Conv((3,3), 64=>16,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 64=>64,elu ; pad = 0),
+        Conv((5,5) ,64=>16,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),64=>16,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+    
+    Parallel(hcat,
+        Conv((1,1), 64=>16,elu),
+    Chain(
+        Conv((1,1), 64=>64,elu;pad = 0),
+        Conv((3,3), 64=>16,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 64=>64,elu ; pad = 0),
+        Conv((5,5) ,64=>16,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),64=>16,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+
+    Parallel(hcat,
+        Conv((1,1), 64=>16,elu),
+    Chain(
+        Conv((1,1), 64=>64,elu;pad = 0),
+        Conv((3,3), 64=>16,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 64=>64,elu ; pad = 0),
+        Conv((5,5) ,64=>16,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),64=>16,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+
+    Parallel(hcat,
+        Conv((1,1), 64=>16,elu),
+    Chain(
+        Conv((1,1), 64=>64,elu;pad = 0),
+        Conv((3,3), 64=>16,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 64=>64,elu ; pad = 0),
+        Conv((5,5) ,64=>16,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),64=>16,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+
+    Parallel(hcat,
+        Conv((1,1), 64=>32,elu),
+    Chain(
+        Conv((1,1), 64=>32,elu;pad = 0),
+        Conv((3,3), 32=>32,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 64=>32,elu ; pad = 0),
+        Conv((5,5) ,32=>32,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),64=>32,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+    x-> maxpool(x,(2,2),stride = 2),
+
+
+    #Sixth Convolution
+    Parallel(hcat,
+        Conv((1,1), 128=>32,elu),
+    Chain(
+        Conv((1,1), 128=>32,elu;pad = 0),
+        Conv((3,3), 32=>32,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 128=>32,elu ; pad = 0),
+        Conv((5,5) ,32=>32,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),128=>32,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+
+    Parallel(hcat,
+        Conv((1,1), 128=>32,elu),
+    Chain(
+        Conv((1,1), 128=>32,elu;pad = 0),
+        Conv((3,3), 32=>32,elu; pad= 1)),
+    Chain(
+        Conv((1,1), 128=>32,elu ; pad = 0),
+        Conv((5,5) ,32=>32,elu, pad = 2)),
+    Chain(
+        x->maxpool(x,(3,3),stride=1,pad=1),
+        Conv((1,1),128=>32,elu))),
+    
+    x->reshape(x,(size(x,1),size(x,1),size(x,3)*4,size(x,4))),
+
+
+    #AlphaDropout(0.5),
+    Flux.GlobalMeanPool(),
+    Flux.flatten,
+    
+    #Fully connected layer
+    Dense(128=>32), 
+    Dense(32=>1,),
+    sigmoid_fast
+    #TODO: softmax needs to be added to last dense layer
+
+    )|> gpu 
+model=gpu(model)
+ps = Flux.params(model)
+global best_acc = 0 
+loss(x, y) = Flux.Losses.mse(model(x), y)
+epochs = 60
+#test_model= make_test_batch(H5_Dict,test_data,1)
+test_model= make_test_batch(H5_Dict,test_data,1)
+#train_model=make_test_batch(H5_Dict,training_data,1)
+for i in 1:epochs
+    global best_acc
+    @info("Epoch: $(i)")
+    #if !@isdefined best_acc 
+    #    best_acc = 0 
+    #    @info("best_acc set to zero")
+    #end
+    @info("creating training model ...")
+    train_model = make_test_batch(H5_Dict, training_data, 1,true, true,true,1)
+    @info("training model ...")
+    Flux.testmode!(model , false)
+    Flux.train!(weighted_loss,ps,train_model,opt)
+    Flux.testmode!(model , true)
+    @info("training done")
+
+    @info("calculating accuracy loss and f1 score of test set ... ")
+    global training_log = f1_score_precission_recall_accuracy(model,training_log, train_model, 1 , false )
+    global test_log =f1_score_precission_recall_accuracy(model, test_log, test_model, 1  , true )
+    acc = test_log[4][length(test_log[4])]
+    if acc >=0.99
+        @info(" -> Early-exiting: We reached our target accuracy of 99.9%")
+        break
+    end
+    if acc >= best_acc
+        @info(" -> New best accuracy! Saving model out to mnist_conv.bson")
+        if !isdir(model_name)
+            mkdir(model_name)
+        end
+        BSON.@save "$(model_name)\\epoch_$(i)_acc_$(acc).bson" model
+        best_acc = acc 
+    
+    end
+    #weight decay ...
+    #opt.eta = opt.eta*0.94 #for Adam
+    #opt.os[1].eta = opt.os[1].eta*0.89 # 0.94 is if we want a * 0.3 every 20 epochs atm its *0.3 every 10 epochs 
+end 
+
+save_models(test_log,training_log)
+
+
+JLD2.save_object("$(model_name)\\traininglog_epoch_model_$(model_name)_best_acc_$(best_acc).jld2",test_log)

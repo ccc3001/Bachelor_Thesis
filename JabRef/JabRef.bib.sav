@@ -1,7 +1,6 @@
 @Article{Walle2023,
   author     = {Matthias Walle and Dominic Eggemann and Penny R. Atkins and Jack J. Kendall and Kerstin Stock and Ralph Müller and Caitlyn J. Collins},
   journal    = {Bone},
-  title      = {Motion grading of high-resolution quantitative computed tomography supported by deep convolutional neural networks},
   year       = {2023},
   month      = {jan},
   pages      = {116607},
@@ -21,9 +20,16 @@
   month      = {nov},
   pages      = {101955},
   volume     = {110},
+  comment    = {uniformly distributed random rotation within ±5 degrees
+and translation within ±10 pixels around the manually annotated centre
+of LV cavity
+- initial learning rate 0.001, which was lowered by
+a factor of 10 at the validation loss plateaus with a patience of 30 epoch.
+Adam [38] was used as the optimise},
   doi        = {10.1016/j.artmed.2020.101955},
+  priority   = {prio1},
   publisher  = {Elsevier {BV}},
-  readstatus = {skimmed},
+  readstatus = {read},
 }
 
 @Article{Lorch2017,
@@ -398,7 +404,11 @@ accuracy in the large-scale image recognition settin},
 -scale jittering at training time leads to significantly better results than
 training on images with fixed smallest side
 - It was demonstrated that the representation depth is beneficial for the
-classification accuracy},
+classification accuracy
+
+-steadily increase the
+depth of the network by adding more convolutional layers, which is feasible due to the use of very
+small (3 × 3) convolution filters in all layers},
   copyright  = {arXiv.org perpetual, non-exclusive license},
   doi        = {10.48550/ARXIV.1409.1556},
   keywords   = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
@@ -1379,7 +1389,7 @@ direction [},
 @Article{Boutroy2005,
   author     = {Stephanie Boutroy and Mary L. Bouxsein and Francoise Munoz and Pierre D. Delmas},
   journal    = {The Journal of Clinical Endocrinology {\&}amp$\mathsemicolon$ Metabolism},
-  title      = {$\less$i$\greater$In Vivo$\less$/i$\greater$Assessment of Trabecular Bone Microarchitecture by High-Resolution Peripheral Quantitative Computed Tomography},
+  title      = {In Vivo Assessment of Trabecular Bone Microarchitecture by High-Resolution Peripheral Quantitative Computed Tomography},
   year       = {2005},
   month      = {dec},
   number     = {12},
@@ -1431,6 +1441,303 @@ construction.
 (nur ansatzweise gelesen ist aber wichtig um das bei der radon transform zu zitieren)},
   priority   = {prio1},
   readstatus = {skimmed},
+}
+
+@InProceedings{Woo_2023_CVPR,
+  author    = {Woo, Sanghyun and Debnath, Shoubhik and Hu, Ronghang and Chen, Xinlei and Liu, Zhuang and Kweon, In So and Xie, Saining},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {ConvNeXt V2: Co-Designing and Scaling ConvNets With Masked Autoencoders},
+  year      = {2023},
+  month     = {June},
+  pages     = {16133-16142},
+}
+
+ 
+@Article{Szegedy2017,
+  author    = {Szegedy, Christian and Ioffe, Sergey and Vanhoucke, Vincent and Alemi, Alexander},
+  journal   = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title     = {Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning},
+  year      = {2017},
+  issn      = {2159-5399},
+  month     = feb,
+  number    = {1},
+  volume    = {31},
+  comment   = {-benefits to combining Inception architec-
+tures with residual connections
+-residual connections acceler-
+ates the training of Inception networks significantly
+- studied whether Inception without residual connections can be
+made more efficient by making it deeper and wider
+-Each
+Inception block is followed by filter-expansion layer (1 ×
+1 convolution without activation)
+-scaling
+up the dimensionality of the filter bank before the residual
+addition to match the depth of the input.
+-step time of Inception-v4 proved to be signifi-
+cantly slower in practice, probably due to the larger number
+of layers
+-if the number of filters is
+very high, then even a very low (0.00001) learning rate is
+not sufficient to cope with the instabilities and the training
+with high learning rate had a chance to destroy its effects
+-inception-v3:
+	-converts 7x7 conv layers into multiple 3x3 layers 
+	-model is way deeper thatn googlenet and still just 2.5x higher cost and still much more efficient than vgg net 
+
+-training methodology batchsize 32 for 100 epochs},
+  doi       = {10.1609/aaai.v31i1.11231},
+  publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},
+}
+
+@Article{Wang2015,
+  author        = {Wang, Limin and Guo, Sheng and Huang, Weilin and Qiao, Yu},
+  title         = {Places205-VGGNet Models for Scene Recognition},
+  year          = {2015},
+  month         = aug,
+  abstract      = {VGGNets have turned out to be effective for object recognition in still images. However, it is unable to yield good performance by directly adapting the VGGNet models trained on the ImageNet dataset for scene recognition. This report describes our implementation of training the VGGNets on the large-scale Places205 dataset. Specifically, we train three VGGNet models, namely VGGNet-11, VGGNet-13, and VGGNet-16, by using a Multi-GPU extension of Caffe toolbox with high computational efficiency. We verify the performance of trained Places205-VGGNet models on three datasets: MIT67, SUN397, and Places205. Our trained models achieve the state-of-the-art performance on these datasets and are made public available.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1508.01667},
+  eprint        = {1508.01667},
+  file          = {:http\://arxiv.org/pdf/1508.01667v1:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@InCollection{bridle1990probabilistic,
+  author    = {Bridle, John S},
+  booktitle = {Neurocomputing: Algorithms, architectures and applications},
+  publisher = {Springer},
+  title     = {Probabilistic interpretation of feedforward classification network outputs, with relationships to statistical pattern recognition},
+  year      = {1990},
+  pages     = {227--236},
+}
+
+ 
+@InProceedings{Vieira2010,
+  author    = {Vieira, Susana M. and Kaymak, Uzay and Sousa, Joao M. C.},
+  booktitle = {International Conference on Fuzzy Systems},
+  title     = {Cohen’s kappa coefficient as a performance measure for feature selection},
+  year      = {2010},
+  month     = jul,
+  publisher = {IEEE},
+  comment   = {-main idea of feature selection is to choose a subset of available features , by eliminating features with little or no predictive information
+
+-performance assesments are usually done using a validation set or by cross-validation. nevertheless there is always the question how to measure the performance between different models? in this paper the importance of the robustness of this measure is targeted. Cohen's kappa coefficient is a statistical measure of inter-rater  agreement for qualitative items. it is genreally thought to be a more robust measure  than simple percent agreement calculation since it takes into account the agreement occuring by chance 
+
+-Cohens Kappa [4] was first introduced as a measure of
+agreement between observers of psychological behavior. The
+original intent of Cohens Kappa was to measure the degree of
+agreement or disagreement of two or more people observing
+the same phenomenon.},
+  doi       = {10.1109/fuzzy.2010.5584447},
+}
+
+ 
+@Article{Dinga2019,
+  author    = {Dinga, Richard and Penninx, Brenda W.J.H. and Veltman, Dick J. and Schmaal, Lianne and Marquand, Andre F.},
+  year      = {2019},
+  month     = aug,
+  comment   = {-most commonly used method for quantifying  model performance is to calculate the accuracy (proportion of correctly classified samples to the whole samplespace)
+
+-results show that accuracy had worst performance with respect to statistical properties in various settings  using simulated data
+
+
+Categorical measures: 
+-most commonly used performance measures are based on evaluation of categorical predictions
+-accuracy can be misleading since  for example if the diseas precalence is 1% it is trivial to obtain an accuracy of 99% just by always reporting no desease. ->therefore balanced accuracy is often used 
+
+F1 scorre is a harmoic mean of positive predicted value(PPV) and sensitivity (so if one of the elements is close
+to 0, the whole score will be close to 0)
+
+... just read until begining of page 5},
+  doi       = {10.1101/743138},
+  publisher = {Cold Spring Harbor Laboratory},
+}
+
+ 
+@Article{Cohen1960,
+  author    = {Cohen, Jacob},
+  journal   = {Educational and Psychological Measurement},
+  title     = {A Coefficient of Agreement for Nominal Scales},
+  year      = {1960},
+  issn      = {1552-3888},
+  month     = apr,
+  number    = {1},
+  pages     = {37--46},
+  volume    = {20},
+  doi       = {10.1177/001316446002000104},
+  publisher = {SAGE Publications},
+}
+
+@Article{,
+}
+
+ 
+@Article{Tian2022,
+  author     = {Tian, Yingjie and Su, Duo and Lauria, Stanislao and Liu, Xiaohui},
+  journal    = {Neurocomputing},
+  title      = {Recent advances on loss functions in deep learning for computer vision},
+  year       = {2022},
+  issn       = {0925-2312},
+  month      = aug,
+  pages      = {129--158},
+  volume     = {497},
+  doi        = {10.1016/j.neucom.2022.04.127},
+  priority   = {prio2},
+  publisher  = {Elsevier BV},
+  ranking    = {rank4},
+  readstatus = {skimmed},
+}
+
+ 
+@Article{Shorten2019,
+  author    = {Shorten, Connor and Khoshgoftaar, Taghi M.},
+  journal   = {Journal of Big Data},
+  title     = {A survey on Image Data Augmentation for Deep Learning},
+  year      = {2019},
+  issn      = {2196-1115},
+  month     = jul,
+  number    = {1},
+  volume    = {6},
+  comment   = {data augmentation based on basic image manipulations 
+generic transformations
+
+-describes different augmentation techniques based on geometric transformations
+
+-also talk about the safety of functions 
+
+-flipping: Horizontal axis flipping is much more common than flipping the vertical axis
+-one of the easiest implementations 
+-cropping: central patch of image 
+-Additionally,
+random cropping can also be used to provide an effect very similar to translations
+-rotation:Rotation augmentations are done by rotating the image right or left on an axis
+between 1° and 359°
+- safety of rotation augmentations is heavily determined by
+the rotation degree parameter
+problem with mnist if rot more than 20 deg
+-translation: shit images left right up down can be very useful transformation to avoid positional bias in the data 
+-noise injection: Noise injection consists of injecting a matrix of random values usually drawn from a
+Gaussian distribution.
+-Adding noise to images can help CNNs learn
+more robust features
+
+-facial recognition geometric transformation 
+also usefull since they help the network overcome positional biases 
+-geometric transformations such ass translation or random cropping must be manually observed to make sure they  have not altered the label of the image
+
+-medical image analysis, the biases distancing
+the training data from the testing data are more complex than positional and transla-
+tional variances. Therefore, the scope of where and when geometric transformations
+can be applied is relatively limited
+
+-Kernel Filters: work by sliding a n x n matrix across an image with either a gaussian blur filter or a high contrast horizontl or vertical filter.
+-Kernel filters are a relatively unexplored area for Data Augmentation. A disadvantage
+of this technique is that it is very similar to the internal mechanisms of CNNs
+
+-mixing images: images are then mixed by averaging the pixel values
+for each of the RGB channels. This results in a mixed image which is used to train a clas-
+sification model
+- label assigned to the new image is the same as the first randomly
+selected image
+-when mixing
+images from the entire training set rather than from instances exclusively belonging
+to the same class},
+  doi       = {10.1186/s40537-019-0197-0},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+ 
+@InProceedings{Richter2021,
+  author    = {Richter, Mats L. and Schoning, Julius and Wiedenroth, Anna and Krumnack, Ulf},
+  booktitle = {2021 20th IEEE International Conference on Machine Learning and Applications (ICMLA)},
+  title     = {Should You Go Deeper? Optimizing Convolutional Neural Network Architectures without Training},
+  year      = {2021},
+  month     = dec,
+  publisher = {IEEE},
+  comment   = {-specialist often overshoot the number of convolutional layers in their design
+-propose design strategies based on a so-called border layer
+-currently only be approximated by
+comparative evaluation of trained mod
+-. Since
+convolutional layers can be considered feature extractors, the
+receptive field size is thus the natural upper limit to the size
+of features that a unit in a convolutional layer can extract
+from the input image
+- growth of the receptive field can lead
+to mismatches between the CNN architecture and the input
+image resolution, causing a loss of efficiency and predictive
+performanc
+-receptive field size increases with every
+convolutional layer l
+-the network gives a formular to calculate the receptive field sice for layer l this formular still does not work for Inception net v3 layers 
+-sequences of unproduc-
+tive layers are linked to a mismatch between CNN architecture
+and input resolution
+-Skip connections are a special case of non-sequential archi-
+tectures since they effectively create pathways that do not ex-
+pand the size of the receptive field and are often parameterless
+- skip connections
+effectively allow the CNN to skip all layers except the stem.
+Thus, the receptive field size is reduced effectively at each
+merging block of the pathway},
+  doi       = {10.1109/icmla52953.2021.00159},
+  ranking   = {rank5},
+}
+
+@Article{Loshchilov2017,
+  author        = {Ilya Loshchilov and Frank Hutter},
+  title         = {Decoupled Weight Decay Regularization},
+  year          = {2017},
+  month         = nov,
+  abstract      = {L$_2$ regularization and weight decay regularization are equivalent for standard stochastic gradient descent (when rescaled by the learning rate), but as we demonstrate this is \emph{not} the case for adaptive gradient algorithms, such as Adam. While common implementations of these algorithms employ L$_2$ regularization (often calling it "weight decay" in what may be misleading due to the inequivalence we expose), we propose a simple modification to recover the original formulation of weight decay regularization by \emph{decoupling} the weight decay from the optimization steps taken w.r.t. the loss function. We provide empirical evidence that our proposed modification (i) decouples the optimal choice of weight decay factor from the setting of the learning rate for both standard SGD and Adam and (ii) substantially improves Adam's generalization performance, allowing it to compete with SGD with momentum on image classification datasets (on which it was previously typically outperformed by the latter). Our proposed decoupled weight decay has already been adopted by many researchers, and the community has implemented it in TensorFlow and PyTorch; the complete source code for our experiments is available at https://github.com/loshchil/AdamW-and-SGDW},
+  archiveprefix = {arXiv},
+  comment       = {-weight decay is not equaly efficient in Adam as in SGD
+-the larger the runtime/number of batch
+passes to be performed, the smaller the optimal weight decay(ADAM and SGD)
+-ADAM cab substantially benefit from a scheduled learnigńg rate multiplyer 
+
+-introduce adamw as a new decoupled optimizer if we want to change the learning rate while training},
+  eprint        = {1711.05101},
+  file          = {:http\://arxiv.org/pdf/1711.05101v3:PDF},
+  keywords      = {cs.LG, cs.NE, math.OC},
+  primaryclass  = {cs.LG},
+}
+
+ 
+@Article{Narkhede2021,
+  author    = {Narkhede, Meenal V. and Bartakke, Prashant P. and Sutaone, Mukul S.},
+  journal   = {Artificial Intelligence Review},
+  title     = {A review on weight initialization strategies for neural networks},
+  year      = {2021},
+  issn      = {1573-7462},
+  month     = jun,
+  number    = {1},
+  pages     = {291--322},
+  volume    = {55},
+  doi       = {10.1007/s10462-021-10033-z},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{glorot2010,
+  author  = {Glorot, Xavier and Bengio, Y.},
+  journal = {Journal of Machine Learning Research - Proceedings Track},
+  title   = {Understanding the difficulty of training deep feedforward neural networks},
+  year    = {2010},
+  month   = {01},
+  pages   = {249-256},
+  volume  = {9},
+}
+
+@InProceedings{Szegedy_2015_CVPR,
+  author    = {Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Going Deeper With Convolutions},
+  year      = {2015},
+  month     = {June},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
