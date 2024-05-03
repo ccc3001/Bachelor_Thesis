@@ -1,8 +1,40 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{7}{}%
+\contentsline {section}{\numberline {1.1}Computer Tomography}{7}{}%
+\contentsline {section}{\numberline {1.2}Machine Learning}{8}{}%
 \contentsline {chapter}{\numberline {2}Literature review}{9}{}%
-\contentsline {chapter}{\numberline {3}Methods and experimental Setup}{23}{}%
-\contentsline {chapter}{\numberline {4}Results}{27}{}%
+\contentsline {section}{\numberline {2.1}Loss}{10}{}%
+\contentsline {section}{\numberline {2.2}Optimizer}{11}{}%
+\contentsline {section}{\numberline {2.3}Batch Normalization}{13}{}%
+\contentsline {section}{\numberline {2.4}Convolutional Neural Networks}{13}{}%
+\contentsline {section}{\numberline {2.5}Convolution Layer}{13}{}%
+\contentsline {section}{\numberline {2.6}Pooling Layer}{14}{}%
+\contentsline {section}{\numberline {2.7}Fully Connected Layer}{15}{}%
+\contentsline {section}{\numberline {2.8}Activation Function}{15}{}%
+\contentsline {section}{\numberline {2.9}ImageNet}{17}{}%
+\contentsline {section}{\numberline {2.10}GoogleNet}{17}{}%
+\contentsline {section}{\numberline {2.11}ResNet}{18}{}%
+\contentsline {section}{\numberline {2.12}receptive field}{18}{}%
+\contentsline {section}{\numberline {2.13}Data Augmentation}{19}{}%
+\contentsline {section}{\numberline {2.14}Transfer Learning}{20}{}%
+\contentsline {section}{\numberline {2.15}Early Stopping and Overfitting}{20}{}%
+\contentsline {section}{\numberline {2.16}Performance Measures}{21}{}%
+\contentsline {subsection}{\numberline {2.16.1}F1-Score}{21}{}%
+\contentsline {subsection}{\numberline {2.16.2}Cohen's Kappa}{22}{}%
+\contentsline {section}{\numberline {2.17}Existing Network Structure}{22}{}%
+\contentsline {chapter}{\numberline {3}Methods and experimental Setup}{25}{}%
+\contentsline {section}{\numberline {3.1}Performance Measures}{25}{}%
+\contentsline {section}{\numberline {3.2}Weight Initialization}{26}{}%
+\contentsline {section}{\numberline {3.3}Existing Network Structure}{26}{}%
+\contentsline {section}{\numberline {3.4}Loss}{26}{}%
+\contentsline {section}{\numberline {3.5}Data}{26}{}%
+\contentsline {section}{\numberline {3.6}Hardware}{27}{}%
+\contentsline {section}{\numberline {3.7}Data Augmentation}{27}{}%
+\contentsline {section}{\numberline {3.8}Optimizer}{28}{}%
+\contentsline {section}{\numberline {3.9}Network Building Blocks}{28}{}%
+\contentsline {chapter}{\numberline {4}Results}{29}{}%
+\contentsline {section}{\numberline {4.1}Augmentation Tests}{29}{}%
+\contentsline {section}{\numberline {4.2}Optimizer Tests}{35}{}%
 \contentsline {chapter}{\numberline {5}Discussion}{49}{}%
 \contentsline {chapter}{\numberline {6}Conclusion}{51}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,177 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alzubaidi et~al.(2021)Alzubaidi, Zhang, Humaidi, Al-Dujaili, Duan,
+  Al-Shamma, Santamar{\'{\i}}a, Fadhel, Al-Amidie, and Farhan]{Alzubaidi2021}
+Laith Alzubaidi, Jinglan Zhang, Amjad~J. Humaidi, Ayad Al-Dujaili, Ye~Duan,
+  Omran Al-Shamma, J.~Santamar{\'{\i}}a, Mohammed~A. Fadhel, Muthana Al-Amidie,
+  and Laith Farhan.
+\newblock Review of deep learning: concepts, {CNN} architectures, challenges,
+  applications, future directions.
+\newblock \emph{Journal of Big Data}, 8\penalty0 (1), mar 2021.
+\newblock \doi{10.1186/s40537-021-00444-8}.
+
+\bibitem[Bridle(1990)]{Bridle1990}
+John~S Bridle.
+\newblock Probabilistic interpretation of feedforward classification network
+  outputs, with relationships to statistical pattern recognition.
+\newblock In \emph{Neurocomputing: Algorithms, architectures and applications},
+  pages 227--236. Springer, 1990.
+
+\bibitem[Cohen(1960)]{Cohen1960}
+Jacob Cohen.
+\newblock A coefficient of agreement for nominal scales.
+\newblock \emph{Educational and Psychological Measurement}, 20\penalty0
+  (1):\penalty0 37--46, April 1960.
+\newblock ISSN 1552-3888.
+\newblock \doi{10.1177/001316446002000104}.
+
+\bibitem[Dinga et~al.(2019)Dinga, Penninx, Veltman, Schmaal, and
+  Marquand]{Dinga2019}
+Richard Dinga, Brenda~W.J.H. Penninx, Dick~J. Veltman, Lianne Schmaal, and
+  Andre~F. Marquand.
+\newblock August 2019.
+\newblock \doi{10.1101/743138}.
+
+\bibitem[Glorot and Bengio(2010)]{glorot2010}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In Yee~Whye Teh and Mike Titterington, editors, \emph{Proceedings of
+  the Thirteenth International Conference on Artificial Intelligence and
+  Statistics}, volume~9 of \emph{Proceedings of Machine Learning Research},
+  pages 249--256, Chia Laguna Resort, Sardinia, Italy, 13--15 May 2010. PMLR.
+\newblock URL \url{https://proceedings.mlr.press/v9/glorot10a.html}.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{He2016a}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, June 2016.
+
+\bibitem[Ioffe and Szegedy(2015)]{Ioffe2015}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock February 2015.
+\newblock \doi{10.48550/ARXIV.1502.03167}.
+
+\bibitem[Khan et~al.(2020)Khan, Sohail, Zahoora, and Qureshi]{Khan2020}
+Asifullah Khan, Anabia Sohail, Umme Zahoora, and Aqsa~Saeed Qureshi.
+\newblock A survey of the recent architectures of deep convolutional neural
+  networks.
+\newblock \emph{Artificial Intelligence Review}, 53\penalty0 (8):\penalty0
+  5455--5516, apr 2020.
+\newblock \doi{10.1007/s10462-020-09825-6}.
+
+\bibitem[Kingma and Ba(2014)]{Kingma2014}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization, 2014.
+
+\bibitem[Loshchilov and Hutter(2017)]{Loshchilov2017}
+Ilya Loshchilov and Frank Hutter.
+\newblock Decoupled weight decay regularization.
+\newblock November 2017.
+
+\bibitem[Mishkin et~al.(2017)Mishkin, Sergievskiy, and Matas]{Mishkin2017}
+Dmytro Mishkin, Nikolay Sergievskiy, and Jiri Matas.
+\newblock Systematic evaluation of convolution neural network advances on the
+  imagenet.
+\newblock \emph{Computer Vision and Image Understanding}, 161:\penalty0 11--19,
+  aug 2017.
+\newblock \doi{10.1016/j.cviu.2017.05.007}.
+
+\bibitem[Raghu et~al.(2019)Raghu, Zhang, Kleinberg, and Bengio]{Raghu2019}
+Maithra Raghu, Chiyuan Zhang, Jon Kleinberg, and Samy Bengio.
+\newblock Transfusion: Understanding transfer learning for medical imaging.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d'~Alché-Buc,
+  E.~Fox, and R.~Garnett, editors, \emph{Advances in Neural Information
+  Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+
+\bibitem[Ruder(2016)]{Ruder2016}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms, 2016.
+
+\bibitem[Shorten and Khoshgoftaar(2019)]{Shorten2019}
+Connor Shorten and Taghi~M. Khoshgoftaar.
+\newblock A survey on image data augmentation for deep learning.
+\newblock \emph{Journal of Big Data}, 6\penalty0 (1), July 2019.
+\newblock ISSN 2196-1115.
+\newblock \doi{10.1186/s40537-019-0197-0}.
+
+\bibitem[Sode et~al.(2011)Sode, Burghardt, Pialat, Link, and
+  Majumdar]{Sode2011}
+Miki Sode, Andrew~J. Burghardt, Jean-Baptiste Pialat, Thomas~M. Link, and
+  Sharmila Majumdar.
+\newblock Quantitative characterization of subject motion in {HR}-{pQCT} images
+  of the distal radius and tibia.
+\newblock \emph{Bone}, 48\penalty0 (6):\penalty0 1291--1297, jun 2011.
+\newblock \doi{10.1016/j.bone.2011.03.755}.
+
+\bibitem[Szegedy et~al.(2015)Szegedy, Liu, Jia, Sermanet, Reed, Anguelov,
+  Erhan, Vanhoucke, and Rabinovich]{Szegedy2015}
+Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir
+  Anguelov, Dumitru Erhan, Vincent Vanhoucke, and Andrew Rabinovich.
+\newblock Going deeper with convolutions.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, June 2015.
+
+\bibitem[Tran et~al.(2019)Tran, Vilayphiou, and Koller]{Tran2019}
+Doris My-Lan Tran, Nicolas Vilayphiou, and Bruno Koller.
+\newblock Clinical in vivo assessment of bone microarchitecture with ct
+  scanners: An enduring challenge.
+\newblock \emph{Journal of Bone and Mineral Research}, 35\penalty0
+  (2):\penalty0 415--416, December 2019.
+\newblock ISSN 1523-4681.
+\newblock \doi{10.1002/jbmr.3919}.
+
+\bibitem[Vieira et~al.(2010)Vieira, Kaymak, and Sousa]{Vieira2010}
+Susana~M. Vieira, Uzay Kaymak, and Joao M.~C. Sousa.
+\newblock Cohen’s kappa coefficient as a performance measure for feature
+  selection.
+\newblock In \emph{International Conference on Fuzzy Systems}. IEEE, July 2010.
+\newblock \doi{10.1109/fuzzy.2010.5584447}.
+
+\bibitem[Walle et~al.(2023)Walle, Eggemann, Atkins, Kendall, Stock, Müller,
+  and Collins]{Walle2023}
+Matthias Walle, Dominic Eggemann, Penny~R. Atkins, Jack~J. Kendall, Kerstin
+  Stock, Ralph Müller, and Caitlyn~J. Collins.
+\newblock Motion grading of high-resolution quantitative computed tomography
+  supported by deep convolutional neural networks.
+\newblock \emph{Bone}, 166:\penalty0 116607, jan 2023.
+\newblock \doi{10.1016/j.bone.2022.116607}.
+
+\bibitem[Whittier et~al.(2020)Whittier, Boyd, Burghardt, Paccou, Ghasem-Zadeh,
+  Chapurlat, Engelke, and Bouxsein]{Whittier2020}
+D.E. Whittier, S.K. Boyd, A.J. Burghardt, J.~Paccou, A.~Ghasem-Zadeh,
+  R.~Chapurlat, K.~Engelke, and M.L. Bouxsein.
+\newblock Guidelines for the assessment of bone density and microarchitecture
+  in vivo using high-resolution peripheral quantitative computed tomography.
+\newblock \emph{Osteoporosis International}, 31\penalty0 (9):\penalty0
+  1607--1627, may 2020.
+\newblock \doi{10.1007/s00198-020-05438-5}.
+
+\bibitem[Yamashita et~al.(2018)Yamashita, Nishio, Do, and
+  Togashi]{Yamashita2018}
+Rikiya Yamashita, Mizuho Nishio, Richard Kinh~Gian Do, and Kaori Togashi.
+\newblock Convolutional neural networks: an overview and application in
+  radiology.
+\newblock \emph{Insights into Imaging}, 9\penalty0 (4):\penalty0 611--629, jun
+  2018.
+\newblock \doi{10.1007/s13244-018-0639-9}.
+
+\bibitem[Zhang et~al.(2020)Zhang, Hann, Werys, Wu, Popescu, Lukaschuk, Barutcu,
+  Ferreira, and Piechnik]{Zhang2020}
+Qiang Zhang, Evan Hann, Konrad Werys, Cody Wu, Iulia Popescu, Elena Lukaschuk,
+  Ahmet Barutcu, Vanessa~M. Ferreira, and Stefan~K. Piechnik.
+\newblock Deep learning with attention supervision for automated motion
+  artefact detection in quality control of cardiac t1-mapping.
+\newblock \emph{Artificial Intelligence in Medicine}, 110:\penalty0 101955, nov
+  2020.
+\newblock \doi{10.1016/j.artmed.2020.101955}.
+
+\end{thebibliography}

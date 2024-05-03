@@ -1527,7 +1527,6 @@ construction.
   year   = {2016},
 }
 
-<<<<<<< HEAD
  
 @Article{Dinga2019,
   author    = {Dinga, Richard and Penninx, Brenda W.J.H. and Veltman, Dick J. and Schmaal, Lianne and Marquand, Andre F.},
@@ -1573,50 +1572,6 @@ to 0, the whole score will be close to 0)
   volume    = {20},
   doi       = {10.1177/001316446002000104},
   publisher = {SAGE Publications},
-=======
-@Article{Whittier2020,
-<<<<<<< HEAD
-  author     = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
-  journal    = {Osteoporosis International},
-  title      = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
-  year       = {2020},
-  month      = {may},
-  number     = {9},
-  pages      = {1607--1627},
-  volume     = {31},
-  comment    = {In general, density-based measures are less sensitive to motion
-=======
-  author    = {D.E. Whittier and S.K. Boyd and A.J. Burghardt and J. Paccou and A. Ghasem-Zadeh and R. Chapurlat and K. Engelke and M.L. Bouxsein},
-  journal   = {Osteoporosis International},
-  title     = {Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography},
-  year      = {2020},
-  month     = {may},
-  number    = {9},
-  pages     = {1607--1627},
-  volume    = {31},
-  comment   = {In general, density-based measures are less sensitive to motion
->>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
-artifacts than structure-based measures. It is acceptable to include
-all outcome variables from scans with a motion score of three or
-less, as the precision error is not substantially compromised for
-density (< 1% error), microarchitecture (< 5% error), and biome-
-chanical parameters, such as estimated failure load (< 4% error)
-
--.However, even with a standardized
-scoring system, motion scoring remains subjective, and op-
-erator agreement has shown to remain only moderate, even
-with intensive training},
-<<<<<<< HEAD
-  doi        = {10.1007/s00198-020-05438-5},
-  priority   = {prio1},
-  publisher  = {Springer Science and Business Media {LLC}},
-  ranking    = {rank4},
-  readstatus = {read},
-=======
-  doi       = {10.1007/s00198-020-05438-5},
-  publisher = {Springer Science and Business Media {LLC}},
->>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
->>>>>>> e932acff89962bf4401e1722924232d7d28804d2
 }
 
 @Article{Burghardt2011,
@@ -1830,6 +1785,7 @@ Paper contains many intresting evaluation techniques like :Accuracy Sensitivity 
   readstatus = {read},
 }
 
+<<<<<<< HEAD
  
 @Article{Tran2019,
   author    = {Tran, Doris My-Lan and Vilayphiou, Nicolas and Koller, Bruno},
@@ -1845,7 +1801,11 @@ Paper contains many intresting evaluation techniques like :Accuracy Sensitivity 
   publisher = {Oxford University Press (OUP)},
 }
 
+=======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
 @Article{Suzuki2017,
   author    = {Kenji Suzuki},
   journal   = {Radiological Physics and Technology},
@@ -1877,6 +1837,30 @@ skeletal fragility and to improve prediction of fractures.},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+<<<<<<< HEAD
 =======
->>>>>>> b8a9b037329df9438b574d1a23e195a2e710af71
+@Article{Agostinelli2014,
+  author        = {Agostinelli, Forest and Hoffman, Matthew and Sadowski, Peter and Baldi, Pierre},
+  title         = {Learning Activation Functions to Improve Deep Neural Networks},
+  year          = {2014},
+  month         = dec,
+  abstract      = {Artificial neural networks typically have a fixed, non-linear activation function at each neuron. We have designed a novel form of piecewise linear activation function that is learned independently for each neuron using gradient descent. With this adaptive activation function, we are able to improve upon deep neural network architectures composed of static rectified linear units, achieving state-of-the-art performance on CIFAR-10 (7.51%), CIFAR-100 (30.83%), and a benchmark from high-energy physics involving Higgs boson decay modes.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1412.6830},
+  eprint        = {1412.6830},
+  file          = {:http\://arxiv.org/pdf/1412.6830v3:PDF},
+  keywords      = {Neural and Evolutionary Computing (cs.NE), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.NE},
+  publisher     = {arXiv},
+}
+
+@InProceedings{Szegedy_2015_CVPR,
+  author    = {Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Going Deeper With Convolutions},
+  year      = {2015},
+  month     = {June},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

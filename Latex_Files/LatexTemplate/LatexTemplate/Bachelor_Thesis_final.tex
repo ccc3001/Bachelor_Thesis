@@ -158,7 +158,7 @@ twoside, BCOR10mm, 12pt, DIV13,headinclude, footexclude, final, abstracton, open
 \date{\today}
 \subject{Bachelor thesis}
 \professor{Prof.~Dr.-Ing.~Tobias Knopp}
-\advisor{Paul Jürß}
+\advisor{Paul Jürß, M.Sc.}
 
 
 
@@ -205,14 +205,14 @@ The lower results might be explained by the fact that we use XtremeCT I instead 
 
 
 \chapter{Introduction}
-
+\section{Computer Tomography}
 High-Resolution peripheral Quantitative Computed Tomography (HR-pQCT) is a specialized non-invasive imaging technique that provides detailed and accurate three-dimensional images of bone and tissue micro architecture at the peripheral skeletal sites. In this paper we focus  on the radius and tibia. This advanced imaging technique offers several distinct advantages like that scans provide high resolution images that allow a thorough assessment of the scanned bone micro architecture. It offers precise measurement of Bone Mineral Density(BMD) and geometric parameters such as trabecular thickness and cortical thickness. HR-pQCT has applications in both clinical and research settings and can help make more informed decisions about patient management and treatment strategies. It can provide insight into fracture or the risk of its occurrence. HR-pQCT imaging requires the patient to remain in position during the scan to avoid motion artifacts. This can be challenging for certain patient populations, such as children or individuals with limited  mobility. The XtremCT I (Scanco Media AG), a device that  was used to generated the test and training data for this paper, is vulnerable to patient movement for which it takes about 3-4 minutes for a scan which makes it difficult for patients to hold the chosen extremity in place for such a long time. This is also an issue when the extremity is hold in place by a cast.
 
  Depending on the severity of the motion artifact the scan must be repeated. To determine the severity of the scan, \cite{Whittier2020} introduced a scale from 1 (no visible motion artifacts) to 5 (significant horizontal streaks) to grade the severity of motion in scans. In clinical studies it is commonly implemented, that scans with a grading of 4 or 5 have to be repeated to get another scan with possibly mitigated motion artifacts. However, even with a standardized scoring system, motion scoring remains subjective. Operator agreement has shown to remain only moderate, even with intensive training. Studies have shown that operators disagree in up to 30\% of all cases \cite{Walle2023}. Due to this issue a objective and standardized method is desirable for the grading process. Papers like \cite{Walle2023} have taken an approach to find a suitable method for the objective grading of motion artifacts, with partial success.
  
-
+\section{Machine Learning}
 In the last few years a tremendous interest in machine learning emerged. Many applications have found a way in our modern society \cite{LeCun2015}. They can be found in applications like speech to text or the recommendations on e-commerce websites.
-With the emerging field of deep learning in computer vision machine learning got more attention. In 2012 the ILSVRC 2012 challenge  was won by the Convolutional Neural Network (CNN) based Network AlexNet outperforming the runner up with 10.8 percentage points lower top-5 error score of 15.3\% . Since then the application of deep learning structures like CNNs have seen rapid growth in fields like medical imaging. Fields including retinopathy screening, skin lesion classification and lymph node metastasis detection already have research showing that deep learning has a great potential in those fields . This holds also true for the research field of radiology there has been studies in fields like lesion detection, classification and segmentation \cite{Yamashita2018}.
+With the emerging field of deep learning in computer vision machine learning got more attention. In 2012 the ILSVRC 2012 challenge  was won by the Convolutional Neural Network (CNN) based Network AlexNet outperforming the runner up with 10.8 percentage points lower top-5 error score of 15.3\%. Since then the application of deep learning structures like CNNs have seen rapid growth in fields like medical imaging. Fields including retinopathy screening, skin lesion classification and lymph node metastasis detection already have research showing that deep learning has a great potential in those fields . This holds also true for the research field of radiology there has been studies in fields like lesion detection, classification and segmentation \cite{Yamashita2018}.
 
 A frequently occurring issue in medical imaging is the lack of training data. In our case we had 500 labeled examples of tibia and radius. If we compare this to the amount of data used in training state of the art networks with datasets like MNIST, CIFAR or ImageNet ranging from many thousand labeled images to over a million examples it's a small fraction. The main reason is that the labeling task in medical imaging can just be performed by professionals and therefore the process is costly and just a few people can do it.
 The data that we use in this paper to compare the different approaches was provided by the osteology department of the Universitätsklinikum Hamburg-Eppendorf. All 500 provided scans where generated by the Scanco XtremCT I.
@@ -244,7 +244,9 @@ HR-pQCT is a  dedicated extremity imaging system developed to image bone micro a
 %machine learning 
 In recent years machine learning has become a popular field in the research domain due to its versatile nature. It is a branch of artificial intelligence and computer science which focuses on the use of data and algorithms to imitate the way humans learn. A machine learning algorithm operates by processing data to identify patterns and connections. It learns from the data through a training process, adjusting its internal parameters to minimize a measure called "loss". The loss quantifies the difference between the algorithm's predictions and the actual outcomes in the training data. The algorithm iterative refines its parameters to reduce this loss, making its predictions more accurate. Once trained, the algorithm can apply its learning to new, unseen data, aiming to make predictions or classifications with minimized error based on its learned patterns.
 
-Loss functions in machine learning can be categorized base on the task which they are used for. Most of them can either be applied to classification or regression tasks. A typical function for regression tasks and one of the early loss functions in machine learning is the $L_2$ (also known as Mean Squared Error) loss. This function quantifies the magnitude of the error between the prediction and actual output of a network. The squaring results in a higher penalty to higher deviations from the target value. 
+
+\section{Loss}
+Loss functions in machine learning can be categorized base on the task which they are used for. Most of them can either be applied to classification or regression tasks. A typical function for regression tasks and one of the early loss functions in machine learning is the $L^2$ (also known as Mean Squared Error) loss. This function quantifies the magnitude of the error between the prediction and actual output of a network. The squaring results in a higher penalty to higher deviations from the target value. 
 \begin{align}
 	L_2(y,\hat{y})=\frac{1}{N}\cdot \sum^{N}_{i=1}(y_i-\hat{y_i})^2
 \end{align}
@@ -280,6 +282,7 @@ Weighted loss can also be applied to a single class classification model. Since 
 
 %TODO: maybe check if we can get a transition or change the start of optimizers
 
+\section{Optimizer}
 %optimizers
 The process of refining the data is done by a so called optimizer. There are various different optimization algorithms like stochastic gradient descent, RMSprop, Momentum or Adam. These algorithms differ in how they calculate and apply parameter updates based on the gradients of the loss function with respect to the model parameters (weight and biases) during training. The optimizer  seeks to find the optimal set of parameters by iterative updating the parameters in a way that converges the model in a direction of decreasing loss.
 
@@ -334,16 +337,17 @@ In this formulas $\eta_t$ denotes the schedule multiplier which can be fixed or 
 Using Adam is usually not sufficient to achieve the best results in the absence of added gradient noise. In one of the experiments conducted by \cite{Neelakantan2015} multiple approaches were used to train a network on the MNIST data set. Every approach was compared with and without adding Gaussian noise to the test data. The results of this experiment showed that in any of the chosen cases the best test and average test accuracy increased with the addition of noise, besides one case where the average stayed the same. 
 
 
-
+\section{Batch Normalization}
 %Batch Normalization
 To ease the training process the initial values of the networks parameters are typically normalized by initializing them with zero mean. By training on our data we would usually lose this normalization, which slows down training and amplifies changes as the network becomes deeper. To remove those effects and therefore enhance the training stability and convergence of deep neural networks, batch normalization can be employed. \cite{Ioffe2015} By standardizing the inputs within each mini-batch during training, gradient related issues are mitigated and convergence is  accelerated. Additionally, it acts as a form of regularization and curbs overfitting. With this method we are able to use higher learning rates and pay less attention to the initialization parameters. \cite{Ruder2016} 
 
 
-
+\section{Convolutional Neural Networks}
 %CNN
 CNNs are a class of deep learning models specifically designed for processing structured grid-like data, such as images, by automatically learning hierarchical patterns and features. CNNs are widely used in computer vision tasks and have revolutionized the field of image recognition, object detection, and image generation. CNNs excel at tasks like image classification where the network assigns a label or category to an input image.
 %Convolutional Layer
 
+\section{Convolution Layer}
 The fundamental building blocks of CNNs are convolution layers which perform convolution operations on input data. These layers apply a set of learnable filters (also called kernels) to the input images by sliding the filter over the data and computing element-wise multiplications and summations to produce feature maps which are shown in \ref{fig:fig2}. This layers purpose is detecting different features like edges, textures and more complex patterns. The learned features become progressively more abstract as they pass through multiple convolution layers making it possible to classify complex structures. Two key hyper parameters that define the convolution operation are size and number of kernels. The former is typically 3 × 3, but sometimes 5 × 5 or 7 × 7. The application of a convolution layer on a matrix shrinks it in size. To get the desired output size there are two parameters, named padding and stride, which can be changed to modify the output size. 
  
  The first possibility is to add padding which adds a number of zero rows and columns to the input. This increases the resulting output size. During the convolution, the filter slides over the matrix from left to right and from top to bottom. Stride is the second changeable parameter. It defines the step size of the filter. It therefore defines how many elements the filter moves to the right or bottom per iteration.
@@ -357,7 +361,7 @@ The fundamental building blocks of CNNs are convolution layers which perform con
 	%https://datascience.stackexchange.com/questions/80436/understanding-how-convolutional-layers-work
 \end{figure}
 
-
+\section{Pooling Layer}
 %Pooling Layer
 The convolution layer is usually followed by a pooling layer. This layers down sample the feature maps, reducing the spatial dimensions while retaining important information. Usually the stride matches the field size of the pooling operation so that no feature of the previous layer is used twice. Max pooling and average pooling are the most common applied pooling operations. In the max pooling operation the maximum value of the current view is selected. This preserves detected features especially the most commonly used. The average pooling operation takes the averages of the values of the current view. During training in back propagation, average pooling provides a smoother gradient compared to max pooling. It also retains information from the original image since average pooling takes the collective information into account where max-pooling losses are at least 75\% of the previous images data. 
 
@@ -386,6 +390,7 @@ The convolution layer is usually followed by a pooling layer. This layers down s
 	AveragePooling(X)_{i,j,k} =\frac{1}{f_x\cdot f_y}\sum_{m,n} X_{i\cdot s_x + m, j \cdot s_y+n,k}
 \end{align}
 
+\section{Fully Connected Layer}
 %Fully Connected Layer
 After a few convolution and pooling layers the output gets flattened and feed into one or a set of Fully Connected (FC) layers (also known as dense layers). Each layer consists of interconnected nodes, also called neurons, where each output neuron is usually connected to every input. This feature enables the network to make high-level decisions based on the learned features. Each connection between nodes has an associated weight. To calculate the output of a FC layer the weighted sum for every single neuron is calculated. Most of the time a bias is added to the sum. Afterwards, an activation function is applied. 
 
@@ -402,6 +407,8 @@ After a few convolution and pooling layers the output gets flattened and feed in
 
 %https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/3_fully-connected-layer_0.jpg
 
+
+\section{Activation Function}
 %Activation functions 
 As stated before, to calculate the output from the weighted sum of the inputs from a node, an activation function is needed. Those functions are used to map the input into the required number range like a value between 0 and 1 or 1 and -1. The choice of the activation function has a large impact on the capability and performance of the neural network. It can ensure a better detection of complicated patterns and even accelerate the learning process. \cite{Khan2020} 
 
@@ -456,6 +463,7 @@ To enforce this stochastic constraint \cite{Bridle1990} suggests a normalized ex
 Another last layer activation function is the sigmoid activation function which is commonly used for binary classification.
  The graph of the sigmoid function is a S shaped curve that is 0.5 for $\sigma(0)$. It converges to 1 for x $\rightarrow \infty$ and 0 for x $\rightarrow -\infty$. This ensures that the values range between 0 and 1. 
  
+\section{ImageNet}
 The ImageNet Image Large Scale Visual Recognition Challenge (ILSVRC) is an annual competition in the field of computer vision which focused on object detection and image classification. In the initial challenge held from 2010 to 2017 many breakthroughs were seen with the performance quickly rising. After 2017 the data set was updated and the challenge continues until now. It involves training and evaluating algorithms on the large ImageNet data set which contains millions of labeled images across thousands of categories. Many breakthroughs in deep learning particularly in CNN's can be traced back to this challenge.
 
 %AlexNet
@@ -482,13 +490,15 @@ In the history of CNNs AlexNet is a pioneering architecture that played a pivota
 
 %network in Network 
 %GoogleNet / Inception Module
-
+\section{GoogleNet}
 GoogleNet (also known as Inception-V1) the winner of the 2014-ILSVRC competition introduced the inception block in its network achieving high accuracy with decreased computational cost. \cite{Szegedy2015}
 
 In this paper convolution layers are replaced with small blocks similar to the idea of substituting each layer with smaller networks which was proposed by network in network (NIN). It makes use of the idea of VVG that bigger filters of size 11x11 or 5x5 can be replaced by a stack of 3x3 filters. The use of smaller filters reduces computational complexity and induces the effect of large scale filter's. The inception block includes filters of size 1x1,3x3 and 5x5 to capture spatial information at different scales. Its split transform and merge concept addresses a problem related to the learning of diverse types of variations which are present in the same category of images.
 
 Since the introduction of Inception-V1 progress has been made. The latest model Inception-V3/V4 was to minimize the computational cost with no effect on the deeper network generation by using asymmetric small-size filters (1x5 and 1x7) rather then large scale filters. Moreover they utilized the bottleneck of a 1x1 convolution layer prior to the large size filters. 
 
+
+\section{ResNet}
 %ResNet ILSVRC 2015 
 In 2015,\cite{He2016a} won the ILSVRC competition by introducing Residual Networks(ResNet). These networks use a special component called the shortcut connection. This framework allows easier training of deeper networks. The shortcut connection allows the input data of a layer to be connected with the output of that layer and therefore input information can be kept. A great feature of this connection is not adding new parameters nor computational complexity to the network. As seen in \ref{fig:ResNet_block} it is common to have more than one convolution layer between a shortcut connection. Usually, two to three convolution layers are used but more are possible. One convolution layer is uncommon since it's like using a linear layer which wouldn't benefit the network.
 
@@ -500,7 +510,7 @@ In 2015,\cite{He2016a} won the ILSVRC competition by introducing Residual Networ
 	\caption{Convolutional layers with shortcut connection}
 	\label{fig:ResNet_block}
 \end{figure}%
-
+\section{receptive field}
 %receptive field 
 In recent years the depth of network increased drastically. In fact, \cite{Richter2021} stated that networks can be too deep. The features a convolution layer can process are limited by a parameter which is called receptive field. It predicts which layers won't contribute qualitatively to the accuracy.
 
@@ -518,7 +528,7 @@ When the input resolution i is smaller than the previous receptive field size th
 
 This layer separates the so called unproductive layers from the productive layers. \cite{Richter2021} states that with this layer it is possible to determine that every following layer will not contribute qualitatively to the test accuracy.
 
-
+\section{Data Augmentation}
 %imbalanced data in medical imaging   
 Commonly, biological data tends to be imbalanced. Often negative samples are more common, than positive ones. \cite{Alzubaidi2021} When training a network with imbalanced data, the network is prone to bias towards the major classes, since it prioritizes learning the features for detecting those classes. This also means that the network does not get enough exposure to detect minor features and therefore can't learn its distinctive features. All this leads to a higher number of false negatives. With the network trying to capture the minor features it can run into the issue of overfitting the network. In our case there is a lack of data that is labeled with the severity type of 1 and 5. This holds a major issue, since type 5 scans are in need of a re-scan. Thus, a high accuracy score for detecting this class to be sure that healthcare professionals won't unnecessarily re-scan patients is desirable. A high accuracy score in class detection could thereby reduce the patient's exposure to unnecessary radiation.%TODO: ausschmücken informationsdichte ist zu hoch 
 
@@ -536,7 +546,7 @@ Rotation can also be implemented as an augmentation technique. The rotation can 
 
 
 %TODO: \cite{Szegedy_2015_CVPR} GoogleNet
-
+\section{Transfer Learning}
 %Transfere Learning 
 Due to the lack of training data a possible method of enhancing the network is using transfer learning. This method is a common and effective strategy to use before training a network on a small data set. By pre-training the network on extremely large datasets like ImageNet with 1.4 million images and 1000 classes, trying to learn generic features that can be shared among networks. \cite{Yamashita2018} This is a unique advantage of deep learning that makes itself useful in various domain tasks with small datasets. Despite the popularity of transfer learning in medical imaging there hasn't been a lot of work studying of its effects. Usually transfer learning is performed by taking a standard IMAGENET architecture with pre-trained weights and then fine tuning its parameters on the data set which the network is supposed to detect.
 %When comparing medical datasets with IMAGENET we can see that medical images usually range from a few hundred to a couple hundred thousands  (not sure if i want to go in this direction)
@@ -544,7 +554,7 @@ Due to the lack of training data a possible method of enhancing the network is u
 
 \cite{Raghu2019} shows on two large scale medical image networks that the gain of transfer learning on those networks is marginal. It also shows that transfer usually helps large scale models, with small models showing little difference. Therefore, transfer learning is not applied in this study.
 
-
+\section{Early Stopping and Overfitting}
 % early stopping / overfitting 
 When training a CNN with to little data we usually make use of the method of early stopping. This technique is used in machine learning to prevent overfitting during model training. Overfitting occurs in machine learning when a model learns to perform well on the training data, capturing noise and irrelevant patterns, but usually performs poor on new unseen data. This indicates that the model has memorized the training data instead of learning the underlying patterns, leading to reduced generalization ability and diminished predictive accuracy on real-world examples. Early stopping involves monitoring the model's performance on a validation data set and stopping training when the performance on a validation data set starts to degrade. By preventing excessive training; early stopping helps the model to generalize better to new data and to improve its ability to make accurate predictions on new data.
 This technique strikes a balance between training optimal performance and avoiding the point where the model starts memorizing noise in the training data. %letzter satz vlt wecklassen
@@ -555,13 +565,15 @@ This technique strikes a balance between training optimal performance and avoidi
 %TODO: make a patr about this it sounds very interresting it pairs well with CBAM most of recent network engineering methods mainly target on three factors depth [19,9,10,5], width [10,22,6,8], and cardinality [7,11], we focus on the other aspect, ‘attention’, 
 %to incorporate: global average pulled features are  suboptimal features in order to infer fine channel attention and we suggest to use max-pooled features as well	
 
-
+\section{Performance Measures}
 % performance measures for models and how to sufficiently compare networks
 When training networks a crucial step is to compare different network structures and their performances with each other to get the best results. One possibility is to introduce a measure that is capable to express how well a network would perform on new, unseen data. The most common way, which is employed in the majority of machine learning papers, is to calculate the accuracy of a network. This is done by splitting the data into two sets of arbitrary sizes. The first set inherits 80 percent of the data and is harnessed to train the network. The second set is then used to calculate the accuracy this is done by taking the proportion of correctly classified samples to the whole sample space. This measure can be misleading especially in medical imaging due to the sometimes extreme uneven distribution of data. 
 
 %As an example if we have 1000 labeled images with 990 positive and 10 negative labeled images we could simply get a 99 percent accuracy by only outputting positives. This accuracy is in general true but if for example the network is suposed to detect if a tumor is seen in the image and we have 10 examples where a tumor should be detected, it would be way more important to detect the tumors and get a lower accuracy then not detecting the tumors at all. Since our data is also quite imbalanced a different measure needs to be used to compare networks with each other.
 %TODO: not sure if the example is correct since im not sure if the f1 score measure helps with the issiue 
- 
+
+\subsection{F1-Score}
+
 \begin{center}
 	\begin{tabular}{c||c|c}
 	
@@ -599,6 +611,7 @@ Hence multiplication is used in the numerator, the measure would tend to zero if
 
 Each data point is just counted as a correct or incorrect classification without considering the magnitude of the error because each data point counts either as a correct or incorrect without taking the magnitude of the error into account. \cite{Dinga2019}
 
+\subsection{Cohen's Kappa}
 %TODO: needs to be finished 
 A different measure which was initially introduced as a measure of agreement between observers of psychological behavior, is the degree of agreement between two or more people observing the same experiment. This measure is called Cohen's kappa. It's application in machine learning is quite easy to implement since there are at least two observers given by the labeled data and the results of the machine learning model.
 
@@ -641,6 +654,7 @@ $\kappa$ is the proportion of agreement after chance agreement is removed from c
 	\label{fig:walle_net}
 \end{figure}%
 
+\section{Existing Network Structure}
 \cite{Walle2023} introduces a CNN structure which is trained to classify the severity of motion artifacts in HR-pQCT. The Network is trained with images (XtremeCT II, Scanco Media AG) from 90 patients. The size of scans is 512 x 512 x 168 pixels. For the training 8 equally spaced images from every scan are used resulting in a database of 3312 images. Images of the training set are randomly flipped horizontally and vertically. 
 The implemented network structure begins with four alternating convolution and max-pooling layers followed by another convolution layer. The convolution layers employed leaky-ReLU as an activation function to enable faster learning while avoiding dead neurons. Afterwards, a global average pooling layer is implemented to reduce the output of each layer to size one which is necessary for the following dense layer. The classification is performed by a Fully Connected Layer integrating non-linear combinations of all high-level features using a standard Rectified Linear Unit (ReLU) activation function. The output layer used a softmax activation function which allowed the output to be understood as the classes probability. For training a weighted loss is implented to increase the accuracy for underrepresented classes. \cite{Walle2023} further applied a feature visualization tool to determine the validity of the learned filters.
 
@@ -648,11 +662,13 @@ The implemented network structure begins with four alternating convolution and m
 
 \chapter{Methods and experimental Setup }
 
-To develop the network and compare it, several steps are necessary. First of all, several measures are chosen to compare the networks structures with each other. Afterwards, different augmentation techniques are tested. To compare the performances we will look at the test and training set performance side by side. The side by side comparison can give valuable information on how the network learns, especially when identifying overfitting. Next the learning performance of the network needs to be evaluated. This includes the use of fixed and decaying learning rates. After these fundamental evaluations starts the testing of the effect different changes in the network structure have on its performance. The extracted information of those tests is then used to develop and test a final batch of networks.
+To develop the network and compare it, several steps are necessary. First of all, measures are chosen to compare the networks structures with each other. Afterwards, different augmentation techniques are tested. To compare the performances we will look at the test and training set performance side by side. The side by side comparison can give valuable information on how the network learns, especially when identifying overfitting. Next the learning performance of the network needs to be evaluated. This includes the use of fixed and decaying learning rates. After these fundamental evaluations starts the testing of the effect different changes in the network structure have on its performance. The extracted information of those tests is then used to develop and test a final batch of networks.
 
+\section{Performance Measures}
 Since we will compare our networks with the one from \cite{Walle2023}, it's significant to evaluate similar metrics. As the main indicator of convergence the loss metric is utilized. Going from that the focus is on the accuracy. F1-score and Cohen's kappa are calculated to get a better understanding on how the actual performance of the network looks like. Accuracy is a commonly used metric which can give a general understanding of the overall performance. Considering that the targeted issue is in medical imaging, accuracy is not sufficient, it doesn't inform about the distribution of true positives and true negatives. In the medical research field the Cohen's kappa coefficient is applied which is developed to measure the agreement between two or more raters. It's uniqueness is given by taking the agreement by chance into account. Still it can sometimes be difficult to interpret. 
 Therefore, the F1-score is implemented as a third metric. This measure can be applied in situations where there is an imbalance between classes, which is true in the present case. It is calculated from the precision and the recall of the test set and can  be applied as a convenient metric for comparing and communicating the overall performance of a classifier. 
 
+\section{Weight Initialization}
 The weight initialization which is employed for all networks is the preset weight initialization technique used in the Flux.jl library. It  is described in \cite{glorot2010}. This method draws random numbers from a uniform distribution on the interval [-x,x] where:
 
 \begin{align}
@@ -661,10 +677,13 @@ The weight initialization which is employed for all networks is the preset weigh
 
 The gain factor is preset to one, fan$\_$in is the number of input neurons connected to one output neuron and fan$\_$out is the number of output neurons connected to one input neuron.
 
+\section{Existing Network Structure}
 The initial approach of \cite{Walle2023} set the output size to five since the scans had five severity grades. This approach only yielded a low accuracy. Considering that the most significant information is if a re-scan is necessary or not the output size was changed to one, which yielded significantly better results. Accordingly, in this thesis an output size of one is implemented for the scans.
 
+\section{Loss}
 As a loss function the weighted binary cross entropy loss is chosen. Since the input data is not equally distributed this is meant to help the network shift into a more generalized direction.
 
+\section{Data}
 \begin{center}
 	\begin{tabular}{||c|c|c||c||}
 		
@@ -696,9 +715,10 @@ Considering the case that one doctor was for or against a re-scan contrary to th
 For training the network the radius scans are selected as those are more equal distributed. Tibia is not considered because the use of both sets together lead to a worse accuracy.
 
 The data is separated in a test and training set. The training set consists of 75\% of the data and test set of the remaining 25\%. The training data was then augmented. The test data is not augmented because in a real world example the augmented scans are unlikely to appear and would thereby perturbed the results. 
-
+\section{Hardware}
 For our training we used a "Nvidia Geforce RTX 2070 Super". It has 8 gigabytes of graphic memory. We decided to use a batch size of 16 images per iteration and a training set of 3200 images per Epoch. 
 
+\section{Data Augmentation}
 Considering that the data set only consists of 500 radius scans the data set was enlarge by different augmentation methods. Meanwhile not every method is suitable for any type of data. Different augmentation methods are compared and will be evaluated in the results. The outcome shows that the optimal set of augmentation methods consists of:
 
 \begin{itemize}
@@ -712,10 +732,11 @@ Considering that the data set only consists of 500 radius scans the data set was
 The implementation for Gaussian noise, 90$^{\circ}$ rotation and flipping of the images can be found in Julia libraries. The cropping of the image snippets is not as trivial. First, a minimal image size of 620 pixels is defined being the smallest frame where all the information is kept. The maximal size is limited by the input image size of 1536x1536 pixels. The decision on the frame size is made by a random normal distribution. Depending on the resulting size, the frame is randomly moved in horizontal or vertical direction, whilst always retaining the necessary information.
 %TODO: generate image that shows how the important information can be retained 
 
+\section{Optimizer}
 Commonly, Adam is used with a fixed learning rate of 0.001 which is sufficient in most cases. In the initial tests conducted with a learning rate of 0.001, the standard derivation of loss and accuracy is significant leading to the investigation on the learning rate. A strong oscillating loss or accuracy is usually the case when a network is trained with a learning rate that is too high. The learning rate determines how fast or slow the network will converge towards the optimal weights. A learning rate which is too large might lead the network to overshoot. This can either result in oscillation or in some extreme cases to a diverging network. In consequence different learning rates and methods are tested. The conducted tests used Adam and ADAMW with the possible addition of different weight decay parameters. Either a fixed value or a starting parameter which then applied an epoch wise decay function is chosen. These tests are conducted on the network of \cite{Walle2023} and trained for 60 epochs to get a general understanding of the parameters performances.
 
 
-
+\section{Network Building Blocks}
 Subsequently, the different building blocks or methods to be included in the network are tested as follows:
 
 \begin{itemize}
@@ -746,7 +767,7 @@ The information gathered in this approach are used to build a set of final netwo
 
 %I used the network structure given by \cite{Walle2023} as a reference network and trained it for 200 epochs with different augmentation compositions. Since the results of the paper showed that the network structure could perform well on the given image data I was able to use it to establish a augmented dataset that was optimized for training. This data set could then be used to train different type of networks. By looking at the change and maximum values of the kohen's kappa and accuracy and minimum for loss of the test set. With those information, I was able to extract which methods worked well for training which ensure a stable growth  and also result in higher maximum accuracy and kohen's kappa. Since the used Scans had a depth of 110 layers we were able to extract multiple images from one scan. To stay comparable with \cite{Walle2023} I also used 8 equally separated slices from every image, since I also saw the danger of taking to many images of one scan which might mean that the images could be to similar for the network and have no benefits when training. 
 %The data  Augmentation methodes i trialed where :
-
+\section{Augmentation Tests}
 The first milestone of this thesis was to replicate the results of \cite{Walle2023}. The networks displayed in \ref{fig:walle_net}, which will later be refered to as the initial model, was chosen with the output size as one. Consequently, the softmax function is not applied as the last layer activation function but sigmoid. This output size is chosen because it is more valuable to detect if a re-scan is necessary than the exact severity level. Furthermore, the results of \cite{Walle2023} show that the accuracy of the model significantly increases with the reduction of the output size.
 
 In our first test different combinations of augmentation techniques are employed in combination and trained on the model of \cite{Walle2023} for 200 epochs. Aiming to find the best augmentation method for the data. In general, the following augmentation techniques are applied to the training data: 
@@ -838,7 +859,7 @@ The simultaneous use of rotation by 90$^{\circ}$, 180$^{\circ}$ and 270$^{\circ}
 \end{figure}%
 
 \clearpage
-
+\section{Optimizer Tests}
 Due to the oscillation of the model the effect of adapting the learning rate over time is tested. When comparing the different learning models with each other it is clear that Adam, with a fixed learning rate, outperforms the two competing methods. After 60 epochs of training it has the lowest loss and the highest accuracy. It also seems to converge since the loss is decreasing in a somewhat linear manner. The other measures are also steadily increasing. This is different for Adam where a learning rate reduction of 0.94 per epoch is used equaling a learning rate decrease of 0.1 every 35 epochs. This method appears to quickly converge in the first 10 epochs and afterwards it slows down significant. If we look at the learning rate a major decrease in the first 10 epochs from 0.7 to 0.62 is observed. In the following 50 epochs it merely decreases by 0.02. This stagnation is also seen in the accuracy F1-score and Cohen's kappa without gaining a lot after the 10th epoch. A possible reason is that Adam's learning rate is not decoupled from the gradient based update method. Therefore, the performance of ADAMW with a learning rate decrease of 0.94 per epoch is analyzed. When looking at the loss of the network a somewhat steady decrease is detected which is not as fast as regular Adam. Although the learning rate is lower, the loss might decrease slower as well. By analyzing the other measures, it is apparent that after epoch 20 the results of the test set compared to the training set get worse. Thereby the results for the test set are decreasing while the ones for the training set increase slowly, with strong oscillation. Consequently, in the next tests Adam will be applied without a learning rate decrease. Still sometimes a learning rate of 0.0001 is implemented instead of the standard learning rate of 0.001. Due to the fact that bigger networks need a smaller learning rate because the network won't converge otherwise.
 
 

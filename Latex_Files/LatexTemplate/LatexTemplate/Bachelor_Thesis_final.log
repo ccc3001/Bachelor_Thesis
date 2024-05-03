@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.25)  22 APR 2024 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.8.25)  3 MAY 2024 17:32
 entering extended mode
 **./Bachelor_Thesis_final.tex
 (Bachelor_Thesis_final.tex
@@ -1148,9 +1148,16 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 19
 
  [3
 
-] [4
+] [4]
 
-] [5] [6
+LaTeX Warning: Citation `Walle2023' on page 5 undefined on input line 200.
+
+
+LaTeX Warning: Citation `Walle2023' on page 5 undefined on input line 200.
+
+[5
+
+] [6
 
 ]
 chapter 1.
@@ -1169,739 +1176,921 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 15.55188pt on input line 208.
+
+LaTeX Warning: Citation `Whittier2020' on page 7 undefined on input line 211.
+
+
+LaTeX Warning: Citation `Walle2023' on page 7 undefined on input line 211.
+
+
+LaTeX Warning: Citation `Walle2023' on page 7 undefined on input line 211.
+
+
+LaTeX Warning: Citation `LeCun2015' on page 7 undefined on input line 214.
+
+
+LaTeX Warning: Citation `Yamashita2018' on page 7 undefined on input line 215.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
+
+LaTeX Warning: Citation `Walle2023' on page 8 undefined on input line 219.
+
+
+LaTeX Warning: Citation `Walle2023' on page 8 undefined on input line 226.
+
+
+LaTeX Warning: Citation `Walle2023' on page 8 undefined on input line 228.
+
 [8]
 chapter 2.
+
+LaTeX Warning: Citation `Burghardt2011' on page 9 undefined on input line 237.
+
+
+LaTeX Warning: Citation `Bergh2021' on page 9 undefined on input line 240.
+
 LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 2
 41.
 (C:\Users\johan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tex-gyre\ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 )
+
+LaTeX Warning: Citation `Bergh2021' on page 9 undefined on input line 241.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9
 
 ]
-[10] [11] [12]
-<3x3_conv_layer.png, id=54, 2473.24pt x 311.1625pt>
+
+LaTeX Warning: Citation `Tian2022' on page 10 undefined on input line 261.
+
+[10]
+
+LaTeX Warning: Citation `Ruder2016' on page 11 undefined on input line 289.
+
+[11]
+
+LaTeX Warning: Citation `Kingma2014' on page 12 undefined on input line 299.
+
+
+LaTeX Warning: Citation `Loshchilov2017' on page 12 undefined on input line 327
+.
+
+
+LaTeX Warning: Citation `Neelakantan2015' on page 12 undefined on input line 33
+7.
+
+[12]
+
+LaTeX Warning: Citation `Ioffe2015' on page 13 undefined on input line 342.
+
+
+LaTeX Warning: Citation `Ruder2016' on page 13 undefined on input line 342.
+
+[13]
+<3x3_conv_layer.png, id=59, 2473.24pt x 311.1625pt>
 File: 3x3_conv_layer.png Graphic file (type png)
 <use 3x3_conv_layer.png>
-Package pdftex.def Info: 3x3_conv_layer.png  used on input line 354.
+Package pdftex.def Info: 3x3_conv_layer.png  used on input line 358.
 (pdftex.def)             Requested size: 437.73479pt x 55.07149pt.
- [13 <./3x3_conv_layer.png>]
-<max_pool.png, id=62, 784.9325pt x 348.30125pt>
+
+
+LaTeX Warning: Citation `Walle2023' on page 14 undefined on input line 359.
+
+
+LaTeX Warning: Citation `Walle2023' on page 14 undefined on input line 359.
+
+<max_pool.png, id=61, 784.9325pt x 348.30125pt>
 File: max_pool.png Graphic file (type png)
 <use max_pool.png>
-Package pdftex.def Info: max_pool.png  used on input line 368.
+Package pdftex.def Info: max_pool.png  used on input line 372.
 (pdftex.def)             Requested size: 196.97931pt x 87.4046pt.
-<average_pool.png, id=63, 320.19624pt x 142.5325pt>
+<average_pool.png, id=62, 320.19624pt x 142.5325pt>
 File: average_pool.png Graphic file (type png)
 <use average_pool.png>
-Package pdftex.def Info: average_pool.png  used on input line 376.
+Package pdftex.def Info: average_pool.png  used on input line 380.
 (pdftex.def)             Requested size: 196.97931pt x 87.68414pt.
-<Dense_layer.png, id=64, 510.90875pt x 711.65875pt>
+[14 <./3x3_conv_layer.png> <./max_pool.png> <./average_pool.png>]
+<Dense_layer.png, id=69, 510.90875pt x 711.65875pt>
 File: Dense_layer.png Graphic file (type png)
 <use Dense_layer.png>
-Package pdftex.def Info: Dense_layer.png  used on input line 398.
+Package pdftex.def Info: Dense_layer.png  used on input line 403.
 (pdftex.def)             Requested size: 109.43369pt x 152.42812pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Citation `Khan2020' on page 15 undefined on input line 413.
 
-[14 <./max_pool.png> <./average_pool.png>] [15 <./Dense_layer.png>]
-<Inception_modle_naive.png, id=74, 2076.75874pt x 924.45375pt>
+
+LaTeX Warning: Citation `Mishkin2017' on page 15 undefined on input line 415.
+
+[15 <./Dense_layer.png>]
+
+LaTeX Warning: Citation `Bridle1990' on page 16 undefined on input line 457.
+
+[16]
+
+LaTeX Warning: Citation `Alzubaidi2021' on page 17 undefined on input line 470.
+
+
+<Inception_modle_naive.png, id=77, 2076.75874pt x 924.45375pt>
 File: Inception_modle_naive.png Graphic file (type png)
 <use Inception_modle_naive.png>
-Package pdftex.def Info: Inception_modle_naive.png  used on input line 468.
+Package pdftex.def Info: Inception_modle_naive.png  used on input line 476.
 (pdftex.def)             Requested size: 214.49245pt x 95.46947pt.
-<Inception_modle_reduction.png, id=75, 1648.1575pt x 1007.765pt>
+<Inception_modle_reduction.png, id=78, 1648.1575pt x 1007.765pt>
 File: Inception_modle_reduction.png Graphic file (type png)
 <use Inception_modle_reduction.png>
-Package pdftex.def Info: Inception_modle_reduction.png  used on input line 476.
+Package pdftex.def Info: Inception_modle_reduction.png  used on input line 484.
 
 (pdftex.def)             Requested size: 214.49245pt x 131.13705pt.
- [16 <./Inception_modle_naive.png> <./Inception_modle_reduction.png>]
-<conv_layer_with_skip_connection.png, id=81, 1625.07124pt x 1566.85374pt>
+
+LaTeX Warning: Citation `Szegedy2015' on page 17 undefined on input line 494.
+
+[17 <./Inception_modle_naive.png> <./Inception_modle_reduction.png>]
+
+LaTeX Warning: Citation `He2016a' on page 18 undefined on input line 503.
+
+<conv_layer_with_skip_connection.png, id=84, 1625.07124pt x 1566.85374pt>
 File: conv_layer_with_skip_connection.png Graphic file (type png)
 <use conv_layer_with_skip_connection.png>
 Package pdftex.def Info: conv_layer_with_skip_connection.png  used on input lin
-e 499.
+e 509.
 (pdftex.def)             Requested size: 175.09123pt x 168.81602pt.
- [17 <./conv_layer_with_skip_connection.png>] [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-Underfull \vbox (badness 2980) has occurred while \output is active []
+LaTeX Warning: Citation `Richter2021' on page 18 undefined on input line 515.
 
- [20]
-<walle_net_different.png, id=96, 482.80376pt x 1295.84125pt>
+[18 <./conv_layer_with_skip_connection.png>]
+
+LaTeX Warning: Citation `Richter2021' on page 19 undefined on input line 529.
+
+
+LaTeX Warning: Citation `Alzubaidi2021' on page 19 undefined on input line 533.
+
+
+
+LaTeX Warning: Citation `Shorten2019' on page 19 undefined on input line 537.
+
+
+LaTeX Warning: Citation `Shorten2019' on page 19 undefined on input line 539.
+
+[19]
+
+LaTeX Warning: Citation `Zhang2020' on page 20 undefined on input line 545.
+
+
+LaTeX Warning: Citation `Yamashita2018' on page 20 undefined on input line 551.
+
+
+
+LaTeX Warning: Citation `Raghu2019' on page 20 undefined on input line 555.
+
+[20]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 575.
+ [21]
+
+LaTeX Warning: Citation `Dinga2019' on page 22 undefined on input line 612.
+
+
+LaTeX Warning: Citation `Cohen1960' on page 22 undefined on input line 634.
+
+
+LaTeX Warning: Citation `Vieira2010' on page 22 undefined on input line 634.
+
+<walle_net_different.png, id=99, 482.80376pt x 1295.84125pt>
 File: walle_net_different.png Graphic file (type png)
 <use walle_net_different.png>
-Package pdftex.def Info: walle_net_different.png  used on input line 639.
+Package pdftex.def Info: walle_net_different.png  used on input line 652.
 (pdftex.def)             Requested size: 100.67712pt x 270.21672pt.
 
-[21 <./walle_net_different.png>] [22]
-chapter 3.
-[23
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-] [24] [25] [26
+
+LaTeX Warning: Citation `Walle2023' on page 22 undefined on input line 658.
+
+
+LaTeX Warning: Citation `Walle2023' on page 22 undefined on input line 659.
+
+[22] [23 <./walle_net_different.png>] [24
 
 ]
+chapter 3.
+
+LaTeX Warning: Citation `Walle2023' on page 25 undefined on input line 668.
+
+
+LaTeX Warning: Citation `glorot2010' on page 25 undefined on input line 672.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+
+LaTeX Warning: Citation `Walle2023' on page 26 undefined on input line 681.
+
+[26]
+
+LaTeX Warning: Citation `Walle2023' on page 27 undefined on input line 736.
+
+[27]
+
+LaTeX Warning: Citation `Walle2023' on page 28 undefined on input line 749.
+
+
+LaTeX Warning: Citation `Walle2023' on page 28 undefined on input line 751.
+
+[28]
 chapter 4.
-<loss_png_final_run_0_7.png, id=117, 602.25pt x 401.5pt>
+
+LaTeX Warning: Citation `Walle2023' on page 29 undefined on input line 771.
+
+
+LaTeX Warning: Citation `Walle2023' on page 29 undefined on input line 771.
+
+
+LaTeX Warning: Citation `Walle2023' on page 29 undefined on input line 773.
+
+<loss_png_final_run_0_7.png, id=123, 602.25pt x 401.5pt>
 File: loss_png_final_run_0_7.png Graphic file (type png)
 <use loss_png_final_run_0_7.png>
-Package pdftex.def Info: loss_png_final_run_0_7.png  used on input line 764.
+Package pdftex.def Info: loss_png_final_run_0_7.png  used on input line 785.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_run_0_7.png, id=118, 602.25pt x 401.5pt>
+<accuracy_png_final_run_0_7.png, id=124, 602.25pt x 401.5pt>
 File: accuracy_png_final_run_0_7.png Graphic file (type png)
 <use accuracy_png_final_run_0_7.png>
-Package pdftex.def Info: accuracy_png_final_run_0_7.png  used on input line 765
+Package pdftex.def Info: accuracy_png_final_run_0_7.png  used on input line 786
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_run_0_7.png, id=119, 602.25pt x 401.5pt>
+<f1_score_png_final_run_0_7.png, id=125, 602.25pt x 401.5pt>
 File: f1_score_png_final_run_0_7.png Graphic file (type png)
 <use f1_score_png_final_run_0_7.png>
-Package pdftex.def Info: f1_score_png_final_run_0_7.png  used on input line 767
+Package pdftex.def Info: f1_score_png_final_run_0_7.png  used on input line 788
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_run_0_7.png, id=120, 602.25pt x 401.5pt>
+<cohens_kappa_png_final_run_0_7.png, id=126, 602.25pt x 401.5pt>
 File: cohens_kappa_png_final_run_0_7.png Graphic file (type png)
 <use cohens_kappa_png_final_run_0_7.png>
 Package pdftex.def Info: cohens_kappa_png_final_run_0_7.png  used on input line
- 768.
+ 789.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_run_6_2.png, id=121, 602.25pt x 401.5pt>
+<loss_png_final_run_6_2.png, id=127, 602.25pt x 401.5pt>
 File: loss_png_final_run_6_2.png Graphic file (type png)
 <use loss_png_final_run_6_2.png>
-Package pdftex.def Info: loss_png_final_run_6_2.png  used on input line 773.
+Package pdftex.def Info: loss_png_final_run_6_2.png  used on input line 794.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_run_6_2.png, id=122, 602.25pt x 401.5pt>
+<accuracy_png_final_run_6_2.png, id=128, 602.25pt x 401.5pt>
 File: accuracy_png_final_run_6_2.png Graphic file (type png)
 <use accuracy_png_final_run_6_2.png>
-Package pdftex.def Info: accuracy_png_final_run_6_2.png  used on input line 774
+Package pdftex.def Info: accuracy_png_final_run_6_2.png  used on input line 795
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_run_6_2.png, id=123, 602.25pt x 401.5pt>
+<f1_score_png_final_run_6_2.png, id=129, 602.25pt x 401.5pt>
 File: f1_score_png_final_run_6_2.png Graphic file (type png)
 <use f1_score_png_final_run_6_2.png>
-Package pdftex.def Info: f1_score_png_final_run_6_2.png  used on input line 776
+Package pdftex.def Info: f1_score_png_final_run_6_2.png  used on input line 797
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_run_6_2.png, id=124, 602.25pt x 401.5pt>
+<cohens_kappa_png_final_run_6_2.png, id=130, 602.25pt x 401.5pt>
 File: cohens_kappa_png_final_run_6_2.png Graphic file (type png)
 <use cohens_kappa_png_final_run_6_2.png>
 Package pdftex.def Info: cohens_kappa_png_final_run_6_2.png  used on input line
- 777.
+ 798.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_run_0_5.png, id=125, 602.25pt x 401.5pt>
+<loss_png_final_run_0_5.png, id=131, 602.25pt x 401.5pt>
 File: loss_png_final_run_0_5.png Graphic file (type png)
 <use loss_png_final_run_0_5.png>
-Package pdftex.def Info: loss_png_final_run_0_5.png  used on input line 782.
+Package pdftex.def Info: loss_png_final_run_0_5.png  used on input line 803.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_run_0_5.png, id=126, 602.25pt x 401.5pt>
+<accuracy_png_final_run_0_5.png, id=132, 602.25pt x 401.5pt>
 File: accuracy_png_final_run_0_5.png Graphic file (type png)
 <use accuracy_png_final_run_0_5.png>
-Package pdftex.def Info: accuracy_png_final_run_0_5.png  used on input line 783
+Package pdftex.def Info: accuracy_png_final_run_0_5.png  used on input line 804
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_run_0_5.png, id=127, 602.25pt x 401.5pt>
+<f1_score_png_final_run_0_5.png, id=133, 602.25pt x 401.5pt>
 File: f1_score_png_final_run_0_5.png Graphic file (type png)
 <use f1_score_png_final_run_0_5.png>
-Package pdftex.def Info: f1_score_png_final_run_0_5.png  used on input line 785
+Package pdftex.def Info: f1_score_png_final_run_0_5.png  used on input line 806
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_run_0_5.png, id=128, 602.25pt x 401.5pt>
+<cohens_kappa_png_final_run_0_5.png, id=134, 602.25pt x 401.5pt>
 File: cohens_kappa_png_final_run_0_5.png Graphic file (type png)
 <use cohens_kappa_png_final_run_0_5.png>
 Package pdftex.def Info: cohens_kappa_png_final_run_0_5.png  used on input line
- 786.
+ 807.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_run_0_4.png, id=129, 602.25pt x 401.5pt>
+<loss_png_final_run_0_4.png, id=135, 602.25pt x 401.5pt>
 File: loss_png_final_run_0_4.png Graphic file (type png)
 <use loss_png_final_run_0_4.png>
-Package pdftex.def Info: loss_png_final_run_0_4.png  used on input line 791.
+Package pdftex.def Info: loss_png_final_run_0_4.png  used on input line 812.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_run_0_4.png, id=130, 602.25pt x 401.5pt>
+<accuracy_png_final_run_0_4.png, id=136, 602.25pt x 401.5pt>
 File: accuracy_png_final_run_0_4.png Graphic file (type png)
 <use accuracy_png_final_run_0_4.png>
-Package pdftex.def Info: accuracy_png_final_run_0_4.png  used on input line 792
+Package pdftex.def Info: accuracy_png_final_run_0_4.png  used on input line 813
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_run_0_4.png, id=131, 602.25pt x 401.5pt>
+<f1_score_png_final_run_0_4.png, id=137, 602.25pt x 401.5pt>
 File: f1_score_png_final_run_0_4.png Graphic file (type png)
 <use f1_score_png_final_run_0_4.png>
-Package pdftex.def Info: f1_score_png_final_run_0_4.png  used on input line 794
+Package pdftex.def Info: f1_score_png_final_run_0_4.png  used on input line 815
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_run_0_4.png, id=132, 602.25pt x 401.5pt>
+<cohens_kappa_png_final_run_0_4.png, id=138, 602.25pt x 401.5pt>
 File: cohens_kappa_png_final_run_0_4.png Graphic file (type png)
 <use cohens_kappa_png_final_run_0_4.png>
 Package pdftex.def Info: cohens_kappa_png_final_run_0_4.png  used on input line
- 795.
+ 816.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_run_0_6.png, id=133, 602.25pt x 401.5pt>
+<loss_png_final_run_0_6.png, id=139, 602.25pt x 401.5pt>
 File: loss_png_final_run_0_6.png Graphic file (type png)
 <use loss_png_final_run_0_6.png>
-Package pdftex.def Info: loss_png_final_run_0_6.png  used on input line 800.
+Package pdftex.def Info: loss_png_final_run_0_6.png  used on input line 821.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_run_0_6.png, id=134, 602.25pt x 401.5pt>
+<accuracy_png_final_run_0_6.png, id=140, 602.25pt x 401.5pt>
 File: accuracy_png_final_run_0_6.png Graphic file (type png)
 <use accuracy_png_final_run_0_6.png>
-Package pdftex.def Info: accuracy_png_final_run_0_6.png  used on input line 801
+Package pdftex.def Info: accuracy_png_final_run_0_6.png  used on input line 822
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_run_0_6.png, id=135, 602.25pt x 401.5pt>
+<f1_score_png_final_run_0_6.png, id=141, 602.25pt x 401.5pt>
 File: f1_score_png_final_run_0_6.png Graphic file (type png)
 <use f1_score_png_final_run_0_6.png>
-Package pdftex.def Info: f1_score_png_final_run_0_6.png  used on input line 803
+Package pdftex.def Info: f1_score_png_final_run_0_6.png  used on input line 824
 .
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_run_0_6.png, id=136, 602.25pt x 401.5pt>
+<cohens_kappa_png_final_run_0_6.png, id=142, 602.25pt x 401.5pt>
 File: cohens_kappa_png_final_run_0_6.png Graphic file (type png)
 <use cohens_kappa_png_final_run_0_6.png>
 Package pdftex.def Info: cohens_kappa_png_final_run_0_6.png  used on input line
- 804.
+ 825.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-[27] [28 <./loss_png_final_run_0_7.png> <./accuracy_png_final_run_0_7.png> <./f
-1_score_png_final_run_0_7.png> <./cohens_kappa_png_final_run_0_7.png> <./loss_p
-ng_final_run_6_2.png> <./accuracy_png_final_run_6_2.png> <./f1_score_png_final_
-run_6_2.png> <./cohens_kappa_png_final_run_6_2.png>] [29 <./loss_png_final_run_
-0_5.png> <./accuracy_png_final_run_0_5.png> <./f1_score_png_final_run_0_5.png> 
-<./cohens_kappa_png_final_run_0_5.png> <./loss_png_final_run_0_4.png> <./accura
-cy_png_final_run_0_4.png> <./f1_score_png_final_run_0_4.png> <./cohens_kappa_pn
-g_final_run_0_4.png>] [30 <./loss_png_final_run_0_6.png> <./accuracy_png_final_
-run_0_6.png> <./f1_score_png_final_run_0_6.png> <./cohens_kappa_png_final_run_0
-_6.png>]
-<loss_png_11_1.png, id=149, 602.25pt x 401.5pt>
+[29
+
+] [30 <./loss_png_final_run_0_7.png> <./accuracy_png_final_run_0_7.png> <./f1_s
+core_png_final_run_0_7.png> <./cohens_kappa_png_final_run_0_7.png> <./loss_png_
+final_run_6_2.png> <./accuracy_png_final_run_6_2.png> <./f1_score_png_final_run
+_6_2.png> <./cohens_kappa_png_final_run_6_2.png>] [31 <./loss_png_final_run_0_5
+.png> <./accuracy_png_final_run_0_5.png> <./f1_score_png_final_run_0_5.png> <./
+cohens_kappa_png_final_run_0_5.png> <./loss_png_final_run_0_4.png> <./accuracy_
+png_final_run_0_4.png> <./f1_score_png_final_run_0_4.png> <./cohens_kappa_png_f
+inal_run_0_4.png>] [32 <./loss_png_final_run_0_6.png> <./accuracy_png_final_run
+_0_6.png> <./f1_score_png_final_run_0_6.png> <./cohens_kappa_png_final_run_0_6.
+png>]
+
+LaTeX Warning: Citation `Zhang2020' on page 33 undefined on input line 832.
+
+<loss_png_11_1.png, id=156, 602.25pt x 401.5pt>
 File: loss_png_11_1.png Graphic file (type png)
 <use loss_png_11_1.png>
-Package pdftex.def Info: loss_png_11_1.png  used on input line 814.
+Package pdftex.def Info: loss_png_11_1.png  used on input line 835.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_11_1.png, id=150, 602.25pt x 401.5pt>
+<accuracy_png_11_1.png, id=157, 602.25pt x 401.5pt>
 File: accuracy_png_11_1.png Graphic file (type png)
 <use accuracy_png_11_1.png>
-Package pdftex.def Info: accuracy_png_11_1.png  used on input line 815.
+Package pdftex.def Info: accuracy_png_11_1.png  used on input line 836.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_11_1.png, id=151, 602.25pt x 401.5pt>
+<f1_score_png_11_1.png, id=158, 602.25pt x 401.5pt>
 File: f1_score_png_11_1.png Graphic file (type png)
 <use f1_score_png_11_1.png>
-Package pdftex.def Info: f1_score_png_11_1.png  used on input line 817.
+Package pdftex.def Info: f1_score_png_11_1.png  used on input line 838.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_11_1.png, id=152, 602.25pt x 401.5pt>
+<cohens_kappa_png_11_1.png, id=159, 602.25pt x 401.5pt>
 File: cohens_kappa_png_11_1.png Graphic file (type png)
 <use cohens_kappa_png_11_1.png>
-Package pdftex.def Info: cohens_kappa_png_11_1.png  used on input line 818.
+Package pdftex.def Info: cohens_kappa_png_11_1.png  used on input line 839.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_11_2.png, id=153, 602.25pt x 401.5pt>
+<loss_png_11_2.png, id=160, 602.25pt x 401.5pt>
 File: loss_png_11_2.png Graphic file (type png)
 <use loss_png_11_2.png>
-Package pdftex.def Info: loss_png_11_2.png  used on input line 823.
+Package pdftex.def Info: loss_png_11_2.png  used on input line 844.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_11_2.png, id=154, 602.25pt x 401.5pt>
+<accuracy_png_11_2.png, id=161, 602.25pt x 401.5pt>
 File: accuracy_png_11_2.png Graphic file (type png)
 <use accuracy_png_11_2.png>
-Package pdftex.def Info: accuracy_png_11_2.png  used on input line 824.
+Package pdftex.def Info: accuracy_png_11_2.png  used on input line 845.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_11_2.png, id=155, 602.25pt x 401.5pt>
+<f1_score_png_11_2.png, id=162, 602.25pt x 401.5pt>
 File: f1_score_png_11_2.png Graphic file (type png)
 <use f1_score_png_11_2.png>
-Package pdftex.def Info: f1_score_png_11_2.png  used on input line 826.
+Package pdftex.def Info: f1_score_png_11_2.png  used on input line 847.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_11_2.png, id=156, 602.25pt x 401.5pt>
+<cohens_kappa_png_11_2.png, id=163, 602.25pt x 401.5pt>
 File: cohens_kappa_png_11_2.png Graphic file (type png)
 <use cohens_kappa_png_11_2.png>
-Package pdftex.def Info: cohens_kappa_png_11_2.png  used on input line 827.
+Package pdftex.def Info: cohens_kappa_png_11_2.png  used on input line 848.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<loss_png_11_3.png, id=157, 602.25pt x 401.5pt>
+<loss_png_11_3.png, id=164, 602.25pt x 401.5pt>
 File: loss_png_11_3.png Graphic file (type png)
 <use loss_png_11_3.png>
-Package pdftex.def Info: loss_png_11_3.png  used on input line 832.
+Package pdftex.def Info: loss_png_11_3.png  used on input line 853.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_11_3.png, id=158, 602.25pt x 401.5pt>
+<accuracy_png_11_3.png, id=165, 602.25pt x 401.5pt>
 File: accuracy_png_11_3.png Graphic file (type png)
 <use accuracy_png_11_3.png>
-Package pdftex.def Info: accuracy_png_11_3.png  used on input line 833.
+Package pdftex.def Info: accuracy_png_11_3.png  used on input line 854.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_11_3.png, id=159, 602.25pt x 401.5pt>
+<f1_score_png_11_3.png, id=166, 602.25pt x 401.5pt>
 File: f1_score_png_11_3.png Graphic file (type png)
 <use f1_score_png_11_3.png>
-Package pdftex.def Info: f1_score_png_11_3.png  used on input line 835.
+Package pdftex.def Info: f1_score_png_11_3.png  used on input line 856.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_11_3.png, id=160, 602.25pt x 401.5pt>
+<cohens_kappa_png_11_3.png, id=167, 602.25pt x 401.5pt>
 File: cohens_kappa_png_11_3.png Graphic file (type png)
 <use cohens_kappa_png_11_3.png>
-Package pdftex.def Info: cohens_kappa_png_11_3.png  used on input line 836.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31
-
- <./loss_png_11_1.png> <./accuracy_png_11_1.png> <./f1_score_png_11_1.png> <./c
-ohens_kappa_png_11_1.png>] [32 <./loss_png_11_2.png> <./accuracy_png_11_2.png> 
-<./f1_score_png_11_2.png> <./cohens_kappa_png_11_2.png> <./loss_png_11_3.png> <
-./accuracy_png_11_3.png> <./f1_score_png_11_3.png> <./cohens_kappa_png_11_3.png
->]
-
-LaTeX Warning: Float too large for page by 37.92119pt on input line 930.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 932--997
-[][]
- []
-
-<loss_png_final_1_1.png, id=168, 602.25pt x 401.5pt>
-File: loss_png_final_1_1.png Graphic file (type png)
-<use loss_png_final_1_1.png>
-Package pdftex.def Info: loss_png_final_1_1.png  used on input line 1002.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_1_1.png, id=169, 602.25pt x 401.5pt>
-File: accuracy_png_final_1_1.png Graphic file (type png)
-<use accuracy_png_final_1_1.png>
-Package pdftex.def Info: accuracy_png_final_1_1.png  used on input line 1003.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_1_1.png, id=170, 602.25pt x 401.5pt>
-File: f1_score_png_final_1_1.png Graphic file (type png)
-<use f1_score_png_final_1_1.png>
-Package pdftex.def Info: f1_score_png_final_1_1.png  used on input line 1005.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_1_1.png, id=171, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_1_1.png Graphic file (type png)
-<use cohens_kappa_png_final_1_1.png>
-Package pdftex.def Info: cohens_kappa_png_final_1_1.png  used on input line 100
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_1_2.png, id=172, 602.25pt x 401.5pt>
-File: loss_png_final_1_2.png Graphic file (type png)
-<use loss_png_final_1_2.png>
-Package pdftex.def Info: loss_png_final_1_2.png  used on input line 1012.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_1_2.png, id=173, 602.25pt x 401.5pt>
-File: accuracy_png_final_1_2.png Graphic file (type png)
-<use accuracy_png_final_1_2.png>
-Package pdftex.def Info: accuracy_png_final_1_2.png  used on input line 1013.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_1_2.png, id=174, 602.25pt x 401.5pt>
-File: f1_score_png_final_1_2.png Graphic file (type png)
-<use f1_score_png_final_1_2.png>
-Package pdftex.def Info: f1_score_png_final_1_2.png  used on input line 1015.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_1_2.png, id=175, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_1_2.png Graphic file (type png)
-<use cohens_kappa_png_final_1_2.png>
-Package pdftex.def Info: cohens_kappa_png_final_1_2.png  used on input line 101
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_1_3.png, id=176, 602.25pt x 401.5pt>
-File: loss_png_final_1_3.png Graphic file (type png)
-<use loss_png_final_1_3.png>
-Package pdftex.def Info: loss_png_final_1_3.png  used on input line 1022.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_1_3.png, id=177, 602.25pt x 401.5pt>
-File: accuracy_png_final_1_3.png Graphic file (type png)
-<use accuracy_png_final_1_3.png>
-Package pdftex.def Info: accuracy_png_final_1_3.png  used on input line 1023.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_1_3.png, id=178, 602.25pt x 401.5pt>
-File: f1_score_png_final_1_3.png Graphic file (type png)
-<use f1_score_png_final_1_3.png>
-Package pdftex.def Info: f1_score_png_final_1_3.png  used on input line 1025.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_1_3.png, id=179, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_1_3.png Graphic file (type png)
-<use cohens_kappa_png_final_1_3.png>
-Package pdftex.def Info: cohens_kappa_png_final_1_3.png  used on input line 102
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_1_4.png, id=180, 602.25pt x 401.5pt>
-File: loss_png_final_1_4.png Graphic file (type png)
-<use loss_png_final_1_4.png>
-Package pdftex.def Info: loss_png_final_1_4.png  used on input line 1032.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_1_4.png, id=181, 602.25pt x 401.5pt>
-File: accuracy_png_final_1_4.png Graphic file (type png)
-<use accuracy_png_final_1_4.png>
-Package pdftex.def Info: accuracy_png_final_1_4.png  used on input line 1033.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_1_4.png, id=182, 602.25pt x 401.5pt>
-File: f1_score_png_final_1_4.png Graphic file (type png)
-<use f1_score_png_final_1_4.png>
-Package pdftex.def Info: f1_score_png_final_1_4.png  used on input line 1035.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_1_4.png, id=183, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_1_4.png Graphic file (type png)
-<use cohens_kappa_png_final_1_4.png>
-Package pdftex.def Info: cohens_kappa_png_final_1_4.png  used on input line 103
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_2_1.png, id=184, 602.25pt x 401.5pt>
-File: loss_png_final_2_1.png Graphic file (type png)
-<use loss_png_final_2_1.png>
-Package pdftex.def Info: loss_png_final_2_1.png  used on input line 1042.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_2_1.png, id=185, 602.25pt x 401.5pt>
-File: accuracy_png_final_2_1.png Graphic file (type png)
-<use accuracy_png_final_2_1.png>
-Package pdftex.def Info: accuracy_png_final_2_1.png  used on input line 1043.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_2_1.png, id=186, 602.25pt x 401.5pt>
-File: f1_score_png_final_2_1.png Graphic file (type png)
-<use f1_score_png_final_2_1.png>
-Package pdftex.def Info: f1_score_png_final_2_1.png  used on input line 1045.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_2_1.png, id=187, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_2_1.png Graphic file (type png)
-<use cohens_kappa_png_final_2_1.png>
-Package pdftex.def Info: cohens_kappa_png_final_2_1.png  used on input line 104
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_2_2.png, id=188, 602.25pt x 401.5pt>
-File: loss_png_final_2_2.png Graphic file (type png)
-<use loss_png_final_2_2.png>
-Package pdftex.def Info: loss_png_final_2_2.png  used on input line 1052.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_2_2.png, id=189, 602.25pt x 401.5pt>
-File: accuracy_png_final_2_2.png Graphic file (type png)
-<use accuracy_png_final_2_2.png>
-Package pdftex.def Info: accuracy_png_final_2_2.png  used on input line 1053.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_2_2.png, id=190, 602.25pt x 401.5pt>
-File: f1_score_png_final_2_2.png Graphic file (type png)
-<use f1_score_png_final_2_2.png>
-Package pdftex.def Info: f1_score_png_final_2_2.png  used on input line 1055.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_2_2.png, id=191, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_2_2.png Graphic file (type png)
-<use cohens_kappa_png_final_2_2.png>
-Package pdftex.def Info: cohens_kappa_png_final_2_2.png  used on input line 105
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_2_3.png, id=192, 602.25pt x 401.5pt>
-File: loss_png_final_2_3.png Graphic file (type png)
-<use loss_png_final_2_3.png>
-Package pdftex.def Info: loss_png_final_2_3.png  used on input line 1062.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_2_3.png, id=193, 602.25pt x 401.5pt>
-File: accuracy_png_final_2_3.png Graphic file (type png)
-<use accuracy_png_final_2_3.png>
-Package pdftex.def Info: accuracy_png_final_2_3.png  used on input line 1063.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_2_3.png, id=194, 602.25pt x 401.5pt>
-File: f1_score_png_final_2_3.png Graphic file (type png)
-<use f1_score_png_final_2_3.png>
-Package pdftex.def Info: f1_score_png_final_2_3.png  used on input line 1065.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_2_3.png, id=195, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_2_3.png Graphic file (type png)
-<use cohens_kappa_png_final_2_3.png>
-Package pdftex.def Info: cohens_kappa_png_final_2_3.png  used on input line 106
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<loss_png_final_2_4.png, id=196, 602.25pt x 401.5pt>
-File: loss_png_final_2_4.png Graphic file (type png)
-<use loss_png_final_2_4.png>
-Package pdftex.def Info: loss_png_final_2_4.png  used on input line 1072.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_2_4.png, id=197, 602.25pt x 401.5pt>
-File: accuracy_png_final_2_4.png Graphic file (type png)
-<use accuracy_png_final_2_4.png>
-Package pdftex.def Info: accuracy_png_final_2_4.png  used on input line 1073.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_2_4.png, id=198, 602.25pt x 401.5pt>
-File: f1_score_png_final_2_4.png Graphic file (type png)
-<use f1_score_png_final_2_4.png>
-Package pdftex.def Info: f1_score_png_final_2_4.png  used on input line 1075.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_2_4.png, id=199, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_2_4.png Graphic file (type png)
-<use cohens_kappa_png_final_2_4.png>
-Package pdftex.def Info: cohens_kappa_png_final_2_4.png  used on input line 107
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<loss_png_final_3_1.png, id=200, 602.25pt x 401.5pt>
-File: loss_png_final_3_1.png Graphic file (type png)
-<use loss_png_final_3_1.png>
-Package pdftex.def Info: loss_png_final_3_1.png  used on input line 1082.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_3_1.png, id=201, 602.25pt x 401.5pt>
-File: accuracy_png_final_3_1.png Graphic file (type png)
-<use accuracy_png_final_3_1.png>
-Package pdftex.def Info: accuracy_png_final_3_1.png  used on input line 1083.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_3_1.png, id=202, 602.25pt x 401.5pt>
-File: f1_score_png_final_3_1.png Graphic file (type png)
-<use f1_score_png_final_3_1.png>
-Package pdftex.def Info: f1_score_png_final_3_1.png  used on input line 1085.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_3_1.png, id=203, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_3_1.png Graphic file (type png)
-<use cohens_kappa_png_final_3_1.png>
-Package pdftex.def Info: cohens_kappa_png_final_3_1.png  used on input line 108
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<loss_png_final_3_2.png, id=204, 602.25pt x 401.5pt>
-File: loss_png_final_3_2.png Graphic file (type png)
-<use loss_png_final_3_2.png>
-Package pdftex.def Info: loss_png_final_3_2.png  used on input line 1092.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_3_2.png, id=205, 602.25pt x 401.5pt>
-File: accuracy_png_final_3_2.png Graphic file (type png)
-<use accuracy_png_final_3_2.png>
-Package pdftex.def Info: accuracy_png_final_3_2.png  used on input line 1093.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_3_2.png, id=206, 602.25pt x 401.5pt>
-File: f1_score_png_final_3_2.png Graphic file (type png)
-<use f1_score_png_final_3_2.png>
-Package pdftex.def Info: f1_score_png_final_3_2.png  used on input line 1095.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_3_2.png, id=207, 602.25pt x 401.5pt>
-File: cohens_kappa_png_final_3_2.png Graphic file (type png)
-<use cohens_kappa_png_final_3_2.png>
-Package pdftex.def Info: cohens_kappa_png_final_3_2.png  used on input line 109
-6.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<loss_png_13_1.png, id=208, 602.25pt x 401.5pt>
-File: loss_png_13_1.png Graphic file (type png)
-<use loss_png_13_1.png>
-Package pdftex.def Info: loss_png_13_1.png  used on input line 1102.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_13_1.png, id=209, 602.25pt x 401.5pt>
-File: accuracy_png_13_1.png Graphic file (type png)
-<use accuracy_png_13_1.png>
-Package pdftex.def Info: accuracy_png_13_1.png  used on input line 1103.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_13_1.png, id=210, 602.25pt x 401.5pt>
-File: f1_score_png_13_1.png Graphic file (type png)
-<use f1_score_png_13_1.png>
-Package pdftex.def Info: f1_score_png_13_1.png  used on input line 1105.
-(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_13_1.png, id=211, 602.25pt x 401.5pt>
-File: cohens_kappa_png_13_1.png Graphic file (type png)
-<use cohens_kappa_png_13_1.png>
-Package pdftex.def Info: cohens_kappa_png_13_1.png  used on input line 1106.
+Package pdftex.def Info: cohens_kappa_png_11_3.png  used on input line 857.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [33
 
-] [34] [35] [36 <./loss_png_final_1_1.png> <./accuracy_png_final_1_1.png> <./f1
+ <./loss_png_11_1.png> <./accuracy_png_11_1.png> <./f1_score_png_11_1.png> <./c
+ohens_kappa_png_11_1.png>] [34 <./loss_png_11_2.png> <./accuracy_png_11_2.png> 
+<./f1_score_png_11_2.png> <./cohens_kappa_png_11_2.png> <./loss_png_11_3.png> <
+./accuracy_png_11_3.png> <./f1_score_png_11_3.png> <./cohens_kappa_png_11_3.png
+>]
+
+LaTeX Warning: Float too large for page by 37.92119pt on input line 951.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--1018
+[][]
+ []
+
+<loss_png_final_1_1.png, id=174, 602.25pt x 401.5pt>
+File: loss_png_final_1_1.png Graphic file (type png)
+<use loss_png_final_1_1.png>
+Package pdftex.def Info: loss_png_final_1_1.png  used on input line 1023.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_1_1.png, id=175, 602.25pt x 401.5pt>
+File: accuracy_png_final_1_1.png Graphic file (type png)
+<use accuracy_png_final_1_1.png>
+Package pdftex.def Info: accuracy_png_final_1_1.png  used on input line 1024.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_1_1.png, id=176, 602.25pt x 401.5pt>
+File: f1_score_png_final_1_1.png Graphic file (type png)
+<use f1_score_png_final_1_1.png>
+Package pdftex.def Info: f1_score_png_final_1_1.png  used on input line 1026.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_1_1.png, id=177, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_1_1.png Graphic file (type png)
+<use cohens_kappa_png_final_1_1.png>
+Package pdftex.def Info: cohens_kappa_png_final_1_1.png  used on input line 102
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<loss_png_final_1_2.png, id=178, 602.25pt x 401.5pt>
+File: loss_png_final_1_2.png Graphic file (type png)
+<use loss_png_final_1_2.png>
+Package pdftex.def Info: loss_png_final_1_2.png  used on input line 1033.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_1_2.png, id=179, 602.25pt x 401.5pt>
+File: accuracy_png_final_1_2.png Graphic file (type png)
+<use accuracy_png_final_1_2.png>
+Package pdftex.def Info: accuracy_png_final_1_2.png  used on input line 1034.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_1_2.png, id=180, 602.25pt x 401.5pt>
+File: f1_score_png_final_1_2.png Graphic file (type png)
+<use f1_score_png_final_1_2.png>
+Package pdftex.def Info: f1_score_png_final_1_2.png  used on input line 1036.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_1_2.png, id=181, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_1_2.png Graphic file (type png)
+<use cohens_kappa_png_final_1_2.png>
+Package pdftex.def Info: cohens_kappa_png_final_1_2.png  used on input line 103
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<loss_png_final_1_3.png, id=182, 602.25pt x 401.5pt>
+File: loss_png_final_1_3.png Graphic file (type png)
+<use loss_png_final_1_3.png>
+Package pdftex.def Info: loss_png_final_1_3.png  used on input line 1043.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_1_3.png, id=183, 602.25pt x 401.5pt>
+File: accuracy_png_final_1_3.png Graphic file (type png)
+<use accuracy_png_final_1_3.png>
+Package pdftex.def Info: accuracy_png_final_1_3.png  used on input line 1044.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_1_3.png, id=184, 602.25pt x 401.5pt>
+File: f1_score_png_final_1_3.png Graphic file (type png)
+<use f1_score_png_final_1_3.png>
+Package pdftex.def Info: f1_score_png_final_1_3.png  used on input line 1046.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_1_3.png, id=185, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_1_3.png Graphic file (type png)
+<use cohens_kappa_png_final_1_3.png>
+Package pdftex.def Info: cohens_kappa_png_final_1_3.png  used on input line 104
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<loss_png_final_1_4.png, id=186, 602.25pt x 401.5pt>
+File: loss_png_final_1_4.png Graphic file (type png)
+<use loss_png_final_1_4.png>
+Package pdftex.def Info: loss_png_final_1_4.png  used on input line 1053.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_1_4.png, id=187, 602.25pt x 401.5pt>
+File: accuracy_png_final_1_4.png Graphic file (type png)
+<use accuracy_png_final_1_4.png>
+Package pdftex.def Info: accuracy_png_final_1_4.png  used on input line 1054.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_1_4.png, id=188, 602.25pt x 401.5pt>
+File: f1_score_png_final_1_4.png Graphic file (type png)
+<use f1_score_png_final_1_4.png>
+Package pdftex.def Info: f1_score_png_final_1_4.png  used on input line 1056.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_1_4.png, id=189, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_1_4.png Graphic file (type png)
+<use cohens_kappa_png_final_1_4.png>
+Package pdftex.def Info: cohens_kappa_png_final_1_4.png  used on input line 105
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<loss_png_final_2_1.png, id=190, 602.25pt x 401.5pt>
+File: loss_png_final_2_1.png Graphic file (type png)
+<use loss_png_final_2_1.png>
+Package pdftex.def Info: loss_png_final_2_1.png  used on input line 1063.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_2_1.png, id=191, 602.25pt x 401.5pt>
+File: accuracy_png_final_2_1.png Graphic file (type png)
+<use accuracy_png_final_2_1.png>
+Package pdftex.def Info: accuracy_png_final_2_1.png  used on input line 1064.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_2_1.png, id=192, 602.25pt x 401.5pt>
+File: f1_score_png_final_2_1.png Graphic file (type png)
+<use f1_score_png_final_2_1.png>
+Package pdftex.def Info: f1_score_png_final_2_1.png  used on input line 1066.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_2_1.png, id=193, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_2_1.png Graphic file (type png)
+<use cohens_kappa_png_final_2_1.png>
+Package pdftex.def Info: cohens_kappa_png_final_2_1.png  used on input line 106
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<loss_png_final_2_2.png, id=194, 602.25pt x 401.5pt>
+File: loss_png_final_2_2.png Graphic file (type png)
+<use loss_png_final_2_2.png>
+Package pdftex.def Info: loss_png_final_2_2.png  used on input line 1073.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_2_2.png, id=195, 602.25pt x 401.5pt>
+File: accuracy_png_final_2_2.png Graphic file (type png)
+<use accuracy_png_final_2_2.png>
+Package pdftex.def Info: accuracy_png_final_2_2.png  used on input line 1074.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_2_2.png, id=196, 602.25pt x 401.5pt>
+File: f1_score_png_final_2_2.png Graphic file (type png)
+<use f1_score_png_final_2_2.png>
+Package pdftex.def Info: f1_score_png_final_2_2.png  used on input line 1076.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_2_2.png, id=197, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_2_2.png Graphic file (type png)
+<use cohens_kappa_png_final_2_2.png>
+Package pdftex.def Info: cohens_kappa_png_final_2_2.png  used on input line 107
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<loss_png_final_2_3.png, id=198, 602.25pt x 401.5pt>
+File: loss_png_final_2_3.png Graphic file (type png)
+<use loss_png_final_2_3.png>
+Package pdftex.def Info: loss_png_final_2_3.png  used on input line 1083.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_2_3.png, id=199, 602.25pt x 401.5pt>
+File: accuracy_png_final_2_3.png Graphic file (type png)
+<use accuracy_png_final_2_3.png>
+Package pdftex.def Info: accuracy_png_final_2_3.png  used on input line 1084.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_2_3.png, id=200, 602.25pt x 401.5pt>
+File: f1_score_png_final_2_3.png Graphic file (type png)
+<use f1_score_png_final_2_3.png>
+Package pdftex.def Info: f1_score_png_final_2_3.png  used on input line 1086.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_2_3.png, id=201, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_2_3.png Graphic file (type png)
+<use cohens_kappa_png_final_2_3.png>
+Package pdftex.def Info: cohens_kappa_png_final_2_3.png  used on input line 108
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<loss_png_final_2_4.png, id=202, 602.25pt x 401.5pt>
+File: loss_png_final_2_4.png Graphic file (type png)
+<use loss_png_final_2_4.png>
+Package pdftex.def Info: loss_png_final_2_4.png  used on input line 1093.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_2_4.png, id=203, 602.25pt x 401.5pt>
+File: accuracy_png_final_2_4.png Graphic file (type png)
+<use accuracy_png_final_2_4.png>
+Package pdftex.def Info: accuracy_png_final_2_4.png  used on input line 1094.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_2_4.png, id=204, 602.25pt x 401.5pt>
+File: f1_score_png_final_2_4.png Graphic file (type png)
+<use f1_score_png_final_2_4.png>
+Package pdftex.def Info: f1_score_png_final_2_4.png  used on input line 1096.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_2_4.png, id=205, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_2_4.png Graphic file (type png)
+<use cohens_kappa_png_final_2_4.png>
+Package pdftex.def Info: cohens_kappa_png_final_2_4.png  used on input line 109
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<loss_png_final_3_1.png, id=206, 602.25pt x 401.5pt>
+File: loss_png_final_3_1.png Graphic file (type png)
+<use loss_png_final_3_1.png>
+Package pdftex.def Info: loss_png_final_3_1.png  used on input line 1103.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_3_1.png, id=207, 602.25pt x 401.5pt>
+File: accuracy_png_final_3_1.png Graphic file (type png)
+<use accuracy_png_final_3_1.png>
+Package pdftex.def Info: accuracy_png_final_3_1.png  used on input line 1104.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_3_1.png, id=208, 602.25pt x 401.5pt>
+File: f1_score_png_final_3_1.png Graphic file (type png)
+<use f1_score_png_final_3_1.png>
+Package pdftex.def Info: f1_score_png_final_3_1.png  used on input line 1106.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_3_1.png, id=209, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_3_1.png Graphic file (type png)
+<use cohens_kappa_png_final_3_1.png>
+Package pdftex.def Info: cohens_kappa_png_final_3_1.png  used on input line 110
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<loss_png_final_3_2.png, id=210, 602.25pt x 401.5pt>
+File: loss_png_final_3_2.png Graphic file (type png)
+<use loss_png_final_3_2.png>
+Package pdftex.def Info: loss_png_final_3_2.png  used on input line 1113.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_final_3_2.png, id=211, 602.25pt x 401.5pt>
+File: accuracy_png_final_3_2.png Graphic file (type png)
+<use accuracy_png_final_3_2.png>
+Package pdftex.def Info: accuracy_png_final_3_2.png  used on input line 1114.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_final_3_2.png, id=212, 602.25pt x 401.5pt>
+File: f1_score_png_final_3_2.png Graphic file (type png)
+<use f1_score_png_final_3_2.png>
+Package pdftex.def Info: f1_score_png_final_3_2.png  used on input line 1116.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_final_3_2.png, id=213, 602.25pt x 401.5pt>
+File: cohens_kappa_png_final_3_2.png Graphic file (type png)
+<use cohens_kappa_png_final_3_2.png>
+Package pdftex.def Info: cohens_kappa_png_final_3_2.png  used on input line 111
+7.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<loss_png_13_1.png, id=214, 602.25pt x 401.5pt>
+File: loss_png_13_1.png Graphic file (type png)
+<use loss_png_13_1.png>
+Package pdftex.def Info: loss_png_13_1.png  used on input line 1123.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<accuracy_png_13_1.png, id=215, 602.25pt x 401.5pt>
+File: accuracy_png_13_1.png Graphic file (type png)
+<use accuracy_png_13_1.png>
+Package pdftex.def Info: accuracy_png_13_1.png  used on input line 1124.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<f1_score_png_13_1.png, id=216, 602.25pt x 401.5pt>
+File: f1_score_png_13_1.png Graphic file (type png)
+<use f1_score_png_13_1.png>
+Package pdftex.def Info: f1_score_png_13_1.png  used on input line 1126.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+<cohens_kappa_png_13_1.png, id=217, 602.25pt x 401.5pt>
+File: cohens_kappa_png_13_1.png Graphic file (type png)
+<use cohens_kappa_png_13_1.png>
+Package pdftex.def Info: cohens_kappa_png_13_1.png  used on input line 1127.
+(pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35
+
+] [36] [37] [38 <./loss_png_final_1_1.png> <./accuracy_png_final_1_1.png> <./f1
 _score_png_final_1_1.png> <./cohens_kappa_png_final_1_1.png> <./loss_png_final_
 1_2.png> <./accuracy_png_final_1_2.png> <./f1_score_png_final_1_2.png> <./cohen
-s_kappa_png_final_1_2.png>] [37 <./loss_png_final_1_3.png> <./accuracy_png_fina
+s_kappa_png_final_1_2.png>] [39 <./loss_png_final_1_3.png> <./accuracy_png_fina
 l_1_3.png> <./f1_score_png_final_1_3.png> <./cohens_kappa_png_final_1_3.png> <.
 /loss_png_final_1_4.png> <./accuracy_png_final_1_4.png> <./f1_score_png_final_1
-_4.png> <./cohens_kappa_png_final_1_4.png>] [38 <./loss_png_final_2_1.png> <./a
+_4.png> <./cohens_kappa_png_final_1_4.png>] [40 <./loss_png_final_2_1.png> <./a
 ccuracy_png_final_2_1.png> <./f1_score_png_final_2_1.png> <./cohens_kappa_png_f
 inal_2_1.png> <./loss_png_final_2_2.png> <./accuracy_png_final_2_2.png> <./f1_s
-core_png_final_2_2.png> <./cohens_kappa_png_final_2_2.png>] [39 <./loss_png_fin
+core_png_final_2_2.png> <./cohens_kappa_png_final_2_2.png>] [41 <./loss_png_fin
 al_2_3.png> <./accuracy_png_final_2_3.png> <./f1_score_png_final_2_3.png> <./co
 hens_kappa_png_final_2_3.png> <./loss_png_final_2_4.png> <./accuracy_png_final_
 2_4.png> <./f1_score_png_final_2_4.png> <./cohens_kappa_png_final_2_4.png>]
-[40 <./loss_png_final_3_1.png> <./accuracy_png_final_3_1.png> <./f1_score_png_f
+[42 <./loss_png_final_3_1.png> <./accuracy_png_final_3_1.png> <./f1_score_png_f
 inal_3_1.png> <./cohens_kappa_png_final_3_1.png> <./loss_png_final_3_2.png> <./
 accuracy_png_final_3_2.png> <./f1_score_png_final_3_2.png> <./cohens_kappa_png_
-final_3_2.png>] [41 <./loss_png_13_1.png> <./accuracy_png_13_1.png> <./f1_score
+final_3_2.png>] [43 <./loss_png_13_1.png> <./accuracy_png_13_1.png> <./f1_score
 _png_13_1.png> <./cohens_kappa_png_13_1.png>]
-Overfull \hbox (3.23622pt too wide) in paragraph at lines 1131--1133
-[]\T1/qtm/m/n/12 (-20) Another test is switch-ing con-vo-lu-tion lay-ers by a c
-us-tom in-cep-tion mod-ule. Model 2 (4.10model
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 3312) has occurred while \output is active []
-
- [42
+ [44
 
 ]
-<loss_png_12_1.png, id=243, 602.25pt x 401.5pt>
+<loss_png_12_1.png, id=250, 602.25pt x 401.5pt>
 File: loss_png_12_1.png Graphic file (type png)
 <use loss_png_12_1.png>
-Package pdftex.def Info: loss_png_12_1.png  used on input line 1189.
+Package pdftex.def Info: loss_png_12_1.png  used on input line 1210.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_12_1.png, id=244, 602.25pt x 401.5pt>
+<accuracy_png_12_1.png, id=251, 602.25pt x 401.5pt>
 File: accuracy_png_12_1.png Graphic file (type png)
 <use accuracy_png_12_1.png>
-Package pdftex.def Info: accuracy_png_12_1.png  used on input line 1190.
+Package pdftex.def Info: accuracy_png_12_1.png  used on input line 1211.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_12_1.png, id=245, 602.25pt x 401.5pt>
+<f1_score_png_12_1.png, id=252, 602.25pt x 401.5pt>
 File: f1_score_png_12_1.png Graphic file (type png)
 <use f1_score_png_12_1.png>
-Package pdftex.def Info: f1_score_png_12_1.png  used on input line 1192.
+Package pdftex.def Info: f1_score_png_12_1.png  used on input line 1213.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_12_1.png, id=246, 602.25pt x 401.5pt>
+<cohens_kappa_png_12_1.png, id=253, 602.25pt x 401.5pt>
 File: cohens_kappa_png_12_1.png Graphic file (type png)
 <use cohens_kappa_png_12_1.png>
-Package pdftex.def Info: cohens_kappa_png_12_1.png  used on input line 1193.
+Package pdftex.def Info: cohens_kappa_png_12_1.png  used on input line 1214.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<loss_png_13_3.png, id=247, 602.25pt x 401.5pt>
+<loss_png_13_3.png, id=254, 602.25pt x 401.5pt>
 File: loss_png_13_3.png Graphic file (type png)
 <use loss_png_13_3.png>
-Package pdftex.def Info: loss_png_13_3.png  used on input line 1201.
+Package pdftex.def Info: loss_png_13_3.png  used on input line 1222.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_13_3.png, id=248, 602.25pt x 401.5pt>
+<accuracy_png_13_3.png, id=255, 602.25pt x 401.5pt>
 File: accuracy_png_13_3.png Graphic file (type png)
 <use accuracy_png_13_3.png>
-Package pdftex.def Info: accuracy_png_13_3.png  used on input line 1202.
+Package pdftex.def Info: accuracy_png_13_3.png  used on input line 1223.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_13_3.png, id=249, 602.25pt x 401.5pt>
+<f1_score_png_13_3.png, id=256, 602.25pt x 401.5pt>
 File: f1_score_png_13_3.png Graphic file (type png)
 <use f1_score_png_13_3.png>
-Package pdftex.def Info: f1_score_png_13_3.png  used on input line 1204.
+Package pdftex.def Info: f1_score_png_13_3.png  used on input line 1225.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_13_3.png, id=250, 602.25pt x 401.5pt>
+<cohens_kappa_png_13_3.png, id=257, 602.25pt x 401.5pt>
 File: cohens_kappa_png_13_3.png Graphic file (type png)
 <use cohens_kappa_png_13_3.png>
-Package pdftex.def Info: cohens_kappa_png_13_3.png  used on input line 1205.
+Package pdftex.def Info: cohens_kappa_png_13_3.png  used on input line 1226.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_final_run_6_1.png, id=251, 602.25pt x 401.5pt>
+<loss_png_final_run_6_1.png, id=258, 602.25pt x 401.5pt>
 File: loss_png_final_run_6_1.png Graphic file (type png)
 <use loss_png_final_run_6_1.png>
-Package pdftex.def Info: loss_png_final_run_6_1.png  used on input line 1213.
+Package pdftex.def Info: loss_png_final_run_6_1.png  used on input line 1234.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_final_run_6_1.png, id=252, 602.25pt x 401.5pt>
+<accuracy_png_final_run_6_1.png, id=259, 602.25pt x 401.5pt>
 File: accuracy_png_final_run_6_1.png Graphic file (type png)
 <use accuracy_png_final_run_6_1.png>
-Package pdftex.def Info: accuracy_png_final_run_6_1.png  used on input line 121
-4.
+Package pdftex.def Info: accuracy_png_final_run_6_1.png  used on input line 123
+5.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_final_run_6_1.png, id=253, 602.25pt x 401.5pt>
+<f1_score_png_final_run_6_1.png, id=260, 602.25pt x 401.5pt>
 File: f1_score_png_final_run_6_1.png Graphic file (type png)
 <use f1_score_png_final_run_6_1.png>
-Package pdftex.def Info: f1_score_png_final_run_6_1.png  used on input line 121
-6.
+Package pdftex.def Info: f1_score_png_final_run_6_1.png  used on input line 123
+7.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_final_run_6_1.png, id=254, 602.25pt x 401.5pt>
+<cohens_kappa_png_final_run_6_1.png, id=261, 602.25pt x 401.5pt>
 File: cohens_kappa_png_final_run_6_1.png Graphic file (type png)
 <use cohens_kappa_png_final_run_6_1.png>
 Package pdftex.def Info: cohens_kappa_png_final_run_6_1.png  used on input line
- 1217.
+ 1238.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<loss_png_14_4.png, id=255, 602.25pt x 401.5pt>
+<loss_png_14_4.png, id=262, 602.25pt x 401.5pt>
 File: loss_png_14_4.png Graphic file (type png)
 <use loss_png_14_4.png>
-Package pdftex.def Info: loss_png_14_4.png  used on input line 1223.
+Package pdftex.def Info: loss_png_14_4.png  used on input line 1244.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<accuracy_png_14_4.png, id=256, 602.25pt x 401.5pt>
+<accuracy_png_14_4.png, id=263, 602.25pt x 401.5pt>
 File: accuracy_png_14_4.png Graphic file (type png)
 <use accuracy_png_14_4.png>
-Package pdftex.def Info: accuracy_png_14_4.png  used on input line 1224.
+Package pdftex.def Info: accuracy_png_14_4.png  used on input line 1245.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<f1_score_png_14_4.png, id=257, 602.25pt x 401.5pt>
+<f1_score_png_14_4.png, id=264, 602.25pt x 401.5pt>
 File: f1_score_png_14_4.png Graphic file (type png)
 <use f1_score_png_14_4.png>
-Package pdftex.def Info: f1_score_png_14_4.png  used on input line 1226.
+Package pdftex.def Info: f1_score_png_14_4.png  used on input line 1247.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-<cohens_kappa_png_14_4.png, id=258, 602.25pt x 401.5pt>
+<cohens_kappa_png_14_4.png, id=265, 602.25pt x 401.5pt>
 File: cohens_kappa_png_14_4.png Graphic file (type png)
 <use cohens_kappa_png_14_4.png>
-Package pdftex.def Info: cohens_kappa_png_14_4.png  used on input line 1227.
+Package pdftex.def Info: cohens_kappa_png_14_4.png  used on input line 1248.
 (pdftex.def)             Requested size: 175.09123pt x 116.72607pt.
-[43] [44] [45 <./loss_png_12_1.png> <./accuracy_png_12_1.png> <./f1_score_png_1
-2_1.png> <./cohens_kappa_png_12_1.png> <./loss_png_13_3.png> <./accuracy_png_13
-_3.png> <./f1_score_png_13_3.png> <./cohens_kappa_png_13_3.png>] [46 <./loss_pn
-g_final_run_6_1.png> <./accuracy_png_final_run_6_1.png> <./f1_score_png_final_r
-un_6_1.png> <./cohens_kappa_png_final_run_6_1.png> <./loss_png_14_4.png> <./acc
-uracy_png_14_4.png> <./f1_score_png_14_4.png> <./cohens_kappa_png_14_4.png>]
-<accuracy_per_scan_type_final_run_6_2.png, id=272, 602.25pt x 401.5pt>
+[45] [46 <./loss_png_12_1.png> <./accuracy_png_12_1.png> <./f1_score_png_12_1.p
+ng> <./cohens_kappa_png_12_1.png> <./loss_png_13_3.png> <./accuracy_png_13_3.pn
+g> <./f1_score_png_13_3.png> <./cohens_kappa_png_13_3.png>] [47 <./loss_png_fin
+al_run_6_1.png> <./accuracy_png_final_run_6_1.png> <./f1_score_png_final_run_6_
+1.png> <./cohens_kappa_png_final_run_6_1.png> <./loss_png_14_4.png> <./accuracy
+_png_14_4.png> <./f1_score_png_14_4.png> <./cohens_kappa_png_14_4.png>]
+<accuracy_per_scan_type_final_run_6_2.png, id=275, 602.25pt x 401.5pt>
 File: accuracy_per_scan_type_final_run_6_2.png Graphic file (type png)
 <use accuracy_per_scan_type_final_run_6_2.png>
 Package pdftex.def Info: accuracy_per_scan_type_final_run_6_2.png  used on inpu
-t line 1246.
+t line 1267.
 (pdftex.def)             Requested size: 196.97931pt x 131.31914pt.
-<accuracy_per_scan_type_final_run_6_1.png, id=273, 602.25pt x 401.5pt>
+<accuracy_per_scan_type_final_run_6_1.png, id=276, 602.25pt x 401.5pt>
 File: accuracy_per_scan_type_final_run_6_1.png Graphic file (type png)
 <use accuracy_per_scan_type_final_run_6_1.png>
 Package pdftex.def Info: accuracy_per_scan_type_final_run_6_1.png  used on inpu
-t line 1255.
+t line 1276.
 (pdftex.def)             Requested size: 196.97931pt x 131.31914pt.
 
-Underfull \vbox (badness 1365) has occurred while \output is active []
-
- [47
+[48
 
  <./accuracy_per_scan_type_final_run_6_2.png> <./accuracy_per_scan_type_final_r
-un_6_1.png>] [48]
+un_6_1.png>]
 chapter 5.
+
+LaTeX Warning: Citation `Walle2023' on page 49 undefined on input line 1286.
+
+
+LaTeX Warning: Citation `Walle2023' on page 49 undefined on input line 1286.
+
+
+LaTeX Warning: Citation `Walle2023' on page 49 undefined on input line 1288.
+
+
+LaTeX Warning: Citation `Zhang2020' on page 49 undefined on input line 1288.
+
+
+LaTeX Warning: Citation `Walle2023' on page 49 undefined on input line 1290.
+
+
+LaTeX Warning: Citation `Walle2023' on page 49 undefined on input line 1293.
+
+
+LaTeX Warning: Citation `Tran2019' on page 49 undefined on input line 1293.
+
+
+LaTeX Warning: Citation `Walle2023' on page 49 undefined on input line 1293.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49
 
 ]
+
+LaTeX Warning: Citation `Walle2023' on page 50 undefined on input line 1297.
+
 [50]
 chapter 6.
-(Bachelor_Thesis_final.bbl [51
 
-] [52
+LaTeX Warning: Citation `Walle2023' on page 51 undefined on input line 1303.
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Citation `Walle2023' on page 51 undefined on input line 1305.
 
- [54])
+No file Bachelor_Thesis_final.bbl.
 \tf@thm=\write4
 \openout4 = `Bachelor_Thesis_final.thm'.
 
+[51
 
-[55]
-
-LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1297.
-
+]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1297.
+(LaTeX3)     1318.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1297.
+(LaTeX3)     1318.
+
+
+LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
+(LaTeX3)     1318.
 
  (Bachelor_Thesis_final.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14699 strings out of 479300
- 265164 string characters out of 2853552
- 810282 words of memory out of 3000000
- 31514 multiletter control sequences out of 15000+200000
- 510299 words of font info for 240 fonts, out of 3000000 for 9000
+ 14679 strings out of 479300
+ 265528 string characters out of 2853552
+ 807673 words of memory out of 3000000
+ 31519 multiletter control sequences out of 15000+200000
+ 511059 words of font info for 231 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,17n,130p,10644b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-
-ec.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gy
-re/q-qx.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/t
-ex-gyre/q-ts1.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
-vips/base/8r.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dv
-ips/tex-gyre/q-rm.enc}<C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+qx.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gy
+re/q-ts1.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/
+base/8r.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/t
+ex-gyre/q-rm.enc}{C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dv
+ips/tex-gyre/q-ec.enc}<C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/johan/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/johan/Ap
@@ -1914,9 +2103,9 @@ lic/txfonts/txsy.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/urw/bookman/ubkd8a.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Bachelor_Thesis_final.pdf (55 pages, 5060081 bytes).
+Output written on Bachelor_Thesis_final.pdf (51 pages, 5046406 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
+ 334 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58884 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 65028 words of extra memory for PDF output out of 74296 (max. 10000000)
 
